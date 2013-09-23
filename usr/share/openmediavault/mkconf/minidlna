@@ -1,0 +1,67 @@
+#!/bin/sh
+#
+# This file is part of OpenMediaVault.
+#
+# @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
+# @author    Aaron Murray <aaron@omv-extras.org>
+# @copyright Copyright (c) 2013 Aaron Murray
+#
+# OpenMediaVault is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# OpenMediaVault is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with OpenMediaVault. If not, see <http://www.gnu.org/licenses/>.
+
+set -e
+
+. /etc/default/openmediavault
+. /usr/share/openmediavault/scripts/helper-functions
+
+OMV_MKCONF_SCRIPTS_DIR=${OMV_MKCONF_SCRIPTS_DIR:-"/usr/share/openmediavault/mkconf"}
+
+MINIDLNA_CONFIG="/etc/minidlna.conf"
+
+# Create minidlna config file
+cat <<EOF > ${MINIDLNA_CONFIG}
+port=$(omv_config_get "//services/minidlna/port")
+#network_interface=eth0
+friendly_name=$(omv_config_get "//services/minidlna/name")
+#db_dir=/var/cache/minidlna
+#log_dir=/var/log
+album_art_names=Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg
+inotify=yes
+enable_tivo=$( if [ `omv_config_get "//services/minidlna/tivo"` = "1" ]; then echo "yes"; else echo "no"; fi)
+strict_dlna=$( if [ `omv_config_get "//services/minidlna/strict"` = "1" ]; then echo "yes"; else echo "no"; fi)
+notify_interval=60
+serial=31446138
+model_number=1
+#root_container=.
+EOF
+
+
+# Process FTP shares
+index=$(omv_config_get_count "//services/minidlna/shares/share")
+while [ ${index} -gt 0 ]; do
+
+	# Get the shared folder reference and path
+	sfref=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/sharedfolderref")
+	sfpath=$(omv_get_sharedfolder_path "${sfref}")
+	mtype=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/mtype")
+
+	if [ "${mtype}" != "" ]; then
+		mtype="${mtype},"
+	fi
+
+	if [ "${sfpath}" != "" ]; then
+		echo "media_dir=${mtype}${sfpath}" >>${MINIDLNA_CONFIG}
+	fi
+
+	index=$(( ${index} - 1 ))
+done
