@@ -31,9 +31,21 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
 	rpcService: "MiniDlna",
 	rpcGetMethod: "getSettings",
 	rpcSetMethod: "setSettings",
-
-	getFormItems: function() {
-		var me = this;
+	
+	plugins: [{
+		ptype: "linkedfields",
+		correlations: [{
+			name: [
+				"rescan"
+			],
+			conditions: [
+				{ name: "enable", value: false }
+			],
+			properties: "disabled"
+		}]
+	}],
+	
+	getFormItems: function () {
 		return [{
 			xtype: "fieldset",
 			title: _("General settings"),
@@ -45,12 +57,12 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
 				name: "enable",
 				fieldLabel: _("Enable"),
 				checked: false
-			},{
+			}, {
 				xtype: "textfield",
 				name: "name",
 				value: _("MiniDLNA on OpenMediaVault"),
-				fieldLabel :_("Name")
-			},{
+				fieldLabel: _("Name")
+			}, {
 				xtype: "numberfield",
 				name: "port",
 				fieldLabel: _("Port"),
@@ -60,17 +72,36 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
 				allowDecimals: false,
 				allowBlank: false,
 				value: 8200
-			},{
+			}, {
 				xtype: "checkbox",
 				name: "strict",
 				fieldLabel: _("Strict DLNA"),
 				boxLabel: _("Strictly adhere to DLNA standards"),
 				checked: false
-			},{
+			}, {
 				xtype: "checkbox",
 				name: "tivo",
 				fieldLabel: _("TiVo support"),
 				checked: false
+			},{
+				xtype: "button",
+				name: "rescan",
+				text: _("Rescan"),
+				scope: this,
+				handler: function() {
+					// Execute RPC.
+					OMV.Rpc.request({
+						scope: this,
+						callback: function(id, success, response) {
+							this.doReload();
+						},
+						relayErrors: false,
+						rpcData: {
+							service: "MiniDlna",
+							method: "doRescan"
+						}
+					});
+				}
 			}]
 		}];
 	}

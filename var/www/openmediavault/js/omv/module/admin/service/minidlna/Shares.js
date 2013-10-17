@@ -52,7 +52,7 @@ Ext.define("OMV.module.admin.service.minidlna.Share", {
 	 * @param uuid The UUID of the database/configuration object. Required.
 	 */
 
-	getFormItems: function() {
+	getFormItems: function () {
 		var me = this;
 		return [{
 			xtype: "sharedfoldercombo",
@@ -63,16 +63,16 @@ Ext.define("OMV.module.admin.service.minidlna.Share", {
 				ptype: "fieldinfo",
 				text: _("Shared folder containing media files")
 			}]
-		},{
+		}, {
 			xtype: "combo",
 			name: "mtype",
 			fieldLabel: _("Content Type"),
 			queryMode: "local",
 			store: [
-				[ "A",_("Audio") ],
-				[ "P",_("Images") ],
-				[ "V",_("Video") ],
-				[ "",_("All media") ]
+				[ "A", _("Audio") ],
+				[ "P", _("Images") ],
+				[ "V", _("Video") ],
+				[ "", _("All media") ]
 			],
 			editable: false,
 			triggerAction: "all",
@@ -105,31 +105,32 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
 		sortable: true,
 		dataIndex: "sharedfoldername",
 		stateId: "sharedfoldername"
-	},{
+	}, {
 		text: _("Content Type(s)"),
 		sortable: true,
 		dataIndex: "mtype",
 		stateId: "mtype",
-		renderer: function(value) {
-			switch(value) {
-				case 'A':
-					content = "Audio";
-					break;
-				case 'P':
-					content = "Images";
-					break;
-				case 'V':
-					content = "Video";
-					break;
-				default:
-					content = "All Media";
-					break;
+		renderer: function (value) {
+			var content;
+			switch (value) {
+			case 'A':
+				content = "Audio";
+				break;
+			case 'P':
+				content = "Images";
+				break;
+			case 'V':
+				content = "Video";
+				break;
+			default:
+				content = "All Media";
+				break;
 			}
 			return content;
 		}
 	}],
 
-	initComponent: function() {
+	initComponent: function () {
 		var me = this;
 		Ext.apply(me, {
 			store: Ext.create("OMV.data.Store", {
@@ -154,36 +155,39 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
 		me.callParent(arguments);
 	},
 
-	onAddButton: function() {
+	onAddButton: function () {
 		var me = this;
 		Ext.create("OMV.module.admin.service.minidlna.Share", {
 			title: _("Add media share"),
 			uuid: OMV.UUID_UNDEFINED,
 			listeners: {
 				scope: me,
-				submit: function() {
+				submit: function () {
 					this.doReload();
 				}
 			}
 		}).show();
 	},
 
-	onEditButton: function() {
-		var me = this;
-		var record = me.getSelected();
+	onEditButton: function () {
+		var me, record;
+
+		me = this;
+		record = me.getSelected();
+
 		Ext.create("OMV.module.admin.service.minidlna.Share", {
 			title: _("Edit media share"),
 			uuid: record.get("uuid"),
 			listeners: {
 				scope: me,
-				submit: function() {
+				submit: function () {
 					this.doReload();
 				}
 			}
 		}).show();
 	},
 
-	doDeletion: function(record) {
+	doDeletion: function (record) {
 		var me = this;
 		OMV.Rpc.request({
 			scope: me,

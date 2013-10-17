@@ -44,6 +44,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract {
 		$this->registerMethod("getShare");
 		$this->registerMethod("setShare");
 		$this->registerMethod("deleteShare");
+		$this->registerMethod("doRescan");
 	}
 
 	/**
@@ -313,6 +314,29 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract {
 		// Return the deleted configuration object.
 		return $object;
 	}
+	
+	public function doRescan($params, $context) {
+		global $xmlConfig;
+		
+		// Validate the RPC caller context.
+		$this->validateMethodContext($context, array( "role" => OMV_ROLE_ADMINISTRATOR ));
+		
+		$xpath = "//services/minidlna";
+		$object = $xmlConfig->get($xpath);
+		if(is_null($object)) {
+			throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $xpath);
+		}
+		
+		if(FALSE === boolval($object['enable']))
+			return;
+
+		$cmd = "sudo /etc/init.d/minidlna force-reload 2>&1";
+		if(0 !== $this->exec($cmd, $output)) {
+			throw new OMVException(OMVErrorMsg::E_EXEC_FAILED, $cmd, implode("\n", $output));
+		}		
+			
+	}
+	
 }
 
 // Register the RPC service.
