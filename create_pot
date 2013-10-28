@@ -5,8 +5,8 @@ mkdir -p ${POT_DIR}
 pwd=${PWD##*/}
 edit_date=$(date +%Y-%m-%d\ %H:%M)
 
-grep -Poh '(?<=\_\().*?(?=\"\))' ./var/www/openmediavault/js/omv/module/admin/service/minidlna/*.js | sort -u > strings
-grep -Poh '(?<=\_\().*?(?=\"\))' ./var/www/openmediavault/js/omv/module/admin/diagnostic/log/plugin/*.js | sort -u > strings2
+grep -Poh '(?<=\_\(\").*?(?=\"\))' ./var/www/openmediavault/js/omv/module/admin/service/minidlna/*.js | sort -u > strings
+grep -Poh '(?<=\_\(\").*?(?=\"\))' ./var/www/openmediavault/js/omv/module/admin/diagnostic/log/plugin/*.js | sort -u > strings2
 
 cat strings* | sort -u > pot_strings
 
@@ -35,8 +35,7 @@ EOF
 
 while read line
 do
-    out=${line##*:}
-    echo -e "msgid ${out}\"\nmsgstr ${out}\"\n" >> ${POT_DIR}${pwd}.pot
+    echo -e "msgid \"${line}\"\nmsgstr \"${line}\"\n" >> ${POT_DIR}${pwd}.pot
 done < "pot_strings"
 
 rm strings*
