@@ -1,0 +1,94 @@
+# openmediavault-minidlna
+# Copyright (C) 2013
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# zubr139 <zubr139@ukr.net>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-minidlna\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-28 08:59-0500\n"
+"PO-Revision-Date: 2013-10-29 10:33+0000\n"
+"Last-Translator: zubr139 <zubr139@ukr.net>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/projects/p/openmediavault-minidlna/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Add media share"
+msgstr ""
+
+msgid "All media"
+msgstr "Все медіа"
+
+msgid "Audio"
+msgstr "Аудіо"
+
+msgid "Component"
+msgstr "Компонент"
+
+msgid "Content Type"
+msgstr "Тип контенту"
+
+msgid "Content Type(s)"
+msgstr "Тип(и) контенту"
+
+msgid "Date & Time"
+msgstr "Дата і Час"
+
+msgid "DLNA"
+msgstr "DLNA"
+
+msgid "Edit media share"
+msgstr ""
+
+msgid "Enable"
+msgstr "Увімкнути"
+
+msgid "Event"
+msgstr ""
+
+msgid "General settings"
+msgstr "Загальні налаштування"
+
+msgid "Images"
+msgstr "Зображення"
+
+msgid "MiniDLNA on OpenMediaVault"
+msgstr "MiniDLNA на OpenMediaVault"
+
+msgid "Name"
+msgstr "Ім'я"
+
+msgid "Port"
+msgstr "Порт"
+
+msgid "Rescan"
+msgstr "Повторне сканування"
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "Shared Folder"
+msgstr "Спільна тека"
+
+msgid "Shared folder containing media files"
+msgstr "Спільна тека, що містить медіа-файли"
+
+msgid "Shares"
+msgstr ""
+
+msgid "Strict DLNA"
+msgstr "Жорсткі DLNA"
+
+msgid "Strictly adhere to DLNA standards"
+msgstr "Чітке дотримання стандартів DLNA"
+
+msgid "TiVo support"
+msgstr "Підтримка TiVo"
+
+msgid "Video"
+msgstr "Відео"

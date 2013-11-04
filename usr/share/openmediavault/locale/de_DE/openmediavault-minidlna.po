@@ -1,0 +1,94 @@
+# openmediavault-minidlna
+# Copyright (C) 2013
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# davidh2k <davidh1990@gmx.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-minidlna\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-28 08:59-0500\n"
+"PO-Revision-Date: 2013-10-28 23:04+0000\n"
+"Last-Translator: davidh2k <davidh1990@gmx.de>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/openmediavault-minidlna/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Add media share"
+msgstr "Medienfreigabe hinzufügen"
+
+msgid "All media"
+msgstr "Alle Medientypen"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Component"
+msgstr "Komponente"
+
+msgid "Content Type"
+msgstr "Inhaltstyp"
+
+msgid "Content Type(s)"
+msgstr "Inhaltstyp(en)"
+
+msgid "Date & Time"
+msgstr "Datum & Uhrzeit"
+
+msgid "DLNA"
+msgstr "DLNA"
+
+msgid "Edit media share"
+msgstr "Medienfreigabe bearbeiten"
+
+msgid "Enable"
+msgstr "Aktivieren"
+
+msgid "Event"
+msgstr "Ereignis"
+
+msgid "General settings"
+msgstr "Allgemeine Einstellungen"
+
+msgid "Images"
+msgstr "Bilder"
+
+msgid "MiniDLNA on OpenMediaVault"
+msgstr "MiniDLNA auf OpenMediaVault"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Rescan"
+msgstr "Erneut suchen"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Shared Folder"
+msgstr "Freigegebener Ordner"
+
+msgid "Shared folder containing media files"
+msgstr "Freigegebener Ordner welcher Medien Dateien enthält"
+
+msgid "Shares"
+msgstr "Freigaben"
+
+msgid "Strict DLNA"
+msgstr "Striktes DLNA"
+
+msgid "Strictly adhere to DLNA standards"
+msgstr "Sich strikt an die DLNA Standards halten"
+
+msgid "TiVo support"
+msgstr "TiVo Unterstützung"
+
+msgid "Video"
+msgstr "Video"
