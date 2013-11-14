@@ -1,3 +1,9 @@
+openmediavault-minidlna (0.5.7) stable; urgency=low
+
+  * add locales
+
+ -- Aaron Murray <aaron@omv-extras.org>  Thu, 14 Nov 2013 11:05:27 -0500
+
 openmediavault-minidlna (0.5.6) stable; urgency=low
 
   * add rescan button

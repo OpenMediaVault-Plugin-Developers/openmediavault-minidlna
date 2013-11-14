@@ -5,6 +5,7 @@ include ./openmediavault.mk
 clean:
 	dh_testdir
 	dh_testroot
+	rm -f build-stamp configure-stamp
 	dh_clean
 
 install:
@@ -13,7 +14,7 @@ install:
 	dh_prep
 	dh_installdirs
 	dh_install
-	
+
 binary-indep: install omv_clean_scm
 	dh_testdir
 	dh_testroot
@@ -28,10 +29,7 @@ binary-indep: install omv_clean_scm
 	dh_md5sums
 	dh_builddeb
 
-binary-arch: install
-# We have nothing to do by default.
-
-build:
+binary-arch:
 # We have nothing to do by default.
 
 binary: binary-indep binary-arch

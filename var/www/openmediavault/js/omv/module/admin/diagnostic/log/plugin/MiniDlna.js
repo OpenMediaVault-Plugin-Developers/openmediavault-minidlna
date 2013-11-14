@@ -1,5 +1,4 @@
 /**
- * This file is part of OpenMediaVault.
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Aaron Murray <aaron@omv-extras.org>
@@ -23,43 +22,43 @@
 // require("js/omv/util/Format.js")
 
 Ext.define("OMV.module.admin.diagnostic.log.plugin.MiniDlna", {
-	extend: "OMV.module.admin.diagnostic.log.plugin.Plugin",
+    extend: "OMV.module.admin.diagnostic.log.plugin.Plugin",
 
-	id: "minidlna",
-	text: _("DLNA"),
-	stateful: true,
-	stateId: "92a5f193-e76a-481e-a1c0-13db308c97c0",
-	columns: [{
-		text: _("Date & Time"),
-		sortable: true,
-		dataIndex: "date",
-		stateId: "date",
-		renderer: OMV.util.Format.localeTimeRenderer()
-	},{
-		text: _("Component"),
-		sortable: true,
-		dataIndex: "component",
-		stateId: "component",
-		flex: 1
-	},{
-		text: _("Event"),
-		sortable: true,
-		dataIndex: "event",
-		stateId: "event",
-		flex: 1
-	}],
-	rpcParams: {
-		id: "minidlna"
-	},
-	rpcFields: [
-		{ name: "date", type: "string" },
-		{ name: "component", type: "string" },
-		{ name: "event", type: "string" }
-	]
+    id: "minidlna",
+    text: _("DLNA"),
+    stateful: true,
+    stateId: "92a5f193-e76a-481e-a1c0-13db308c97c0",
+    columns: [{
+        text: _("Date & Time"),
+        sortable: true,
+        dataIndex: "date",
+        stateId: "date",
+        renderer: OMV.util.Format.localeTimeRenderer()
+    },{
+        text: _("Component"),
+        sortable: true,
+        dataIndex: "component",
+        stateId: "component",
+        flex: 1
+    },{
+        text: _("Event"),
+        sortable: true,
+        dataIndex: "event",
+        stateId: "event",
+        flex: 1
+    }],
+    rpcParams: {
+        id: "minidlna"
+    },
+    rpcFields: [
+        { name: "date", type: "string" },
+        { name: "component", type: "string" },
+        { name: "event", type: "string" }
+    ]
 });
 
 OMV.PluginManager.register({
-	ptype: "diagnostic",
-	id: "log",
-	className: "OMV.module.admin.diagnostic.log.plugin.MiniDlna"
+    ptype: "diagnostic",
+    id: "log",
+    className: "OMV.module.admin.diagnostic.log.plugin.MiniDlna"
 });
