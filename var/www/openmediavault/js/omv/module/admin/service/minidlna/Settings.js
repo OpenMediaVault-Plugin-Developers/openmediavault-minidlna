@@ -76,7 +76,7 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 xtype: "checkbox",
                 name: "strict",
                 fieldLabel: _("Strict DLNA"),
-                boxLabel: _("Strictly adhere to DLNA standards"),
+                boxLabel: _("Strictly adhere to DLNA standards."),
                 checked: false
             }, {
                 xtype: "checkbox",
