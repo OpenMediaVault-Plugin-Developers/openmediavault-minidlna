@@ -1,5 +1,4 @@
 /**
- * This file is part of OpenMediaVault.
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Aaron Murray <aaron@omv-extras.org>
@@ -21,9 +20,9 @@
 // require("js/omv/WorkspaceManager.js")
 
 OMV.WorkspaceManager.registerNode({
-	id: "minidlna",
-	path: "/service",
-	text: _("DLNA"),
-	icon16: "images/minidlna.png",
-	iconSvg: "images/minidlna.svg"
+    id      : "minidlna",
+    path    : "/service",
+    text    : _("DLNA"),
+    icon16  : "images/minidlna.png",
+    iconSvg : "images/minidlna.svg"
 });

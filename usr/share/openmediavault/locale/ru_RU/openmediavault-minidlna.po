@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-14 11:03-0600\n"
-"PO-Revision-Date: 2013-11-14 17:04+0000\n"
+"POT-Creation-Date: 2013-11-19 15:45-0600\n"
+"PO-Revision-Date: 2013-11-19 21:46+0000\n"
 "Last-Translator: ryecoaaron <aaron27@ryecoinc.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/openmediavault-minidlna/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -20,13 +20,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 msgid "Add media share"
-msgstr ""
+msgstr "Добавить общие медиа"
 
 msgid "All Media"
-msgstr ""
+msgstr "Вся медиа"
 
 msgid "All media"
-msgstr ""
+msgstr "Вся медиа"
 
 msgid "Audio"
 msgstr "Аудио"
@@ -47,7 +47,7 @@ msgid "Date & Time"
 msgstr "Дата и Время"
 
 msgid "Edit media share"
-msgstr ""
+msgstr "Редактировать общие медиа"
 
 msgid "Enable"
 msgstr "Включить"
@@ -62,7 +62,7 @@ msgid "Images"
 msgstr "Изображения"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA на OpenMediaVault"
@@ -80,19 +80,19 @@ msgid "Settings"
 msgstr "Настройки"
 
 msgid "Shared Folder"
-msgstr ""
+msgstr "Общая папка"
 
 msgid "Shared folder containing media files"
-msgstr ""
+msgstr "Общая папка, содержащая медиа-файлы"
 
 msgid "Shares"
-msgstr ""
+msgstr "Общие"
 
 msgid "Strict DLNA"
 msgstr "Строгий DLNA"
 
-msgid "Strictly adhere to DLNA standards"
-msgstr "Строго придерживаться стандартов DLNA"
+msgid "Strictly adhere to DLNA standards."
+msgstr ""
 
 msgid "The shared folder is already used by another share."
 msgstr ""
