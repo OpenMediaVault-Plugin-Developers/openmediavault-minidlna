@@ -3,104 +3,104 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# davidh2k <davidh1990@gmx.de>, 2013
+# dezi121 <by@songming.me>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-19 15:45-0600\n"
-"PO-Revision-Date: 2013-11-20 09:53+0000\n"
-"Last-Translator: ryecoaaron <aaron27@ryecoinc.com>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/openmediavault-minidlna/language/de/)\n"
+"PO-Revision-Date: 2013-12-15 05:36+0000\n"
+"Last-Translator: dezi121 <by@songming.me>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add media share"
-msgstr "Medienfreigabe hinzufügen"
+msgstr "添加多媒体分享"
 
 msgid "All Media"
-msgstr "Alle Medien"
+msgstr "所有多媒体"
 
 msgid "All media"
-msgstr "Alle Medientypen"
+msgstr "所有多媒体"
 
 msgid "Audio"
-msgstr "Audio"
+msgstr "音频"
 
 msgid "Component"
-msgstr "Komponente"
+msgstr "组成"
 
 msgid "Content Type"
-msgstr "Inhaltstyp"
+msgstr "包含类型"
 
 msgid "Content Type(s)"
-msgstr "Inhaltstyp(en)"
+msgstr "包含类型(s)"
 
 msgid "DLNA"
 msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr "Datum & Uhrzeit"
+msgstr "日期和时间"
 
 msgid "Edit media share"
-msgstr "Medienfreigabe bearbeiten"
+msgstr "编辑分享多媒体"
 
 msgid "Enable"
-msgstr "Aktivieren"
+msgstr "启动"
 
 msgid "Event"
-msgstr "Ereignis"
+msgstr "事件"
 
 msgid "General settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "常规设置"
 
 msgid "Images"
-msgstr "Bilder"
+msgstr "图像"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr "MiniDLNA auf OpenMediaVault"
+msgstr "MiniDLNA"
 
 msgid "Name"
-msgstr "Name"
+msgstr "名字"
 
 msgid "Port"
-msgstr "Port"
+msgstr "端口"
 
 msgid "Rescan"
-msgstr "Erneut suchen"
+msgstr "重新扫描"
 
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "设置"
 
 msgid "Shared Folder"
-msgstr "Freigegebener Ordner"
+msgstr "分享文件夹"
 
 msgid "Shared folder containing media files"
-msgstr "Freigegebener Ordner welcher Medien Dateien enthält"
+msgstr "分享文件夹包含的多媒体文件"
 
 msgid "Shares"
-msgstr "Freigaben"
+msgstr "分享"
 
 msgid "Strict DLNA"
-msgstr "Striktes DLNA"
+msgstr "标准DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "严格遵循 DLNA标准"
 
 msgid "The shared folder is already used by another share."
-msgstr "Der freigegebene Ordner wird bereits von einer anderen Freigabe verwendet."
+msgstr "该文件夹已被其它分享占用。"
 
 msgid "TiVo support"
-msgstr "TiVo Unterstützung"
+msgstr "TiVo支持"
 
 msgid "Video"
-msgstr "Video"
+msgstr "视频"
 
 msgid "n/a"
-msgstr "Nicht verfügbar"
+msgstr "N/A"
