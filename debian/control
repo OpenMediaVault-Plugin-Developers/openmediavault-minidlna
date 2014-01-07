@@ -1,7 +1,7 @@
 Source: openmediavault-minidlna
 Section: misc
 Priority: optional
-Maintainer: Aaron Murray <aaron@omv-extras.org>
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 Build-Depends: debhelper (>= 7 )
 Standards-Version: 3.9.3
 Homepage: http://omv-extras.org/

@@ -1,3 +1,10 @@
+openmediavault-minidlna (0.5.9) stable; urgency=low
+
+  * update locales
+  * update copyrights
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 07 Jan 2014 08:37:27 -0500
+
 openmediavault-minidlna (0.5.8) stable; urgency=low
 
   * update locales
@@ -53,4 +60,4 @@ openmediavault-minidlna (0.5.0) stable; urgency=low
   * Initial release
 
  -- Aaron Murray <aaron@omv-extras.org>  Thu, 12 Sep 2013 7:23:38 -0500
- 
+
