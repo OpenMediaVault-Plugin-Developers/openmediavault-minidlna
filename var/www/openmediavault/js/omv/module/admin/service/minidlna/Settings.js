@@ -104,7 +104,7 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 }
             },{
                 border : false,
-                html   : "<br />"
+                html   : "</p>"
             }]
         }];
     }
