@@ -8,7 +8,7 @@ Homepage: http://omv-extras.org/
 
 Package: openmediavault-minidlna
 Architecture: all
-Depends: ${misc:Depends}, openmediavault (>= 0.5), minidlna (>= 1.0.24)
+Depends: ${misc:Depends}, openmediavault (>= 0.5), openmediavault (<< 0.6), minidlna (>= 1.0.24)
 Description: OpenMediaVault miniDLNA (DLNA server) plugin
  lightweight DLNA/UPnP-AV server targeted at embedded systems
  MiniDLNA (aka ReadyDLNA) is server software with the aim of being
