@@ -75,6 +75,8 @@ case "$1" in
         echo "Add minidlna user to group: users"
         usermod -G users minidlna
 
+        dpkg-trigger update-fixperms
+        dpkg-trigger update-locale
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
