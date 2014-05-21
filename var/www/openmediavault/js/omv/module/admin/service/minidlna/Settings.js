@@ -84,7 +84,7 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 name       : "rescan",
                 text       : _("Rescan"),
                 scope      : this,
-                margin     : "0 5 0 0",
+                margin     : "0 0 5 0",
                 handler    : function() {
                     // Execute RPC.
                     OMV.Rpc.request({

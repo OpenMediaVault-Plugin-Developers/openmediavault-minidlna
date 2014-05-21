@@ -1,9 +1,9 @@
-openmediavault-minidlna (0.6.0) UNRELEASED; urgency=low
+openmediavault-minidlna (0.6.0) stable; urgency=low
 
   * Update for kralizec
   * Update locales
 
- -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Wed, 21 May 2014 08:12:12 -0500
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Wed, 21 May 2014 08:33:38 -0500
 
 openmediavault-minidlna (0.5.9) stable; urgency=low
 

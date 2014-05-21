@@ -173,7 +173,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract {
 
             // Get the shared folder configuration object.
             $xpath = sprintf("%s[uuid='%s']", $this->getXPathSharedFolder() ,$objectv['sharedfolderref'] );
-            $sfObject = $xmlConfig->get();
+            $sfObject = $xmlConfig->get($xpath);
             if(!is_null($sfObject) && !empty($sfObject))
                 $objectv['sharedfoldername'] = $sfObject['name'];
         }
@@ -199,7 +199,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract {
 
         // Get the configuration object.
         $xpath = sprintf("%s[uuid='%s']", $this->getXPathShare(), $params['uuid']);
-        $object = $xmlConfig->get( $xpath );
+        $object = $xmlConfig->get($xpath);
         if(is_null($object))
             throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,  $xpath );
 
@@ -233,14 +233,14 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract {
         $success = FALSE;
         if($params['uuid'] == $GLOBALS['OMV_UUID_UNDEFINED']) {
             // Check uniqueness. A shared folder can only be configured once for MiniDlna.
-            $xpath = sprintf("%s[sharedfolderref='%s']", $this->getXPathShare() ,$params['sharedfolderref'] );
+            $xpath = sprintf("%s[sharedfolderref='%s']", $this->getXPathShare(), $params['sharedfolderref'] );
             if( TRUE === $xmlConfig->exists($xpath) ) {
                 throw new OMVException(OMVErrorMsg::E_CONFIG_OBJECT_UNIQUENESS,
                   gettext("The shared folder is already used by another share."));
             }
 
             // Get the shared folder object.
-            $xpath = sprintf("%s[uuid='%s']", $this->getXPathSharedFolder() ,$params['sharedfolderref'] );
+            $xpath = sprintf("%s[uuid='%s']", $this->getXPathSharedFolder(), $params['sharedfolderref'] );
             $sfObject = $xmlConfig->get($xpath);
             if(is_null($sfObject))
                 throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $xpath);
@@ -253,7 +253,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract {
             $success = $xmlConfig->set($this->getXPathShares(), array("share" => $object));
         } else {
             // Update the existing configuration object.
-            $xpath = sprintf("%s[uuid='%s']", $this->getXPathShare() ,$params['uuid'] );
+            $xpath = sprintf("%s[uuid='%s']", $this->getXPathShare(), $params['uuid'] );
             $success = $xmlConfig->replace($xpath, $object);
         }
 
