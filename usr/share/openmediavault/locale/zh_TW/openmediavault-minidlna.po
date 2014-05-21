@@ -8,98 +8,98 @@ msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-19 15:45-0600\n"
-"PO-Revision-Date: 2013-11-20 09:53+0000\n"
-"Last-Translator: ryecoaaron <aaron27@ryecoinc.com>\n"
-"Language-Team: English (United States) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/en_US/)\n"
+"PO-Revision-Date: 2013-10-28 14:44+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add media share"
-msgstr "Add media share"
+msgstr ""
 
 msgid "All Media"
-msgstr "All Media"
+msgstr ""
 
 msgid "All media"
-msgstr "All media"
+msgstr ""
 
 msgid "Audio"
-msgstr "Audio"
+msgstr ""
 
 msgid "Component"
-msgstr "Component"
+msgstr ""
 
 msgid "Content Type"
-msgstr "Content Type"
+msgstr ""
 
 msgid "Content Type(s)"
-msgstr "Content Type(s)"
+msgstr ""
 
 msgid "DLNA"
-msgstr "DLNA"
+msgstr ""
 
 msgid "Date & Time"
-msgstr "Date & Time"
+msgstr ""
 
 msgid "Edit media share"
-msgstr "Edit media share"
+msgstr ""
 
 msgid "Enable"
-msgstr "Enable"
+msgstr ""
 
 msgid "Event"
-msgstr "Event"
+msgstr ""
 
 msgid "General settings"
-msgstr "General settings"
+msgstr ""
 
 msgid "Images"
-msgstr "Images"
+msgstr ""
 
 msgid "MiniDLNA"
-msgstr "MiniDLNA"
+msgstr ""
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr "MiniDLNA on OpenMediaVault"
+msgstr ""
 
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 msgid "Port"
-msgstr "Port"
+msgstr ""
 
 msgid "Rescan"
-msgstr "Rescan"
+msgstr ""
 
 msgid "Settings"
-msgstr "Settings"
+msgstr ""
 
 msgid "Shared Folder"
-msgstr "Shared Folder"
+msgstr ""
 
 msgid "Shared folder containing media files"
-msgstr "Shared folder containing media files"
+msgstr ""
 
 msgid "Shares"
-msgstr "Shares"
+msgstr ""
 
 msgid "Strict DLNA"
-msgstr "Strict DLNA"
+msgstr ""
 
 msgid "Strictly adhere to DLNA standards."
-msgstr "Strictly adhere to DLNA standards."
+msgstr ""
 
 msgid "The shared folder is already used by another share."
-msgstr "The shared folder is already used by another share."
+msgstr ""
 
 msgid "TiVo support"
-msgstr "TiVo support"
+msgstr ""
 
 msgid "Video"
-msgstr "Video"
+msgstr ""
 
 msgid "n/a"
-msgstr "n/a"
+msgstr ""

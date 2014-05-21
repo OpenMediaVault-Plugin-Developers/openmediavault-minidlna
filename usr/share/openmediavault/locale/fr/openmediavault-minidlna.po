@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# SpaceBrain <spacebrain.damage@gmail.com>, 2013
+# SpaceBrain <spacebrain.damage@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-19 15:45-0600\n"
-"PO-Revision-Date: 2013-11-28 18:15+0000\n"
+"PO-Revision-Date: 2014-03-07 04:02+0000\n"
 "Last-Translator: SpaceBrain <spacebrain.damage@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/openmediavault-minidlna/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Add media share"
 msgstr "Partager un contenu"
 
 msgid "All Media"
-msgstr ""
+msgstr "Tous les médias"
 
 msgid "All media"
 msgstr "Tous les médias"
@@ -91,10 +91,10 @@ msgid "Strict DLNA"
 msgstr "Mode DLNA strict"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "Se conformer strictement aux normes DLNA."
 
 msgid "The shared folder is already used by another share."
-msgstr ""
+msgstr "Ce dossier partagé est déjà utilisé par un autre partage."
 
 msgid "TiVo support"
 msgstr "Support de TiVo"
