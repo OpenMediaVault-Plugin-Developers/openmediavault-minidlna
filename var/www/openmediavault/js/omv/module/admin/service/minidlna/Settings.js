@@ -21,10 +21,6 @@
 // require("js/omv/WorkspaceManager.js")
 // require("js/omv/workspace/form/Panel.js")
 
-/**
- * @class OMV.module.admin.service.minidlna.Settings
- * @derived OMV.workspace.form.Panel
- */
 Ext.define("OMV.module.admin.service.minidlna.Settings", {
     extend : "OMV.workspace.form.Panel",
 
@@ -88,6 +84,7 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 name       : "rescan",
                 text       : _("Rescan"),
                 scope      : this,
+                margin     : "0 5 0 0",
                 handler    : function() {
                     // Execute RPC.
                     OMV.Rpc.request({
@@ -102,9 +99,6 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                         }
                     });
                 }
-            },{
-                border : false,
-                html   : "</p>"
             }]
         }];
     }

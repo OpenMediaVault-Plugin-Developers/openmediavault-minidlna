@@ -28,10 +28,6 @@
 // require("js/omv/data/proxy/Rpc.js")
 // require("js/omv/form/field/SharedFolderComboBox.js")
 
-/**
- * @class OMV.module.admin.service.minidlna.Share
- * @derived OMV.workspace.window.Form
- */
 Ext.define("OMV.module.admin.service.minidlna.Share", {
     extend : "OMV.workspace.window.Form",
     uses   : [
@@ -45,12 +41,6 @@ Ext.define("OMV.module.admin.service.minidlna.Share", {
     plugins      : [{
         ptype : "configobject"
     }],
-
-    /**
-     * The class constructor.
-     * @fn constructor
-     * @param uuid The UUID of the database/configuration object. Required.
-     */
 
     getFormItems : function () {
         var me = this;
@@ -81,10 +71,6 @@ Ext.define("OMV.module.admin.service.minidlna.Share", {
     }
 });
 
-/**
- * @class OMV.module.admin.service.minidlna.Shares
- * @derived OMV.workspace.grid.Panel
- */
 Ext.define("OMV.module.admin.service.minidlna.Shares", {
     extend   : "OMV.workspace.grid.Panel",
     requires : [
@@ -170,11 +156,8 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
     },
 
     onEditButton: function () {
-        var me, record;
-
-        me = this;
-        record = me.getSelected();
-
+        var me = this;
+        var record = me.getSelected();
         Ext.create("OMV.module.admin.service.minidlna.Share", {
             title     : _("Edit media share"),
             uuid      : record.get("uuid"),
