@@ -24,23 +24,13 @@ set -e
 . /etc/default/openmediavault
 . /usr/share/openmediavault/scripts/helper-functions
 
-PIDDIR=/var/run/minidlna
-
-# Generate configuration files and reinitialize monit.
-omv-mkconf monit
-monit reload
-
 case "$1" in
-    remove)
-        rm -rf ${PIDDIR}
-        ;;
-
     purge)
         # Remove the configuration data
         omv_config_delete "/config/services/minidlna"
     ;;
 
-    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+    remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
     ;;
 
     *)

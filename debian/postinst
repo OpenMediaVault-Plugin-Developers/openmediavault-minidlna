@@ -21,59 +21,27 @@
 
 set -e
 
-unset USER
-
-DEFAULT=/etc/default/minidlna
-
-# Get values from ${DEFAULT}, if it exists.
-[ -r ${DEFAULT} ] && . ${DEFAULT}
-
-# Set the default user and user.
-if [ -z ${USER} ]; then
-    USER=minidlna
-fi
-if [ -z ${GROUP} ]; then
-    GROUP=minidlna
-fi
-
-CONFIG=/etc/minidlna.conf
-
 . /etc/default/openmediavault
 . /usr/share/openmediavault/scripts/helper-functions
 
 case "$1" in
     configure)
 
-        ########################################################################
-        #  Update the configuration.
-        #   <config>
-        #       <services>
-        #           <minidlna>
-        #               <enable>0</enable>
-        #               <name>MiniDLNA Server on OpenMediaVault</name>
-        #               <port>8200</port>
-        #               <strict>0</strict>
-        #               <tivo>0</tivo>
-        #               <shares></shares>
-        #           </minidlna>
-        #       </services>
-        #   </config>
-        ########################################################################
+        SERVICE_XPATH_NAME="minidlna"
+        SERVICE_XPATH="/config/services/${SERVICE_XPATH_NAME}"
 
-        if ! omv_config_exists "/config/services/minidlna"; then
-            echo "Initialize configuration"
-            object="<enable>0</enable>"
-            object="${object}<name>MiniDLNA Server on OpenMediaVault</name>"
-            object="${object}<port>8200</port>"
-            object="${object}<strict>8200</strict>"
-            object="${object}<tivo>8200</tivo>"
-
-            object="${object}<shares></shares>"
-            omv_config_add_element "/config/services" "minidlna" "${object}" true
+        if ! omv_config_exists "${SERVICE_XPATH}"; then
+            omv_config_add_element "/config/services" "${SERVICE_XPATH_NAME}"
+            omv_config_add_element "${SERVICE_XPATH}" "enable" "0"
+            omv_config_add_element "${SERVICE_XPATH}" "name" "MiniDLNA Server on OpenMediaVault"
+            omv_config_add_element "${SERVICE_XPATH}" "port" "8200"
+            omv_config_add_element "${SERVICE_XPATH}" "strict" "0"
+            omv_config_add_element "${SERVICE_XPATH}" "tivo" "0"
+            omv_config_add_element "${SERVICE_XPATH}" "shares"
         fi
 
-        echo "Add minidlna user to group: users"
-        usermod -G users minidlna
+        echo "Add ${SERVICE_XPATH_NAME} user to group: users"
+        usermod -G users ${SERVICE_XPATH_NAME}
 
         dpkg-trigger update-fixperms
         dpkg-trigger update-locale

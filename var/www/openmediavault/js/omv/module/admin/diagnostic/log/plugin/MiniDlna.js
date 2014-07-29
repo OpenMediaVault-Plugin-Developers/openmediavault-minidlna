@@ -24,6 +24,7 @@
 
 Ext.define("OMV.module.admin.diagnostic.log.plugin.MiniDlna", {
     extend : "OMV.module.admin.diagnostic.log.plugin.Plugin",
+    alias  : "omv.plugin.diagnostic.log.minidlna",
 
     id       : "minidlna",
     text     : _("DLNA"),
@@ -56,10 +57,4 @@ Ext.define("OMV.module.admin.diagnostic.log.plugin.MiniDlna", {
         { name : "component", type : "string" },
         { name : "event", type : "string" }
     ]
-});
-
-OMV.PluginManager.register({
-    ptype     : "diagnostic",
-    id        : "log",
-    className : "OMV.module.admin.diagnostic.log.plugin.MiniDlna"
 });

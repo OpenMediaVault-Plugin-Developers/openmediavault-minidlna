@@ -24,8 +24,6 @@ set -e
 . /etc/default/openmediavault
 . /usr/share/openmediavault/scripts/helper-functions
 
-OMV_MKCONF_SCRIPTS_DIR=${OMV_MKCONF_SCRIPTS_DIR:-"/usr/share/openmediavault/mkconf"}
-
 MINIDLNA_CONFIG="/etc/minidlna.conf"
 
 # Create minidlna config file
@@ -50,18 +48,18 @@ EOF
 index=$(omv_config_get_count "//services/minidlna/shares/share")
 while [ ${index} -gt 0 ]; do
 
-	# Get the shared folder reference and path
-	sfref=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/sharedfolderref")
-	sfpath=$(omv_get_sharedfolder_path "${sfref}")
-	mtype=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/mtype")
+    # Get the shared folder reference and path
+    sfref=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/sharedfolderref")
+    sfpath=$(omv_get_sharedfolder_path "${sfref}")
+    mtype=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/mtype")
 
-	if [ "${mtype}" != "" ]; then
-		mtype="${mtype},"
-	fi
+    if [ "${mtype}" != "" ]; then
+        mtype="${mtype},"
+    fi
 
-	if [ "${sfpath}" != "" ]; then
-		echo "media_dir=${mtype}${sfpath}" >>${MINIDLNA_CONFIG}
-	fi
+    if [ "${sfpath}" != "" ]; then
+        echo "media_dir=${mtype}${sfpath}" >> ${MINIDLNA_CONFIG}
+    fi
 
-	index=$(( ${index} - 1 ))
+    index=$(( ${index} - 1 ))
 done
