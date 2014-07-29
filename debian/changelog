@@ -1,6 +1,7 @@
 openmediavault-minidlna (1.0) stable; urgency=low
 
   * Code formatting fixes
+  * Update locales
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 29 Jul 2014 09:13:50 -0500
 
