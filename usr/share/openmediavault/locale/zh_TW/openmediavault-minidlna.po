@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# kochin <kochinc@outlook.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-19 15:45-0600\n"
-"PO-Revision-Date: 2013-10-28 14:44+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-06-02 17:54+0000\n"
+"Last-Translator: kochin <kochinc@outlook.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,88 +19,88 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add media share"
-msgstr ""
+msgstr "新增媒體共享"
 
 msgid "All Media"
-msgstr ""
+msgstr "全部媒體"
 
 msgid "All media"
-msgstr ""
+msgstr "全部媒體"
 
 msgid "Audio"
-msgstr ""
+msgstr "音訊"
 
 msgid "Component"
-msgstr ""
+msgstr "元件"
 
 msgid "Content Type"
-msgstr ""
+msgstr "內容型式"
 
 msgid "Content Type(s)"
-msgstr ""
+msgstr "內容型式"
 
 msgid "DLNA"
-msgstr ""
+msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr ""
+msgstr "日期與時間"
 
 msgid "Edit media share"
-msgstr ""
+msgstr "編輯媒體共享"
 
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
 msgid "Event"
-msgstr ""
+msgstr "事件"
 
 msgid "General settings"
-msgstr ""
+msgstr "一般設定"
 
 msgid "Images"
-msgstr ""
+msgstr "圖片"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr ""
+msgstr "MiniDLNA 位於 OpenMediaVault"
 
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 msgid "Port"
-msgstr ""
+msgstr "通訊埠"
 
 msgid "Rescan"
-msgstr ""
+msgstr "重新掃視"
 
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 msgid "Shared Folder"
-msgstr ""
+msgstr "共享檔案夾"
 
 msgid "Shared folder containing media files"
-msgstr ""
+msgstr "內含媒體檔案的共享檔案夾"
 
 msgid "Shares"
-msgstr ""
+msgstr "共享"
 
 msgid "Strict DLNA"
-msgstr ""
+msgstr "嚴格遵循 DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "嚴格遵循 DLNA 標準。"
 
 msgid "The shared folder is already used by another share."
-msgstr ""
+msgstr "此共享檔案夾已被其它的共享使用。"
 
 msgid "TiVo support"
-msgstr ""
+msgstr "TiVo 支援"
 
 msgid "Video"
-msgstr ""
+msgstr "視訊"
 
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
