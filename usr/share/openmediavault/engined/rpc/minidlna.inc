@@ -69,7 +69,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
     private function getEventMessagePath()
     {
-        return sprintf("org.openmediavault.service.%s", $this->getPluginName());
+        return sprintf("org.openmediavault.services.%s", $this->getPluginName());
     }
 
     private function getShareEventMessagePath()
@@ -108,7 +108,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         }
 
         // Modify the result object.
-        $object["enable"] = boolval($object["enable"]);
+        $object["enable"] = boolvalEx($object["enable"]);
         $object["port"]   = intval($object["port"]);
         $object["strict"] = intval($object["strict"]);
         $object["tivo"]   = intval($object["tivo"]);
@@ -410,7 +410,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             );
         }
 
-        if (!boolval($object["enable"])) {
+        if (!boolvalEx($object["enable"])) {
             return;
         }
 

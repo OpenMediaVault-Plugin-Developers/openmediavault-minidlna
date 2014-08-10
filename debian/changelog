@@ -1,3 +1,10 @@
+openmediavault-minidlna (1.0.2) stable; urgency=low
+
+  * Fix typo
+  * Update locales
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 09 Aug 2014 21:03:51 -0500
+
 openmediavault-minidlna (1.0.1) stable; urgency=low
 
   * Fix bug which caused the plugin settings to be wiped when deleting a share
