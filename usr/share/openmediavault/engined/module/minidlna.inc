@@ -64,7 +64,7 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
 
     private function getEventMessagePath()
     {
-        return sprintf("org.openmediavault.service.%s", $this->getPluginName());
+        return sprintf("org.openmediavault.services.%s", $this->getPluginName());
     }
 
     private function getShareEventMessagePath()

@@ -1,3 +1,9 @@
+openmediavault-minidlna (1.0.3) stable; urgency=low
+
+  * Fix typo
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Mon, 11 Aug 2014 09:12:19 -0500
+
 openmediavault-minidlna (1.0.2) stable; urgency=low
 
   * Fix typo
