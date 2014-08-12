@@ -93,14 +93,16 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         global $xmlConfig;
 
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array(
-            "role" => OMV_ROLE_ADMINISTRATOR
-        ));
+        $this->validateMethodContext(
+            $context,
+            array( "role" => OMV_ROLE_ADMINISTRATOR )
+        );
 
         // Get the configuration object.
         $object = $xmlConfig->get($this->getXPath());
 
-        if (is_null($object)) {
+        if (is_null($object))
+        {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
@@ -147,7 +149,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Get the existing configuration object.
         $oldObject = $xmlConfig->get($this->getXPath());
 
-        if (is_null($oldObject)) {
+        if (is_null($oldObject))
+        {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
@@ -164,8 +167,11 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             "shares" => isset($oldObject["shares"]) ? $oldObject["shares"] : array(),
         );
 
-        if ($xmlConfig->replace($this->getXPath(), $object) === false) {
-            throw new OMVException(OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED);
+        if ($xmlConfig->replace($this->getXPath(), $object) === false)
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED
+            );
         }
 
         // Notify configuration changes.
@@ -211,12 +217,13 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         if (is_null($shares)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
-                $this->getXPath()
+                $this->getShareXPath()
             );
         }
 
         // Add additional share informations.
-        foreach ($shares as &$share) {
+        foreach ($shares as &$share)
+        {
             $share["sharedfoldername"] = gettext("n/a");
 
             // Get the shared folder configuration object.
@@ -224,7 +231,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
             $sharedFolder = $xmlConfig->get($xPath);
 
-            if (!is_null($sharedFolder) && !empty($sharedFolder)) {
+            if (!is_null($sharedFolder) && !empty($sharedFolder))
+            {
                 $share["sharedfoldername"] = $sharedFolder["name"];
             }
         }
@@ -263,7 +271,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         $xPath = $this->getShareXPathByUuid($params["uuid"]);
         $share = $xmlConfig->get($xPath);
 
-        if (is_null($share)) {
+        if (is_null($share))
+        {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $xPath
@@ -307,7 +316,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Set the configuration object.
         $success = false;
 
-        if ($params["uuid"] == $GLOBALS["OMV_UUID_UNDEFINED"]) {
+        if ($params["uuid"] == $GLOBALS["OMV_UUID_UNDEFINED"])
+        {
             // Check uniqueness. A shared folder can only be configured
             // once for MiniDlna.
             $xPath = sprintf(
@@ -316,7 +326,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
                 $params["sharedfolderref"]
             );
 
-            if ($xmlConfig->exists($xPath) === true) {
+            if ($xmlConfig->exists($xPath) === true)
+            {
                 throw new OMVException(
                     OMVErrorMsg::E_CONFIG_OBJECT_UNIQUENESS,
                     gettext("The shared folder is already used by another share.")
@@ -327,7 +338,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             $xPath = $this->getSharedFolderXPathByUuid($params["sharedfolderref"]);
             $sharedFolder = $xmlConfig->get($xPath);
 
-            if (is_null($sharedFolder)) {
+            if (is_null($sharedFolder))
+            {
                 throw new OMVException(
                     OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                     $xPath
@@ -335,20 +347,19 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             }
 
             // Append the configuration object.
-            $success = $xmlConfig->set(
-                $this->getSharesXPath(),
-                array("share" => $share)
-            );
-        } else {
+            $success = $xmlConfig->set($this->getSharesXPath(), array("share" => $share));
+        }
+        else
+        {
             // Update the existing configuration object.
-            $success = $xmlConfig->replace(
-                $this->getShareXPathByUuid($params["uuid"]),
-                $share
-            );
+            $success = $xmlConfig->replace($this->getShareXPathByUuid($params["uuid"]),$share);
         }
 
-        if (!$success) {
-            throw new OMVException(OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED);
+        if (!$success)
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED
+            );
         }
 
         // Notify configuration changes.
@@ -397,20 +408,23 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         global $xmlConfig;
 
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array(
-            "role" => OMV_ROLE_ADMINISTRATOR
-        ));
+        $this->validateMethodContext(
+            $context,
+            array( "role" => OMV_ROLE_ADMINISTRATOR )
+        );
 
         $object = $xmlConfig->get($this->getXPath());
 
-        if (is_null($object)) {
+        if (is_null($object))
+        {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
             );
         }
 
-        if (!boolvalEx($object["enable"])) {
+        if (!boolvalEx($object["enable"]))
+        {
             return;
         }
 

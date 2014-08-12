@@ -96,7 +96,7 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
         if (is_null($object)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
-                $xpath
+                $this->getXPath()
             );
         }
 
@@ -117,7 +117,7 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
         if (is_null($object)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
-                $xpath
+                $this->getXPath()
             );
         }
 
@@ -164,7 +164,8 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
 
         $xPath = $this->getShareXPathByUuid($object["uuid"]);
 
-        if ($xmlConfig->exists(xPath)) {
+        if ($xmlConfig->exists($xPath))
+        {
             $this->setDirty();
         }
     }
