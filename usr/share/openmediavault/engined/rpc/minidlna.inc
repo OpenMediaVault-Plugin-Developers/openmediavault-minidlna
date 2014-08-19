@@ -110,7 +110,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         }
 
         // Modify the result object.
-        $object["enable"] = boolvalEx($object["enable"]);
+        $object["enable"] = boolval($object["enable"]);
         $object["port"]   = intval($object["port"]);
         $object["strict"] = intval($object["strict"]);
         $object["tivo"]   = intval($object["tivo"]);
@@ -423,7 +423,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             );
         }
 
-        if (!boolvalEx($object["enable"]))
+        if (!boolval($object["enable"]))
         {
             return;
         }
