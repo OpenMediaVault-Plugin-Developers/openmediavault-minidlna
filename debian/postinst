@@ -40,6 +40,10 @@ case "$1" in
             omv_config_add_element "${SERVICE_XPATH}" "shares"
         fi
 
+        if ! omv_config_exists "${SERVICE_XPATH}/loglevel"; then
+            omv_config_add_element "${SERVICE_XPATH}" "loglevel" "error"
+        fi
+
         echo "Add ${SERVICE_XPATH_NAME} user to group: users"
         usermod -G users ${SERVICE_XPATH_NAME}
 

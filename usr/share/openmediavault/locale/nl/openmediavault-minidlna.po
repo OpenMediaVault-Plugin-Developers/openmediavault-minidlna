@@ -1,72 +1,73 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
+# Translators:
+# okpail <okpail@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2014-10-30 13:45+0000\n"
+"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/openmediavault-minidlna/language/nl/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add media share"
-msgstr ""
+msgstr "Voeg 'media share' toe "
 
 msgid "All Media"
-msgstr ""
+msgstr "Alle Media"
 
 msgid "All media"
-msgstr ""
+msgstr "Alle media"
 
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 msgid "Component"
-msgstr ""
+msgstr "Component"
 
 msgid "Content Type"
-msgstr ""
+msgstr "Content Type"
 
 msgid "Content Type(s)"
-msgstr ""
+msgstr "Content Type(s)"
 
 msgid "DLNA"
-msgstr ""
+msgstr "DLNA (Digital Living Network Alliance)"
 
 msgid "Date & Time"
-msgstr ""
+msgstr "Datum & Tijd"
 
 msgid "Debug"
 msgstr ""
 
 msgid "Edit media share"
-msgstr ""
+msgstr "Edit media share"
 
 msgid "Enable"
-msgstr ""
+msgstr "Aanzetten"
 
 msgid "Error"
 msgstr ""
 
 msgid "Event"
-msgstr ""
+msgstr "Event"
 
 msgid "Fatal"
 msgstr ""
 
 msgid "General settings"
-msgstr ""
+msgstr "Generiek Instelling"
 
 msgid "Images"
-msgstr ""
+msgstr "Afbeeldingen"
 
 msgid "Info"
 msgstr ""
@@ -75,52 +76,52 @@ msgid "Log Level"
 msgstr ""
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr ""
+msgstr "MiniDLNA in OpenMediaVault"
 
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 msgid "Off"
 msgstr ""
 
 msgid "Port"
-msgstr ""
+msgstr "IP poort"
 
 msgid "Rescan"
-msgstr ""
+msgstr "Opnieuw scannen"
 
 msgid "Settings"
-msgstr ""
+msgstr "Instellinge"
 
 msgid "Shared Folder"
-msgstr ""
+msgstr "Gedeelde Folder"
 
 msgid "Shared folder containing media files"
-msgstr ""
+msgstr "Gedeelde folder die media files bevat"
 
 msgid "Shares"
-msgstr ""
+msgstr "Shares"
 
 msgid "Strict DLNA"
-msgstr ""
+msgstr "Stricte DLNA specificatie toepassing"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "Pas de DLNA standaarden strict toe"
 
 msgid "The shared folder is already used by another share."
-msgstr ""
+msgstr "De gedeelde folder wordt al gebruikt door een andere share"
 
 msgid "TiVo support"
-msgstr ""
+msgstr "TiVo ondersteuning"
 
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 msgid "Warn"
 msgstr ""
 
 msgid "n/a"
-msgstr ""
+msgstr "niet aanwezig"

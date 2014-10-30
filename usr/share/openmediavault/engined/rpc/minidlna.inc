@@ -137,11 +137,12 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             '{
                 "type"        : "object",
                 "properties"  : {
-                    "enable" : { "type" : "boolean" },
-                    "name"   : { "type" : "string"},
-                    "port"   : { "type" : "integer", "minimum" : 1, "maximum" : 65535 },
-                    "strict" : { "type" : "boolean"},
-                    "tivo"   : { "type" : "boolean"}
+                    "enable"   : { "type" : "boolean" },
+                    "name"     : { "type" : "string"},
+                    "port"     : { "type" : "integer", "minimum" : 1, "maximum" : 65535 },
+                    "strict"   : { "type" : "boolean"},
+                    "tivo"     : { "type" : "boolean"},
+                    "loglevel" : { "type" : "string"}
                 }
             }'
         );
@@ -159,12 +160,13 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
         // Update the configuration object.
         $object = array(
-            "enable" => array_boolval($params, "enable"),
-            "name"   => $params["name"],
-            "port"   => $params["port"],
-            "strict" => array_boolval($params, "strict"),
-            "tivo"   => array_boolval($params, "tivo"),
-            "shares" => isset($oldObject["shares"]) ? $oldObject["shares"] : array(),
+            "enable"   => array_boolval($params, "enable"),
+            "name"     => $params["name"],
+            "port"     => $params["port"],
+            "strict"   => array_boolval($params, "strict"),
+            "tivo"     => array_boolval($params, "tivo"),
+            "loglevel" => $params["loglevel"],
+            "shares"   => isset($oldObject["shares"]) ? $oldObject["shares"] : array(),
         );
 
         if ($xmlConfig->replace($this->getXPath(), $object) === false)

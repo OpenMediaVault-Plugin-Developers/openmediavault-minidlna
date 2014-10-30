@@ -26,6 +26,8 @@ set -e
 
 MINIDLNA_CONFIG="/etc/minidlna.conf"
 
+log_level="$(omv_config_get "//services/minidlna/loglevel")"
+
 # Create minidlna config file
 cat <<EOF > ${MINIDLNA_CONFIG}
 port=$(omv_config_get "//services/minidlna/port")
@@ -41,6 +43,7 @@ notify_interval=60
 serial=31446138
 model_number=1
 #root_container=.
+log_level=${log_level}
 EOF
 
 

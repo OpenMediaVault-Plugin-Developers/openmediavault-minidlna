@@ -1,3 +1,10 @@
+openmediavault-minidlna (1.0.6) stable; urgency=low
+
+  * Add log level
+  * Update locales
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Thu, 30 Oct 2014 08:42:04 -0500
+
 openmediavault-minidlna (1.0.5) stable; urgency=low
 
   * Change boolvalEx back to boolval

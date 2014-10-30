@@ -80,6 +80,28 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 fieldLabel : _("TiVo support"),
                 checked    : false
             },{
+                xtype      : "combo",
+                name       : "loglevel",
+                fieldLabel : _("Log Level"),
+                mode       : "local",
+                store      : new Ext.data.SimpleStore({
+                    fields  : [ "value", "text" ],
+                    data    : [
+                        [ "off", _("Off") ],
+                        [ "fatal", _("Fatal") ],
+                        [ "error", _("Error") ],
+                        [ "warn", _("Warn") ],
+                        [ "info", _("Info") ],
+                        [ "debug", _("Debug") ]
+                    ]
+                }),
+                displayField  : "text",
+                valueField    : "value",
+                allowBlank    : false,
+                editable      : false,
+                triggerAction : "all",
+                value         : "error"
+            },{
                 xtype      : "button",
                 name       : "rescan",
                 text       : _("Rescan"),

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-19 15:45-0600\n"
-"PO-Revision-Date: 2014-01-19 19:12+0000\n"
-"Last-Translator: Raul Fernandez Garcia <raulfg3@gmail.com>\n"
+"POT-Creation-Date: 2014-10-30 08:42-0500\n"
+"PO-Revision-Date: 2014-10-30 13:45+0000\n"
+"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/openmediavault-minidlna/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,20 +45,35 @@ msgstr "DLNA"
 msgid "Date & Time"
 msgstr "Fecha y Hora"
 
+msgid "Debug"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "Editar compartido"
 
 msgid "Enable"
 msgstr "Habilitar"
 
+msgid "Error"
+msgstr ""
+
 msgid "Event"
 msgstr "Evento"
+
+msgid "Fatal"
+msgstr ""
 
 msgid "General settings"
 msgstr "Opciones generales"
 
 msgid "Images"
 msgstr "Imagenes"
+
+msgid "Info"
+msgstr ""
+
+msgid "Log Level"
+msgstr ""
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -68,6 +83,9 @@ msgstr "MiniDLNA en OpenMediaVault"
 
 msgid "Name"
 msgstr "Nombre"
+
+msgid "Off"
+msgstr ""
 
 msgid "Port"
 msgstr "Puerto"
@@ -101,6 +119,9 @@ msgstr "Soporte TiVo"
 
 msgid "Video"
 msgstr "Video"
+
+msgid "Warn"
+msgstr ""
 
 msgid "n/a"
 msgstr "n/d"

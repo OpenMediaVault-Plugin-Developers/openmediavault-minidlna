@@ -4,12 +4,13 @@
 # 
 # Translators:
 # David Hönel <davidh1990@gmx.de>, 2013
+# Ettore Atalan <atalanttore@googlemail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-19 15:45-0600\n"
-"PO-Revision-Date: 2013-11-20 09:53+0000\n"
+"POT-Creation-Date: 2014-10-30 08:42-0500\n"
+"PO-Revision-Date: 2014-10-30 13:45+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/openmediavault-minidlna/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -45,20 +46,35 @@ msgstr "DLNA"
 msgid "Date & Time"
 msgstr "Datum & Uhrzeit"
 
+msgid "Debug"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "Medienfreigabe bearbeiten"
 
 msgid "Enable"
 msgstr "Aktivieren"
 
+msgid "Error"
+msgstr ""
+
 msgid "Event"
 msgstr "Ereignis"
+
+msgid "Fatal"
+msgstr ""
 
 msgid "General settings"
 msgstr "Allgemeine Einstellungen"
 
 msgid "Images"
 msgstr "Bilder"
+
+msgid "Info"
+msgstr ""
+
+msgid "Log Level"
+msgstr ""
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -68,6 +84,9 @@ msgstr "MiniDLNA auf OpenMediaVault"
 
 msgid "Name"
 msgstr "Name"
+
+msgid "Off"
+msgstr ""
 
 msgid "Port"
 msgstr "Port"
@@ -91,16 +110,19 @@ msgid "Strict DLNA"
 msgstr "Striktes DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "Strikt an die DLNA-Standards halten."
 
 msgid "The shared folder is already used by another share."
 msgstr "Der freigegebene Ordner wird bereits von einer anderen Freigabe verwendet."
 
 msgid "TiVo support"
-msgstr "TiVo Unterstützung"
+msgstr "TiVo-Unterstützung"
 
 msgid "Video"
 msgstr "Video"
+
+msgid "Warn"
+msgstr ""
 
 msgid "n/a"
 msgstr "Nicht verfügbar"
