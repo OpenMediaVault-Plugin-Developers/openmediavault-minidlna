@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Stefan Thrane Overby <stoverby@gmail.com>, 2013
+# Stefan Thrane Overby <stoverby@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-10-30 13:45+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"PO-Revision-Date: 2014-11-02 11:18+0000\n"
+"Last-Translator: Stefan Thrane Overby <stoverby@gmail.com>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/openmediavault-minidlna/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +46,7 @@ msgid "Date & Time"
 msgstr "Dato & Tid"
 
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 msgid "Edit media share"
 msgstr "Rediger medie mappe"
@@ -55,13 +55,13 @@ msgid "Enable"
 msgstr "Aktiver"
 
 msgid "Error"
-msgstr ""
+msgstr "Fejl"
 
 msgid "Event"
 msgstr "Begivenhed"
 
 msgid "Fatal"
-msgstr ""
+msgstr "Kritisk"
 
 msgid "General settings"
 msgstr "Generelle indstillinger"
@@ -70,10 +70,10 @@ msgid "Images"
 msgstr "Billeder"
 
 msgid "Info"
-msgstr ""
+msgstr "Oplysning"
 
 msgid "Log Level"
-msgstr ""
+msgstr "Log Niveau"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -85,7 +85,7 @@ msgid "Name"
 msgstr "Navn"
 
 msgid "Off"
-msgstr ""
+msgstr "Fra"
 
 msgid "Port"
 msgstr "Port"
@@ -121,7 +121,7 @@ msgid "Video"
 msgstr "Video"
 
 msgid "Warn"
-msgstr ""
+msgstr "Advar"
 
 msgid "n/a"
 msgstr "n/a"

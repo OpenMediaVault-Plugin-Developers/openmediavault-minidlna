@@ -1,6 +1,7 @@
 openmediavault-minidlna (1.0.7) stable; urgency=low
 
   * Move rescan button to toolbar
+  * Update locales
 
  -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 02 Nov 2014 07:47:29 -0600
 
