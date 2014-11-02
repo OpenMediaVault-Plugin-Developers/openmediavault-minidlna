@@ -47,7 +47,7 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
             id       : me.getId() + "-rescan",
             xtype    : "button",
             text     : _("Rescan"),
-            icon     : "images/refresh.png",
+            icon     : "images/reboot.png",
             iconCls  : Ext.baseCSSPrefix + "btn-icon-16x16",
             disabled : true,
             scope    : me,
