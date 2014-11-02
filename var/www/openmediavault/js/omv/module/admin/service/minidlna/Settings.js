@@ -31,15 +31,43 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
     plugins : [{
         ptype        : "linkedfields",
         correlations : [{
-            name       : [
-                "rescan"
+            conditions  : [
+                { name : "enable", value : true }
             ],
-            conditions : [
-                { name : "enable", value : false }
-            ],
-            properties : "disabled"
+            properties : function(valid, field) {
+                this.setButtonDisabled("rescan", !valid);
+            }
         }]
     }],
+
+    getButtonItems : function() {
+        var me = this;
+        var items = me.callParent(arguments);
+        items.push({
+            id       : me.getId() + "-rescan",
+            xtype    : "button",
+            text     : _("Rescan"),
+            icon     : "images/refresh.png",
+            iconCls  : Ext.baseCSSPrefix + "btn-icon-16x16",
+            disabled : true,
+            scope    : me,
+            handler  : function() {
+                // Execute RPC.
+                OMV.Rpc.request({
+                    scope       : this,
+                    callback    : function(id, success, response) {
+                        this.doReload();
+                    },
+                    relayErrors : false,
+                    rpcData     : {
+                        service  : "MiniDlna",
+                        method   : "doRescan"
+                    }
+                });
+            }
+        });
+        return items;
+    },
 
     getFormItems : function () {
         return [{
@@ -101,26 +129,6 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 editable      : false,
                 triggerAction : "all",
                 value         : "error"
-            },{
-                xtype      : "button",
-                name       : "rescan",
-                text       : _("Rescan"),
-                scope      : this,
-                margin     : "0 0 5 0",
-                handler    : function() {
-                    // Execute RPC.
-                    OMV.Rpc.request({
-                        scope       : this,
-                        callback    : function(id, success, response) {
-                            this.doReload();
-                        },
-                        relayErrors : false,
-                        rpcData     : {
-                            service  : "MiniDlna",
-                            method   : "doRescan"
-                        }
-                    });
-                }
             }]
         }];
     }
