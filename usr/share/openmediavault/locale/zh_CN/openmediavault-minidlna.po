@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# songming <by@songming.me>, 2013
+# songming <by@songming.me>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-10-30 13:45+0000\n"
+"PO-Revision-Date: 2014-11-14 19:49+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgid "Date & Time"
 msgstr "日期和时间"
 
 msgid "Debug"
-msgstr ""
+msgstr "调试"
 
 msgid "Edit media share"
 msgstr "编辑分享多媒体"
@@ -55,13 +55,13 @@ msgid "Enable"
 msgstr "启动"
 
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 msgid "Event"
 msgstr "事件"
 
 msgid "Fatal"
-msgstr ""
+msgstr "严重的"
 
 msgid "General settings"
 msgstr "常规设置"
@@ -70,10 +70,10 @@ msgid "Images"
 msgstr "图像"
 
 msgid "Info"
-msgstr ""
+msgstr "信息"
 
 msgid "Log Level"
-msgstr ""
+msgstr "日志级别"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -85,7 +85,7 @@ msgid "Name"
 msgstr "名字"
 
 msgid "Off"
-msgstr ""
+msgstr "关闭"
 
 msgid "Port"
 msgstr "端口"
@@ -121,7 +121,7 @@ msgid "Video"
 msgstr "视频"
 
 msgid "Warn"
-msgstr ""
+msgstr "警告"
 
 msgid "n/a"
 msgstr "N/A"

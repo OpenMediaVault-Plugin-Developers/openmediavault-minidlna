@@ -3,8 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Damtux, 2013
-# Paolo Velati <paolo.velati@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
@@ -12,63 +10,63 @@ msgstr ""
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
 "PO-Revision-Date: 2014-11-14 19:49+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/openmediavault-minidlna/language/it/)\n"
+"Language-Team: Adyghe (http://www.transifex.com/projects/p/openmediavault-minidlna/language/ady/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
+"Language: ady\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add media share"
-msgstr "Aggiungi condivisione file multimediale"
+msgstr ""
 
 msgid "All Media"
-msgstr "Tutti i Media"
+msgstr ""
 
 msgid "All media"
-msgstr "Tutti i media"
+msgstr ""
 
 msgid "Audio"
-msgstr "Audio"
+msgstr ""
 
 msgid "Component"
-msgstr "Componente"
+msgstr ""
 
 msgid "Content Type"
-msgstr "Tipo di Contenuto"
+msgstr ""
 
 msgid "Content Type(s)"
-msgstr "Tip(o/i) Contenuto"
+msgstr ""
 
 msgid "DLNA"
-msgstr "DLNA"
+msgstr ""
 
 msgid "Date & Time"
-msgstr "Data & Ora"
+msgstr ""
 
 msgid "Debug"
 msgstr ""
 
 msgid "Edit media share"
-msgstr "Modifica condivisione file"
+msgstr ""
 
 msgid "Enable"
-msgstr "Abilita"
+msgstr ""
 
 msgid "Error"
 msgstr ""
 
 msgid "Event"
-msgstr "Evento"
+msgstr ""
 
 msgid "Fatal"
 msgstr ""
 
 msgid "General settings"
-msgstr "Impostazioni generali"
+msgstr ""
 
 msgid "Images"
-msgstr "Immagini"
+msgstr ""
 
 msgid "Info"
 msgstr ""
@@ -77,52 +75,52 @@ msgid "Log Level"
 msgstr ""
 
 msgid "MiniDLNA"
-msgstr "MiniDLNA"
+msgstr ""
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr "MiniDLNA su OpenMediaVault"
+msgstr ""
 
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 msgid "Off"
 msgstr ""
 
 msgid "Port"
-msgstr "Porta"
+msgstr ""
 
 msgid "Rescan"
-msgstr "Riscansiona"
+msgstr ""
 
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr ""
 
 msgid "Shared Folder"
-msgstr "Cartella Condivisa"
+msgstr ""
 
 msgid "Shared folder containing media files"
-msgstr "Cartella condivisa che contiene file multimediali"
+msgstr ""
 
 msgid "Shares"
-msgstr "Condivisioni"
+msgstr ""
 
 msgid "Strict DLNA"
-msgstr "DLNA Preciso"
+msgstr ""
 
 msgid "Strictly adhere to DLNA standards."
-msgstr "Rispetto rigoroso degli standard DLNA."
+msgstr ""
 
 msgid "The shared folder is already used by another share."
-msgstr "La cartella condivisa è già utilizzata da un'altra condivisione."
+msgstr ""
 
 msgid "TiVo support"
-msgstr "Supporto TiVo"
+msgstr ""
 
 msgid "Video"
-msgstr "Video"
+msgstr ""
 
 msgid "Warn"
 msgstr ""
 
 msgid "n/a"
-msgstr "n/d"
+msgstr ""

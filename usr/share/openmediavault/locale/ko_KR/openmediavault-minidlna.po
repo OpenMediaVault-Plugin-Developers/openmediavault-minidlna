@@ -3,126 +3,125 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Damtux, 2013
-# Paolo Velati <paolo.velati@gmail.com>, 2014
+# Hyeonkyu Chu <hyeonkyu@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-11-14 19:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/openmediavault-minidlna/language/it/)\n"
+"PO-Revision-Date: 2014-11-18 16:49+0000\n"
+"Last-Translator: Hyeonkyu Chu <hyeonkyu@gmail.com>\n"
+"Language-Team: Korean (Korea) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/ko_KR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Add media share"
-msgstr "Aggiungi condivisione file multimediale"
+msgstr "매체 공유 추가"
 
 msgid "All Media"
-msgstr "Tutti i Media"
+msgstr "모든 매체"
 
 msgid "All media"
-msgstr "Tutti i media"
+msgstr "모든 매체"
 
 msgid "Audio"
-msgstr "Audio"
+msgstr "음향"
 
 msgid "Component"
-msgstr "Componente"
+msgstr "구성"
 
 msgid "Content Type"
-msgstr "Tipo di Contenuto"
+msgstr "내용 형식"
 
 msgid "Content Type(s)"
-msgstr "Tip(o/i) Contenuto"
+msgstr "내용 형식(들)"
 
 msgid "DLNA"
 msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr "Data & Ora"
+msgstr "날짜 & 시각"
 
 msgid "Debug"
-msgstr ""
+msgstr "디버그"
 
 msgid "Edit media share"
-msgstr "Modifica condivisione file"
+msgstr "매체 공유 편집"
 
 msgid "Enable"
-msgstr "Abilita"
+msgstr "활성화"
 
 msgid "Error"
-msgstr ""
+msgstr "오류"
 
 msgid "Event"
-msgstr "Evento"
+msgstr "이벤트"
 
 msgid "Fatal"
-msgstr ""
+msgstr "심각"
 
 msgid "General settings"
-msgstr "Impostazioni generali"
+msgstr "일반 설정"
 
 msgid "Images"
-msgstr "Immagini"
+msgstr "사진"
 
 msgid "Info"
-msgstr ""
+msgstr "정보"
 
 msgid "Log Level"
-msgstr ""
+msgstr "기록 수준"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr "MiniDLNA su OpenMediaVault"
+msgstr "OpenMediaVault의 MiniDLNA"
 
 msgid "Name"
-msgstr "Nome"
+msgstr "이름"
 
 msgid "Off"
-msgstr ""
+msgstr "끄기"
 
 msgid "Port"
-msgstr "Porta"
+msgstr "포트"
 
 msgid "Rescan"
-msgstr "Riscansiona"
+msgstr "재검색"
 
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr "설정"
 
 msgid "Shared Folder"
-msgstr "Cartella Condivisa"
+msgstr "공유 폴더"
 
 msgid "Shared folder containing media files"
-msgstr "Cartella condivisa che contiene file multimediali"
+msgstr "매체 파일이 들어있는 공유 폴더"
 
 msgid "Shares"
-msgstr "Condivisioni"
+msgstr "공유"
 
 msgid "Strict DLNA"
-msgstr "DLNA Preciso"
+msgstr "엄격한 DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr "Rispetto rigoroso degli standard DLNA."
+msgstr "DLNA 표준을 엄격하게 준수합니다."
 
 msgid "The shared folder is already used by another share."
-msgstr "La cartella condivisa è già utilizzata da un'altra condivisione."
+msgstr "공유 폴더는 이미 다른 공유에 의해 사용되고 있습니다."
 
 msgid "TiVo support"
-msgstr "Supporto TiVo"
+msgstr "TiVo 지원"
 
 msgid "Video"
-msgstr "Video"
+msgstr "동영상"
 
 msgid "Warn"
-msgstr ""
+msgstr "경고"
 
 msgid "n/a"
-msgstr "n/d"
+msgstr "n/a"

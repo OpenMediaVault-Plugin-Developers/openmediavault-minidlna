@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Toshihiro Kan <kansuke4649@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-10-30 13:45+0000\n"
+"PO-Revision-Date: 2014-11-14 19:49+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +46,7 @@ msgid "Date & Time"
 msgstr "日付 & 時間"
 
 msgid "Debug"
-msgstr ""
+msgstr "デバッグ"
 
 msgid "Edit media share"
 msgstr "メディアの共有を編集"
@@ -54,13 +55,13 @@ msgid "Enable"
 msgstr "有効"
 
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 msgid "Event"
 msgstr "イベント"
 
 msgid "Fatal"
-msgstr ""
+msgstr "致命的"
 
 msgid "General settings"
 msgstr "一般設定"
@@ -69,10 +70,10 @@ msgid "Images"
 msgstr "画像"
 
 msgid "Info"
-msgstr ""
+msgstr "情報"
 
 msgid "Log Level"
-msgstr ""
+msgstr "ログレベル"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -84,7 +85,7 @@ msgid "Name"
 msgstr "名前"
 
 msgid "Off"
-msgstr ""
+msgstr "オフ"
 
 msgid "Port"
 msgstr "ポート"
@@ -120,7 +121,7 @@ msgid "Video"
 msgstr "ビデオ"
 
 msgid "Warn"
-msgstr ""
+msgstr "警告"
 
 msgid "n/a"
 msgstr "n/a"
