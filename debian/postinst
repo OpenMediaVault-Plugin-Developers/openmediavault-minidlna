@@ -47,8 +47,11 @@ case "$1" in
         echo "Add ${SERVICE_XPATH_NAME} user to group: users"
         usermod -G users ${SERVICE_XPATH_NAME}
 
-        echo "Increasing max user watches ..."
-        echo 100000 > /proc/sys/fs/inotify/max_user_watches
+        if grep -q "fs.inotify.max_user_watches" /etc/sysctl.conf; then
+            echo "Increasing max user watches ..."
+            echo "fs.inotify.max_user_watches=100000" >> /etc/sysctl.conf
+            echo 100000 > /proc/sys/fs/inotify/max_user_watches
+        fi
 
         dpkg-trigger update-fixperms
         dpkg-trigger update-locale
