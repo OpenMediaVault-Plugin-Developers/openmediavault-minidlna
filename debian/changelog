@@ -1,3 +1,10 @@
+openmediavault-minidlna (1.0.8) stable; urgency=low
+
+  * Increase max user watches
+  * Update locales
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 18 Nov 2014 14:43:18 -0600
+
 openmediavault-minidlna (1.0.7) stable; urgency=low
 
   * Move rescan button to toolbar
