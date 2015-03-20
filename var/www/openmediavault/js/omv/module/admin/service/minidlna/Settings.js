@@ -31,6 +31,9 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
     plugins : [{
         ptype        : "linkedfields",
         correlations : [{
+            name        : [
+               "enable"
+            ],
             conditions  : [
                 { name : "enable", value : true }
             ],
