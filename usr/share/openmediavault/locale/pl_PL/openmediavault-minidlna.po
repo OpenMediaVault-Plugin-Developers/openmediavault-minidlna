@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Cyryl Sochacki <cyrylsochacki@gmail.com>, 2013
+# Cyryl Sochacki <cyrylsochacki@gmail.com>, 2013,2015
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-11-14 19:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"PO-Revision-Date: 2015-01-19 14:12+0000\n"
+"Last-Translator: Cyryl Sochacki <cyrylsochacki@gmail.com>\n"
 "Language-Team: Polish (Poland) (http://www.transifex.com/projects/p/openmediavault-minidlna/language/pl_PL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +46,7 @@ msgid "Date & Time"
 msgstr "Data i czas"
 
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 msgid "Edit media share"
 msgstr "Edytuj katalog z mediami"
@@ -55,13 +55,13 @@ msgid "Enable"
 msgstr "Włączone"
 
 msgid "Error"
-msgstr ""
+msgstr "Błąd"
 
 msgid "Event"
 msgstr "Zdarzenie"
 
 msgid "Fatal"
-msgstr ""
+msgstr "Poważny"
 
 msgid "General settings"
 msgstr "Głowne ustawienia"
@@ -70,10 +70,10 @@ msgid "Images"
 msgstr "Zdjęcia"
 
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 msgid "Log Level"
-msgstr ""
+msgstr "Poziom logów"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -85,7 +85,7 @@ msgid "Name"
 msgstr "Nazwa"
 
 msgid "Off"
-msgstr ""
+msgstr "Wyłaczone"
 
 msgid "Port"
 msgstr "Port"
@@ -121,7 +121,7 @@ msgid "Video"
 msgstr "Wideo"
 
 msgid "Warn"
-msgstr ""
+msgstr "Ostrzeżenia"
 
 msgid "n/a"
 msgstr "n/d"

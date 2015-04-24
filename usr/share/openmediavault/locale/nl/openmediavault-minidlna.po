@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-10-30 13:45+0000\n"
+"PO-Revision-Date: 2014-11-14 19:49+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/openmediavault-minidlna/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgid "Date & Time"
 msgstr "Datum & Tijd"
 
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 msgid "Edit media share"
 msgstr "Edit media share"
@@ -55,13 +55,13 @@ msgid "Enable"
 msgstr "Aanzetten"
 
 msgid "Error"
-msgstr ""
+msgstr "Fout"
 
 msgid "Event"
 msgstr "Event"
 
 msgid "Fatal"
-msgstr ""
+msgstr "Fataal"
 
 msgid "General settings"
 msgstr "Generiek Instelling"
@@ -70,10 +70,10 @@ msgid "Images"
 msgstr "Afbeeldingen"
 
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 msgid "Log Level"
-msgstr ""
+msgstr "Niveau van loggen"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -85,7 +85,7 @@ msgid "Name"
 msgstr "Naam"
 
 msgid "Off"
-msgstr ""
+msgstr "Uit"
 
 msgid "Port"
 msgstr "IP poort"
@@ -121,7 +121,7 @@ msgid "Video"
 msgstr "Video"
 
 msgid "Warn"
-msgstr ""
+msgstr "Waarschuw"
 
 msgid "n/a"
 msgstr "niet aanwezig"
