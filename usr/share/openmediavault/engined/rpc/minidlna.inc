@@ -112,8 +112,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Modify the result object.
         $object["enable"] = boolval($object["enable"]);
         $object["port"]   = intval($object["port"]);
-        $object["strict"] = intval($object["strict"]);
-        $object["tivo"]   = intval($object["tivo"]);
+        $object["strict"] = boolval($object["strict"]);
+        $object["tivo"]   = boolval($object["tivo"]);
 
         // Remove useless fields from the result object.
         unset($object["shares"]);
