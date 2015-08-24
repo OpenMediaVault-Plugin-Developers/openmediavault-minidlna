@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-11-14 19:49+0000\n"
+"POT-Creation-Date: 2015-08-24 06:49-0500\n"
+"PO-Revision-Date: 2015-08-24 11:49+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/projects/p/openmediavault-minidlna/language/uk/)\n"
+"Language-Team: Ukrainian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,6 +29,9 @@ msgstr "Все медіа"
 
 msgid "Audio"
 msgstr "Аудіо"
+
+msgid "Browse"
+msgstr ""
 
 msgid "Component"
 msgstr "Компонент"
@@ -81,10 +84,16 @@ msgstr "MiniDLNA"
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA на OpenMediaVault"
 
+msgid "Music"
+msgstr ""
+
 msgid "Name"
 msgstr "Ім'я"
 
 msgid "Off"
+msgstr ""
+
+msgid "Pictures"
 msgstr ""
 
 msgid "Port"
@@ -92,6 +101,9 @@ msgstr "Порт"
 
 msgid "Rescan"
 msgstr "Повторне сканування"
+
+msgid "Root Container"
+msgstr ""
 
 msgid "Settings"
 msgstr "Налаштування"
@@ -104,6 +116,9 @@ msgstr "Спільна тека, що містить медіа-файли"
 
 msgid "Shares"
 msgstr "Спісльний"
+
+msgid "Standard"
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Жорсткі DLNA"

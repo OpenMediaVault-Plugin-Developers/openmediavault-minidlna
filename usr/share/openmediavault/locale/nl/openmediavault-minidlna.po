@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2014-11-14 19:49+0000\n"
+"POT-Creation-Date: 2015-08-24 06:49-0500\n"
+"PO-Revision-Date: 2015-08-24 11:49+0000\n"
 "Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/openmediavault-minidlna/language/nl/)\n"
+"Language-Team: Dutch (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,6 +29,9 @@ msgstr "Alle media"
 
 msgid "Audio"
 msgstr "Audio"
+
+msgid "Browse"
+msgstr ""
 
 msgid "Component"
 msgstr "Component"
@@ -81,17 +84,26 @@ msgstr "MiniDLNA"
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA in OpenMediaVault"
 
+msgid "Music"
+msgstr ""
+
 msgid "Name"
 msgstr "Naam"
 
 msgid "Off"
 msgstr "Uit"
 
+msgid "Pictures"
+msgstr ""
+
 msgid "Port"
 msgstr "IP poort"
 
 msgid "Rescan"
 msgstr "Opnieuw scannen"
+
+msgid "Root Container"
+msgstr ""
 
 msgid "Settings"
 msgstr "Instellinge"
@@ -104,6 +116,9 @@ msgstr "Gedeelde folder die media files bevat"
 
 msgid "Shares"
 msgstr "Shares"
+
+msgid "Standard"
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Stricte DLNA specificatie toepassing"

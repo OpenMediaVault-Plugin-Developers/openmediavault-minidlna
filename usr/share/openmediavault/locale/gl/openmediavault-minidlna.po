@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-30 08:42-0500\n"
-"PO-Revision-Date: 2015-02-16 18:13+0000\n"
-"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/openmediavault-minidlna/language/gl/)\n"
+"POT-Creation-Date: 2015-08-24 06:49-0500\n"
+"PO-Revision-Date: 2015-08-24 11:49+0000\n"
+"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"Language-Team: Galician (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,6 +29,9 @@ msgstr "Toda a multimedia"
 
 msgid "Audio"
 msgstr "Son"
+
+msgid "Browse"
+msgstr ""
 
 msgid "Component"
 msgstr "Compoñente"
@@ -81,17 +84,26 @@ msgstr "MiniDLNA"
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA no OpenMediaVault"
 
+msgid "Music"
+msgstr ""
+
 msgid "Name"
 msgstr "Nome"
 
 msgid "Off"
 msgstr "Apagado"
 
+msgid "Pictures"
+msgstr ""
+
 msgid "Port"
 msgstr "Porto"
 
 msgid "Rescan"
 msgstr "Actualizar"
+
+msgid "Root Container"
+msgstr ""
 
 msgid "Settings"
 msgstr "Axustes"
@@ -104,6 +116,9 @@ msgstr "Cartafol compartido contendo ficheiros multimedia."
 
 msgid "Shares"
 msgstr "Compartidos"
+
+msgid "Standard"
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "DLNA estrito"
