@@ -111,6 +111,21 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 fieldLabel : _("TiVo support"),
                 checked    : false
             },{
+                xtype         : "combo",
+                name          : "rootcontainer",
+                fieldLabel    : _("Root Container"),
+                queryMode     : "local",
+                store : [
+                    [ ".", _("Standard") ],
+                    [ "B", _("Browse") ],
+                    [ "M", _("Music") ],
+                    [ "P", _("Pictures") ],
+                    [ "V", _("Video") ]
+                ],
+                editable      : false,
+                triggerAction : "all",
+                value         : "."
+            },{
                 xtype      : "combo",
                 name       : "loglevel",
                 fieldLabel : _("Log Level"),

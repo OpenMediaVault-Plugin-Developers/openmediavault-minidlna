@@ -53,7 +53,7 @@ Ext.define("OMV.module.admin.service.minidlna.Share", {
                 ptype : "fieldinfo",
                 text  : _("Shared folder containing media files")
             }]
-        }, {
+        },{
             xtype         : "combo",
             name          : "mtype",
             fieldLabel    : _("Content Type"),

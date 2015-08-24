@@ -26,23 +26,46 @@ set -e
 
 MINIDLNA_CONFIG="/etc/minidlna.conf"
 
-log_level="$(omv_config_get "//services/minidlna/loglevel")"
+log_level=$(omv_config_get "//services/minidlna/loglevel")
+name=$(omv_config_get "//services/minidlna/name")
+port=$(omv_config_get "//services/minidlna/port")
+rootcontainer=$(omv_config_get "//services/minidlna/rootcontainer")
+strict=$(omv_config_get "//services/minidlna/strict")
+tivo=$(omv_config_get "//services/minidlna/tivo")
+
+if [ "${rootcontainer}" != "" ]; then
+    rootcontainer="root_container=${rootcontainer}"
+else
+    rootcontainer="#root_container=."
+fi
+
+if [ "${strict}" = "1" ]; then
+    strict="yes"
+else
+    strict="no"
+fi
+
+if [ "${tivo}" = "1" ]; then
+    tivo="yes"
+else
+    tivo="no"
+fi
 
 # Create minidlna config file
 cat <<EOF > ${MINIDLNA_CONFIG}
-port=$(omv_config_get "//services/minidlna/port")
+port=${port}
 #network_interface=eth0
-friendly_name=$(omv_config_get "//services/minidlna/name")
+friendly_name=${name}
 #db_dir=/var/cache/minidlna
 #log_dir=/var/log
 album_art_names=Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg
 inotify=yes
-enable_tivo=$( if [ `omv_config_get "//services/minidlna/tivo"` = "1" ]; then echo "yes"; else echo "no"; fi)
-strict_dlna=$( if [ `omv_config_get "//services/minidlna/strict"` = "1" ]; then echo "yes"; else echo "no"; fi)
+enable_tivo=${tivo}
+strict_dlna=${strict}
 notify_interval=60
 serial=31446138
 model_number=1
-#root_container=.
+${rootcontainer}
 log_level=${log_level}
 EOF
 

@@ -1,3 +1,10 @@
+openmediavault-minidlna (1.1) stable; urgency=low
+
+  * Add root container setting
+  * Update locales
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Mon, 24 Aug 2015 06:39:27 -0500
+
 openmediavault-minidlna (1.0.11) stable; urgency=low
 
   * Fix rescan button
