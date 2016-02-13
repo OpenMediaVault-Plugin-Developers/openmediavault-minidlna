@@ -2,7 +2,7 @@
 
 /**
  * Copyright (C) 2009-2013 Volker Theile <volker.theile@openmediavault.org>
- * Copyright (C) 2013-2015 OpenMediaVault Plugin Developers
+ * Copyright (C) 2013-2016 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,13 +20,13 @@
 
 require_once "openmediavault/config.inc";
 require_once "openmediavault/error.inc";
-require_once "openmediavault/initscript.inc";
 require_once "openmediavault/log.inc";
 require_once "openmediavault/module.inc";
+require_once "openmediavault/initscript.inc";
+require_once 'openmediavault/systemctl.inc';
 
 class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
-    OMVINotifyListener,
-    OMVIModuleServiceStatus
+    OMVINotifyListener, OMVIModuleServiceStatus
 {
     public function getName()
     {
@@ -40,7 +40,7 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
 
     private function getXPath()
     {
-        return sprintf("//services/%s", $this->getPluginName());
+        return sprintf("/config/services/%s", $this->getPluginName());
     }
 
     private function getSharesXPath()
@@ -55,10 +55,8 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
 
     private function getShareXPathByUuid($uuid)
     {
-        return sprintf(
-            "%s[uuid='%s']",
-            $this->getShareXPath(),
-            $uuid
+        return sprintf("%s[uuid='%s']",
+            $this->getShareXPath(), $uuid
         );
     }
 
@@ -90,7 +88,6 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
                 implode("\n", $output)
             );
         }
-
         $object = $xmlConfig->get($this->getXPath());
 
         if (is_null($object)) {
@@ -99,11 +96,9 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
                 $this->getXPath()
             );
         }
-
         if (!boolval($object["enable"])) {
             return;
         }
-
         $initd = new OMVSysVInitScript($this->getName());
         $initd->invoke("force-reload");
     }
@@ -124,38 +119,33 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
         if (!boolval($object["enable"])) {
             return;
         }
-
-        $initd = new OMVSysVInitScript($this->getName(), true);
-        $initd->exec();
+        $systemCtl = new OMVSystemCtl($this->getPluginName());
+        $systemCtl->enable(true);
     }
 
     public function stopService()
     {
-        $initd = new OMVSysVInitScript($this->getName());
-        $initd->exec();
+        $systemCtl = new OMVSystemCtl($this->getPluginName());
+        $systemCtl->disable(true);
     }
 
     public function getStatus()
     {
         global $xmlConfig;
-
-        $object = $xmlConfig->get($this->getXPath());
-
+        $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
             );
         }
-
-        $initd = new OMVSysVInitScript($this->getName());
-
-        return array(
-            "name"    => $this->getName(),
-            "title"   => gettext("MiniDLNA"),
-            "enabled" => boolval($object["enable"]),
-            "running" => ($initd->status() == 0)
-        );
+        $systemCtl = new OMVSystemCtl( $this->getPluginName() );
+        return [
+            'name'    => $this->getName(),
+            'title'   => gettext('MiniDLNA'),
+            'enabled' => boolval($object['enable']),
+            'running' => $systemCtl->isActive(),
+        ];
     }
 
     final public function onModifySharedFolder($type, $path, $object)
@@ -164,8 +154,7 @@ class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
 
         $xPath = $this->getShareXPathByUuid($object["uuid"]);
 
-        if ($xmlConfig->exists($xPath))
-        {
+        if ($xmlConfig->exists($xPath)) {
             $this->setDirty();
         }
     }

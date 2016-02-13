@@ -4,7 +4,7 @@
 # @author    Volker Theile <volker.theile@openmediavault.org>
 # @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 # @copyright Copyright (c) 2009-2013 Volker Theile
-# @copyright Copyright (c) 2013-2015 OpenMediaVault Plugin Developers
+# @copyright Copyright (c) 2013-2016 OpenMediaVault Plugin Developers
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,15 +25,16 @@ set -e
 . /usr/share/openmediavault/scripts/helper-functions
 
 MINIDLNA_CONFIG="/etc/minidlna.conf"
+XPATH="/config/services/minidlna"
 
-log_level=$(omv_config_get "//services/minidlna/loglevel")
-name=$(omv_config_get "//services/minidlna/name")
-port=$(omv_config_get "//services/minidlna/port")
-rootcontainer=$(omv_config_get "//services/minidlna/rootcontainer")
-strict=$(omv_config_get "//services/minidlna/strict")
-tivo=$(omv_config_get "//services/minidlna/tivo")
+log_level=$(omv_config_get "${XPATH}/loglevel")
+name=$(omv_config_get "${XPATH}/name")
+port=$(omv_config_get "${XPATH}/port")
+rootcontainer=$(omv_config_get "${XPATH}/rootcontainer")
+strict=$(omv_config_get "${XPATH}/strict")
+tivo=$(omv_config_get "${XPATH}/tivo")
 
-if [ "${rootcontainer}" != "" ]; then
+if [ -n "${rootcontainer}" ]; then
     rootcontainer="root_container=${rootcontainer}"
 else
     rootcontainer="#root_container=."
@@ -71,19 +72,19 @@ EOF
 
 
 # Process FTP shares
-index=$(omv_config_get_count "//services/minidlna/shares/share")
+index=$(omv_config_get_count "${XPATH}/shares/share")
 while [ ${index} -gt 0 ]; do
 
     # Get the shared folder reference and path
-    sfref=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/sharedfolderref")
+    sfref=$(omv_config_get "${XPATH}/shares/share[position()=${index}]/sharedfolderref")
     sfpath=$(omv_get_sharedfolder_path "${sfref}")
-    mtype=$(omv_config_get "//services/minidlna/shares/share[position()=${index}]/mtype")
+    mtype=$(omv_config_get "${XPATH}/shares/share[position()=${index}]/mtype")
 
-    if [ "${mtype}" != "" ]; then
+    if [ -n "${mtype}" ]; then
         mtype="${mtype},"
     fi
 
-    if [ "${sfpath}" != "" ]; then
+    if [ -n "${sfpath}" ]; then
         echo "media_dir=${mtype}${sfpath}" >> ${MINIDLNA_CONFIG}
     fi
 

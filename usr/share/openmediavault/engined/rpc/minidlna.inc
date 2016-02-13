@@ -1,8 +1,7 @@
 <?php
-
 /**
  * Copyright (C) 2009-2013 Volker Theile <volker.theile@openmediavault.org>
- * Copyright (C) 2013-2015 OpenMediaVault Plugin Developers
+ * Copyright (C) 2013-2016 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,7 +39,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
     private function getXPath()
     {
-        return sprintf("//services/%s", $this->getPluginName());
+        return sprintf("/config/services/%s", $this->getPluginName());
     }
 
     private function getSharesXPath()
@@ -64,7 +63,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
     private function getSharedFolderXPathByUuid($uuid)
     {
-        return sprintf("//system/shares/sharedfolder[uuid='%s']", $uuid);
+        return sprintf("/config/system/shares/sharedfolder[uuid='%s']", $uuid);
     }
 
     private function getEventMessagePath()
@@ -95,14 +94,13 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Validate the RPC caller context.
         $this->validateMethodContext(
             $context,
-            array( "role" => OMV_ROLE_ADMINISTRATOR )
+            [ "role" => OMV_ROLE_ADMINISTRATOR ]
         );
 
         // Get the configuration object.
         $object = $xmlConfig->get($this->getXPath());
 
-        if (is_null($object))
-        {
+        if (is_null($object)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
@@ -128,7 +126,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Validate the RPC caller context.
         $this->validateMethodContext(
             $context,
-            array( "role" => OMV_ROLE_ADMINISTRATOR )
+            [ "role" => OMV_ROLE_ADMINISTRATOR ]
         );
 
         // Validate the parameters of the RPC service method.
@@ -151,8 +149,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Get the existing configuration object.
         $oldObject = $xmlConfig->get($this->getXPath());
 
-        if (is_null($oldObject))
-        {
+        if (is_null($oldObject)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
@@ -168,11 +165,10 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             "tivo"          => array_boolval($params, "tivo"),
             "rootcontainer" => $params["rootcontainer"],
             "loglevel"      => $params["loglevel"],
-            "shares"        => isset($oldObject["shares"]) ? $oldObject["shares"] : array(),
+            "shares"        => isset($oldObject["shares"]) ? $oldObject["shares"] : []
         );
 
-        if ($xmlConfig->replace($this->getXPath(), $object) === false)
-        {
+        if ($xmlConfig->replace($this->getXPath(), $object) === false) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED
             );
@@ -180,7 +176,6 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
         // Notify configuration changes.
         $dispatcher = &OMVNotifyDispatcher::getInstance();
-
         $dispatcher->notify(
             OMV_NOTIFY_MODIFY,
             $this->getEventMessagePath(),
@@ -198,7 +193,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Validate the RPC caller context.
         $this->validateMethodContext(
             $context,
-            array( "role" => OMV_ROLE_ADMINISTRATOR )
+            [ "role" => OMV_ROLE_ADMINISTRATOR ]
         );
 
         // Validate the parameters of the RPC service method.
@@ -226,8 +221,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         }
 
         // Add additional share informations.
-        foreach ($shares as &$share)
-        {
+        foreach ($shares as &$share) {
             $share["sharedfoldername"] = gettext("n/a");
 
             // Get the shared folder configuration object.
@@ -235,19 +229,14 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
             $sharedFolder = $xmlConfig->get($xPath);
 
-            if (!is_null($sharedFolder) && !empty($sharedFolder))
-            {
+            if (!is_null($sharedFolder) && !empty($sharedFolder)) {
                 $share["sharedfoldername"] = $sharedFolder["name"];
             }
         }
 
         // Filter the result.
-        return $this->applyFilter(
-            $shares,
-            $params["start"],
-            $params["limit"],
-            $params["sortfield"],
-            $params["sortdir"]
+        return $this->applyFilter($shares, $params["start"], $params["limit"],
+            $params["sortfield"], $params["sortdir"]
         );
     }
 
@@ -256,9 +245,10 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         global $xmlConfig;
 
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array(
-            "role" => OMV_ROLE_ADMINISTRATOR
-        ));
+        $this->validateMethodContext(
+            $context,
+            [ "role" => OMV_ROLE_ADMINISTRATOR ]
+        );
 
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams(
@@ -275,14 +265,12 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         $xPath = $this->getShareXPathByUuid($params["uuid"]);
         $share = $xmlConfig->get($xPath);
 
-        if (is_null($share))
-        {
+        if (is_null($share)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $xPath
             );
         }
-
         return $share;
     }
 
@@ -310,28 +298,24 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         );
 
         // Prepare the configuration object.
-        $share = array(
+        $share = [
             "uuid"            => ($params["uuid"] == $GLOBALS["OMV_UUID_UNDEFINED"]) ?
                 OMVUtil::uuid() : $params["uuid"],
             "sharedfolderref" => $params["sharedfolderref"],
             "mtype"           => $params["mtype"]
-        );
+        ];
 
         // Set the configuration object.
         $success = false;
 
-        if ($params["uuid"] == $GLOBALS["OMV_UUID_UNDEFINED"])
-        {
+        if ($params["uuid"] == $GLOBALS["OMV_UUID_UNDEFINED"]) {
             // Check uniqueness. A shared folder can only be configured
             // once for MiniDlna.
-            $xPath = sprintf(
-                "%s[sharedfolderref='%s']",
-                $this->getShareXPath(),
-                $params["sharedfolderref"]
+            $xPath = sprintf("%s[sharedfolderref='%s']",
+                $this->getShareXPath(), $params["sharedfolderref"]
             );
 
-            if ($xmlConfig->exists($xPath) === true)
-            {
+            if ($xmlConfig->exists($xPath) === true) {
                 throw new OMVException(
                     OMVErrorMsg::E_CONFIG_OBJECT_UNIQUENESS,
                     gettext("The shared folder is already used by another share.")
@@ -342,8 +326,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             $xPath = $this->getSharedFolderXPathByUuid($params["sharedfolderref"]);
             $sharedFolder = $xmlConfig->get($xPath);
 
-            if (is_null($sharedFolder))
-            {
+            if (is_null($sharedFolder)) {
                 throw new OMVException(
                     OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                     $xPath
@@ -352,15 +335,12 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
 
             // Append the configuration object.
             $success = $xmlConfig->set($this->getSharesXPath(), array("share" => $share));
-        }
-        else
-        {
+        } else {
             // Update the existing configuration object.
             $success = $xmlConfig->replace($this->getShareXPathByUuid($params["uuid"]),$share);
         }
 
-        if (!$success)
-        {
+        if (!$success) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED
             );
@@ -382,9 +362,10 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
     public function deleteShare($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array(
-            "role" => OMV_ROLE_ADMINISTRATOR
-        ));
+        $this->validateMethodContext(
+            $context,
+            [ "role" => OMV_ROLE_ADMINISTRATOR ]
+        );
 
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams(
@@ -414,24 +395,20 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
         // Validate the RPC caller context.
         $this->validateMethodContext(
             $context,
-            array( "role" => OMV_ROLE_ADMINISTRATOR )
+            [ "role" => OMV_ROLE_ADMINISTRATOR ]
         );
 
         $object = $xmlConfig->get($this->getXPath());
 
-        if (is_null($object))
-        {
+        if (is_null($object)) {
             throw new OMVException(
                 OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
                 $this->getXPath()
             );
         }
-
-        if (!boolval($object["enable"]))
-        {
+        if (!boolval($object["enable"])) {
             return;
         }
-
         $initd = new OMVSysVInitScript($this->getPluginName());
         $initd->invoke("force-reload");
     }

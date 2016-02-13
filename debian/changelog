@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.0) stable; urgency=low
+
+  * Update for OMV 3.0
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 13 Feb 2016 16:09:33 -0600
+
 openmediavault-minidlna (1.1) stable; urgency=low
 
   * Add root container setting
