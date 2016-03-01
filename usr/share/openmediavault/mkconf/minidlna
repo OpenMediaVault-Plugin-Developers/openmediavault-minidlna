@@ -33,6 +33,7 @@ port=$(omv_config_get "${XPATH}/port")
 rootcontainer=$(omv_config_get "${XPATH}/rootcontainer")
 strict=$(omv_config_get "${XPATH}/strict")
 tivo=$(omv_config_get "${XPATH}/tivo")
+extraoptions=$(omv_config_get "${XPATH}/extraoptions")
 
 if [ -n "${rootcontainer}" ]; then
     rootcontainer="root_container=${rootcontainer}"
@@ -68,6 +69,7 @@ serial=31446138
 model_number=1
 ${rootcontainer}
 log_level=${log_level}
+${extraoptions}
 EOF
 
 

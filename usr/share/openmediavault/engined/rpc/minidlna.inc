@@ -141,7 +141,8 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
                     "strict"        : { "type" : "boolean" },
                     "tivo"          : { "type" : "boolean" },
                     "rootcontainer" : { "type" : "string" },
-                    "loglevel"      : { "type" : "string" }
+                    "loglevel"      : { "type" : "string" },
+                    "extraoptions"  : { "type" : "string", "optional" : true }
                 }
             }'
         );
@@ -165,6 +166,7 @@ class OMVRpcServiceMiniDlna extends OMVRpcServiceAbstract
             "tivo"          => array_boolval($params, "tivo"),
             "rootcontainer" => $params["rootcontainer"],
             "loglevel"      => $params["loglevel"],
+            "extraoptions"  => $params["extraoptions"],
             "shares"        => isset($oldObject["shares"]) ? $oldObject["shares"] : []
         );
 

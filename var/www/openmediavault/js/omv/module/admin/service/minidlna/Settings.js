@@ -147,6 +147,11 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                 editable      : false,
                 triggerAction : "all",
                 value         : "error"
+            },{
+                xtype      : "textarea",
+                name       : "extraoptions",
+                fieldLabel : _("Extra options"),
+                allowBlank : true
             }]
         }];
     }

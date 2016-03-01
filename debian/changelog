@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.1) stable; urgency=low
+
+  * Add extra options field
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 01 Mar 2016 07:41:40 -0600
+
 openmediavault-minidlna (3.0) stable; urgency=low
 
   * Update for OMV 3.0
