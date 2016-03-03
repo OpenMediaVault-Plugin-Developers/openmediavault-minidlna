@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# okpail <okpail@gmail.com>, 2014
+# okpail <okpail@gmail.com>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 06:49-0500\n"
-"PO-Revision-Date: 2015-08-24 11:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"POT-Creation-Date: 2016-03-01 07:41-0600\n"
+"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgid "Audio"
 msgstr "Audio"
 
 msgid "Browse"
-msgstr ""
+msgstr "Browse"
 
 msgid "Component"
 msgstr "Component"
@@ -63,6 +63,9 @@ msgstr "Fout"
 msgid "Event"
 msgstr "Event"
 
+msgid "Extra options"
+msgstr ""
+
 msgid "Fatal"
 msgstr "Fataal"
 
@@ -78,14 +81,11 @@ msgstr "Info"
 msgid "Log Level"
 msgstr "Niveau van loggen"
 
-msgid "MiniDLNA"
-msgstr "MiniDLNA"
-
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA in OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Muziek"
 
 msgid "Name"
 msgstr "Naam"
@@ -94,7 +94,7 @@ msgid "Off"
 msgstr "Uit"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Afbeeldingen"
 
 msgid "Port"
 msgstr "IP poort"
@@ -103,7 +103,7 @@ msgid "Rescan"
 msgstr "Opnieuw scannen"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Root Container"
 
 msgid "Settings"
 msgstr "Instellinge"
@@ -118,7 +118,7 @@ msgid "Shares"
 msgstr "Shares"
 
 msgid "Standard"
-msgstr ""
+msgstr "Standaard"
 
 msgid "Strict DLNA"
 msgstr "Stricte DLNA specificatie toepassing"

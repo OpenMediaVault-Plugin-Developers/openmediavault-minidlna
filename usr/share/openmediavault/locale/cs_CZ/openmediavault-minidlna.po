@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 06:49-0500\n"
-"PO-Revision-Date: 2015-08-24 11:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"POT-Creation-Date: 2016-03-01 07:41-0600\n"
+"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgid "Audio"
 msgstr "Zvuk"
 
 msgid "Browse"
-msgstr ""
+msgstr "Procházet"
 
 msgid "Component"
 msgstr "Součást"
@@ -43,7 +43,7 @@ msgid "Content Type(s)"
 msgstr "Typy obsahu"
 
 msgid "DLNA"
-msgstr ""
+msgstr "DLNA"
 
 msgid "Date & Time"
 msgstr "Datum a čas"
@@ -63,6 +63,9 @@ msgstr "Chyba"
 msgid "Event"
 msgstr "Událost"
 
+msgid "Extra options"
+msgstr ""
+
 msgid "Fatal"
 msgstr "Fatální"
 
@@ -78,14 +81,11 @@ msgstr "Informace"
 msgid "Log Level"
 msgstr "Jak podrobně zaznamenávat události"
 
-msgid "MiniDLNA"
-msgstr ""
-
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA na OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Hudba"
 
 msgid "Name"
 msgstr "Název"
@@ -94,16 +94,16 @@ msgid "Off"
 msgstr "Vypnout"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Obrázky"
 
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 msgid "Rescan"
 msgstr "Znovu prohledat"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Kořenový kontejner"
 
 msgid "Settings"
 msgstr "Nastavení"
@@ -118,7 +118,7 @@ msgid "Shares"
 msgstr "Sdílení"
 
 msgid "Standard"
-msgstr ""
+msgstr "Standardní"
 
 msgid "Strict DLNA"
 msgstr "Striktní DLNA"
@@ -133,10 +133,10 @@ msgid "TiVo support"
 msgstr "Podpora zařízení TiVo"
 
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 msgid "Warn"
-msgstr "Varov"
+msgstr "Varov."
 
 msgid "n/a"
-msgstr ""
+msgstr "n/a"

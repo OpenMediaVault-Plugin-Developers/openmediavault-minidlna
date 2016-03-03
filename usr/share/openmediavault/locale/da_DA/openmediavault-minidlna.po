@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 06:49-0500\n"
-"PO-Revision-Date: 2015-08-24 11:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"POT-Creation-Date: 2016-03-01 07:41-0600\n"
+"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Danish (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgid "Audio"
 msgstr "Lyd"
 
 msgid "Browse"
-msgstr ""
+msgstr "Gennemse"
 
 msgid "Component"
 msgstr "Komponent"
@@ -63,6 +63,9 @@ msgstr "Fejl"
 msgid "Event"
 msgstr "Begivenhed"
 
+msgid "Extra options"
+msgstr ""
+
 msgid "Fatal"
 msgstr "Kritisk"
 
@@ -78,14 +81,11 @@ msgstr "Oplysning"
 msgid "Log Level"
 msgstr "Log Niveau"
 
-msgid "MiniDLNA"
-msgstr "MiniDLNA"
-
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA på OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 msgid "Name"
 msgstr "Navn"
@@ -94,7 +94,7 @@ msgid "Off"
 msgstr "Fra"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Billeder"
 
 msgid "Port"
 msgstr "Port"
@@ -103,7 +103,7 @@ msgid "Rescan"
 msgstr "Genscan"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Rod Beholder"
 
 msgid "Settings"
 msgstr "Indstillinger"
@@ -118,7 +118,7 @@ msgid "Shares"
 msgstr "Delinger"
 
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 msgid "Strict DLNA"
 msgstr "Udelukkende DLNA"

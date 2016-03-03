@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Andi Chandler <andi@gowling.com>, 2015
+# Andi Chandler <andi@gowling.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 06:49-0500\n"
-"PO-Revision-Date: 2015-08-24 11:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"POT-Creation-Date: 2016-03-01 07:41-0600\n"
+"PO-Revision-Date: 2016-03-01 23:56+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgid "Audio"
 msgstr "Audio"
 
 msgid "Browse"
-msgstr ""
+msgstr "Browse"
 
 msgid "Component"
 msgstr "Component"
@@ -63,6 +63,9 @@ msgstr "Error"
 msgid "Event"
 msgstr "Event"
 
+msgid "Extra options"
+msgstr "Extra options"
+
 msgid "Fatal"
 msgstr "Fatal"
 
@@ -78,14 +81,11 @@ msgstr "Info"
 msgid "Log Level"
 msgstr "Log Level"
 
-msgid "MiniDLNA"
-msgstr "MiniDLNA"
-
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA on OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Music"
 
 msgid "Name"
 msgstr "Name"
@@ -94,7 +94,7 @@ msgid "Off"
 msgstr "Off"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Pictures"
 
 msgid "Port"
 msgstr "Port"
@@ -103,7 +103,7 @@ msgid "Rescan"
 msgstr "Rescan"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Root Container"
 
 msgid "Settings"
 msgstr "Settings"
@@ -118,7 +118,7 @@ msgid "Shares"
 msgstr "Shares"
 
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 msgid "Strict DLNA"
 msgstr "Strict DLNA"

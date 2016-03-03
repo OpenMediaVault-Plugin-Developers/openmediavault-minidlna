@@ -4,14 +4,15 @@
 # 
 # Translators:
 # David Hönel <davidh1990@gmx.de>, 2013
-# Ettore Atalan <atalanttore@googlemail.com>, 2014
+# Ettore Atalan <atalanttore@googlemail.com>, 2014-2015
+# Kai Sieben <kai.sieben@gmx.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-24 06:49-0500\n"
-"PO-Revision-Date: 2015-08-24 11:49+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
+"POT-Creation-Date: 2016-03-01 07:41-0600\n"
+"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +33,7 @@ msgid "Audio"
 msgstr "Audio"
 
 msgid "Browse"
-msgstr ""
+msgstr "Durchsuchen"
 
 msgid "Component"
 msgstr "Komponente"
@@ -64,6 +65,9 @@ msgstr "Fehler"
 msgid "Event"
 msgstr "Ereignis"
 
+msgid "Extra options"
+msgstr ""
+
 msgid "Fatal"
 msgstr "Schwerwiegend"
 
@@ -79,14 +83,11 @@ msgstr "Info"
 msgid "Log Level"
 msgstr "Protokollierungsstufe"
 
-msgid "MiniDLNA"
-msgstr "MiniDLNA"
-
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA auf OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 msgid "Name"
 msgstr "Name"
@@ -95,7 +96,7 @@ msgid "Off"
 msgstr "Aus"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Bilder"
 
 msgid "Port"
 msgstr "Port"
@@ -104,7 +105,7 @@ msgid "Rescan"
 msgstr "Erneut suchen"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Root Container"
 
 msgid "Settings"
 msgstr "Einstellungen"
@@ -119,7 +120,7 @@ msgid "Shares"
 msgstr "Freigaben"
 
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 msgid "Strict DLNA"
 msgstr "Striktes DLNA"
