@@ -28,12 +28,12 @@
 			},
 			"rootcontainer": {
 			    "type": "string",
-                "enum": [ ".", "B", "M", "P", "V" ],
+				"enum": [ ".", "B", "M", "P", "V" ],
 		        "required": true
 			},
-            "loglevel": {
+			"loglevel": {
 			    "type": "string",
-                "enum":[ "off", "fatal", "error", "warn", "info", "debug" ],
+				"enum":[ "off", "fatal", "error", "warn", "info", "debug" ],
 		        "required": true
 			},
 			"extraoptions": {

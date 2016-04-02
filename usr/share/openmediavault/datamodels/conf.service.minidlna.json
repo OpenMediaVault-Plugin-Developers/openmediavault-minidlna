@@ -17,7 +17,7 @@
 		},
 		"port": {
 			"type": "integer",
-            "minimum": 1,
+			"minimum": 1,
 			"maximum": 65535,
 			"default": 8200
 		},
@@ -31,11 +31,11 @@
 		},
 		"rootcontainer": {
 			"type": "string",
-            "default": "."
+			"default": "."
 		},
 		"loglevel": {
 			"type": "string",
-            "default": "error"
+			"default": "error"
 		},
 		"extraoptions": {
 			"type": "string"
