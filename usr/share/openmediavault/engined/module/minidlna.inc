@@ -19,186 +19,85 @@
  */
 
 require_once "openmediavault/config.inc";
-require_once "openmediavault/error.inc";
-require_once "openmediavault/log.inc";
-require_once "openmediavault/module.inc";
-require_once "openmediavault/initscript.inc";
-require_once 'openmediavault/systemctl.inc';
 
-class OMVModuleMiniDlna extends OMVModuleServiceAbstract implements
-    OMVINotifyListener, OMVIModuleServiceStatus
+class OMVModuleMiniDlna
+    extends \OMV\Engine\Module\ServiceAbstract
+    implements \OMV\Engine\Notify\IListener, \OMV\Engine\Module\IServiceStatus
 {
+
     public function getName()
     {
         return "minidlna";
     }
 
-    private function getPluginName()
-    {
-        return strtolower($this->getName());
-    }
-
-    private function getXPath()
-    {
-        return sprintf("/config/services/%s", $this->getPluginName());
-    }
-
-    private function getSharesXPath()
-    {
-        return sprintf("%s/shares", $this->getXPath());
-    }
-
-    private function getShareXPath()
-    {
-        return sprintf("%s/share", $this->getSharesXPath());
-    }
-
-    private function getShareXPathByUuid($uuid)
-    {
-        return sprintf("%s[uuid='%s']",
-            $this->getShareXPath(), $uuid
-        );
-    }
-
-    private function getEventMessagePath()
-    {
-        return sprintf("org.openmediavault.services.%s", $this->getPluginName());
-    }
-
-    private function getShareEventMessagePath()
-    {
-        return sprintf("%s.shares.share", $this->getEventMessagePath());
-    }
-
-    private function getSharedFolderEventMessagePath()
-    {
-        return "org.openmediavault.system.shares.sharedfolder";
-    }
-
     public function applyConfig()
     {
-        global $xmlConfig;
-
-        $cmd = sprintf("omv-mkconf %s 2>&1", $this->getName());
-
-        if (0 !== $this->exec($cmd, $output)) {
-            throw new OMVException(
-                OMVErrorMsg::E_EXEC_FAILED,
-                $cmd,
-                implode("\n", $output)
-            );
-        }
-        $object = $xmlConfig->get($this->getXPath());
-
-        if (is_null($object)) {
-            throw new OMVException(
-                OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
-                $this->getXPath()
-            );
-        }
-        if (!boolval($object["enable"])) {
-            return;
-        }
-        $initd = new OMVSysVInitScript($this->getName());
-        $initd->invoke("force-reload");
+        $cmd = new \OMV\System\Process("omv-mkconf", "minidlna");
+        $cmd->setRedirect2to1(TRUE);
+        $cmd->execute();
     }
 
     public function startService()
     {
-        global $xmlConfig;
-
-        $object = $xmlConfig->get($this->getXPath());
-
-        if (is_null($object)) {
-            throw new OMVException(
-                OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
-                $this->getXPath()
-            );
-        }
-
-        if (!boolval($object["enable"])) {
+        $db = \OMV\Config\Database::getInstance();
+        $object = $db->get("conf.service.minidlna");
+        if (TRUE !== $object->get("enable"))
             return;
-        }
-        $systemCtl = new OMVSystemCtl($this->getPluginName());
-        $systemCtl->enable(true);
+        $systemCtl = new \OMV\System\SystemCtl("minidlna");
+        if ($systemCtl->isEnabled() && $systemCtl->isActive())
+            $systemCtl->reload(); // running -> reload config
+        else
+            $systemCtl->enable(TRUE);
     }
 
     public function stopService()
     {
-        $systemCtl = new OMVSystemCtl($this->getPluginName());
-        $systemCtl->disable(true);
+        $db = \OMV\Config\Database::getInstance();
+        $object = $db->get("conf.service.minidlna");
+        if (TRUE !== $object->get("enable"))
+            return;
+        $systemCtl = new \OMV\System\SystemCtl("minidlna");
+        $systemCtl->disable(TRUE);
     }
 
     public function getStatus()
     {
-        global $xmlConfig;
-        $object = $xmlConfig->get( $this->getXPath() );
-        if (is_null($object)) {
-            throw new OMVException(
-                OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
-                $this->getXPath()
-            );
-        }
-        $systemCtl = new OMVSystemCtl( $this->getPluginName() );
-        return [
-            'name'    => $this->getName(),
-            'title'   => gettext('MiniDLNA'),
-            'enabled' => boolval($object['enable']),
-            'running' => $systemCtl->isActive(),
-        ];
+        $db = \OMV\Config\Database::getInstance();
+        $object = $db->get("conf.service.minidlna");
+        $systemCtl = new \OMV\System\SystemCtl("minidlna");
+        return array(
+            "name" => $this->getName(),
+            "title" => gettext("MiniDLNA"),
+            "enabled" => $object->get("enable"),
+            "running" => $systemCtl->isActive()
+        );
     }
 
-    final public function onModifySharedFolder($type, $path, $object)
+    final public function onSharedFolder($type, $path, $object)
     {
-        global $xmlConfig;
-
-        $xPath = $this->getShareXPathByUuid($object["uuid"]);
-
-        if ($xmlConfig->exists($xPath)) {
+        $db = \OMV\Config\Database::getInstance();
+        if (TRUE === $db->existsByProperty("conf.services.minidlna.share",
+          "sharedfolderref", $object['uuid']))
             $this->setDirty();
-        }
     }
 
     public function bindListeners(OMVNotifyDispatcher $dispatcher)
     {
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
-            $this->getEventMessagePath(),
-            array($this, "setDirty")
+            "org.openmediavault.services.minidlna",
+            [ $this, "setDirty" ]
         );
-
         $dispatcher->addListener(
             OMV_NOTIFY_CREATE | OMV_NOTIFY_MODIFY | OMV_NOTIFY_DELETE,
-            $this->getShareEventMessagePath(),
-            array($this, "setDirty")
+            "org.openmediavault.services.minidlna.shares.share",
+            [ $this, "setDirty" ]
         );
-
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
-            $this->getSharedFolderEventMessagePath(),
-            array($this, "onModifySharedFolder")
+            "org.openmediavault.system.shares.sharedfolder",
+            [ $this, "onSharedFolder" ]
         );
+        $moduleMngr = \OMV\Engine\Module\Manager::getInstance();
     }
 }
-
-// Register module.
-$moduleMgr = &OMVModuleMgr::getInstance();
-$moduleMgr->registerModule(new OMVModuleMiniDlna());
-
-// Register new logfile type
-OMVLogFile::registerType("minidlna", array(
-    "filename" => "minidlna.log",
-    "filepath" => "/var/log/minidlna.log",
-    "regex"    => "/^\[(.*?)\]\s+(.*?)\..*?:\d+:\s+.*?:\s+(.*)$/",
-    "columns"  => array(
-        "date"      => array(
-            "index" => 1,
-            "func"  => create_function(
-                "\$v",
-                "return strpdate(\$v,\"Y/n/j G:i:s\");"
-            )
-        ),
-        "component" => 2,
-        "event"     => 3
-    )
-));
