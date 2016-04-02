@@ -1,7 +1,7 @@
 {
 	"type": "config",
 	"id": "conf.service.minidlna.share",
-	"title": "MiniLDNA share",
+	"title": "MiniDLNA share",
 	"queryinfo": {
 		"xpath": "//services/minidlna/shares/share",
 		"iterable": true,
