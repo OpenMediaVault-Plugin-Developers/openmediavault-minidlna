@@ -16,8 +16,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-require_once("openmediavault/globals.inc");
-require_once "openmediavault/systemctl.inc";
 
 class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
 {
@@ -40,52 +38,35 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
     public function getSettings($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext(
-            $context,
-            [ "role" => OMV_ROLE_ADMINISTRATOR ]
-        );
-
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
         // Get the configuration object.
         $db = \OMV\Config\Database::getInstance();
         $object = $db->get("conf.service.minidlna");
-
         // Remove useless properties from the object.
         $object->remove("shares");
-
         return $object->getAssoc();
     }
 
     public function setSettings($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext(
-            $context,
-            [ "role" => OMV_ROLE_ADMINISTRATOR ]
-        );
-
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
         // Validate the parameters of the RPC service method.
-        $this->validateMethodParams(
-            $params,
-            "rpc.minidlna.setsettings"
-        );
-
+        $this->validateMethodParams($params, "rpc.minidlna.setsettings");
         // Get the existing configuration object.
         $db = \OMV\Config\Database::getInstance();
         $object = $db->get("conf.service.minidlna");
         $object->setAssoc($params);
         $db->set($object);
-
         // Remove useless properties from the object.
         $object->remove("shares");
-
         // Notify configuration changes.
         $dispatcher = \OMV\Engine\Notify\Dispatcher::getInstance();
         $dispatcher->notify(
             OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.minidlna"
+            "org.openmediavault.services.minidlna",
             $object->getAssoc()
         );
-
         // Return the configuration object.
         return $object->getAssoc();
     }
@@ -93,91 +74,64 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
     public function getShareList($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext(
-            $context,
-            [ "role" => OMV_ROLE_ADMINISTRATOR ]
-        );
-
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, "rpc.common.getlist");
-
         // Get the configuration object.
         $db = \OMV\Config\Database::getInstance();
         $objects = $db->get("conf.service.minidlna.share");
-
         // Add additional share informations.
         $objectsAssoc = [];
         foreach ($objects as $objectk => &$objectv) {
             // Add the new property 'sharedfoldername'.
             $objectv->add("sharedfoldername", "string", gettext("n/a"));
-
             // Get the shared folder configuration object.
             $sfObject = $db->get("conf.system.sharedfolder",
-              $objectv->get("sharedfolderref"));
-
+                $objectv->get("sharedfolderref"));
             // Update the 'sharedfoldername' property.
             $objectv->set("sharedfoldername", $sfObject->get("name"));
             $objectsAssoc[] = $objectv->getAssoc();
         }
-
         // Filter the result.
-        return $this->applyFilter($objectsAssoc, $params['start'],
-          $params['limit'], $params['sortfield'], $params['sortdir']);
+        return $this->applyFilter($objectsAssoc, $params['start'], $params['limit'],
+            $params['sortfield'], $params['sortdir']);
     }
 
     public function getShare($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext(
-            $context,
-            [ "role" => OMV_ROLE_ADMINISTRATOR ]
-        );
-
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, "rpc.common.objectuuid");
-
         // Get the configuration object.
         $db = \OMV\Config\Database::getInstance();
-
-        return $db->getAssoc(
-            "conf.service.minidlna.share",
-            $params['uuid']
-        );
+        return $db->getAssoc("conf.service.minidlna.share", $params['uuid']);
     }
 
     public function setShare($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext(
-            $context,
-            [ "role" => OMV_ROLE_ADMINISTRATOR ]
-        );
-
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, "rpc.minidlna.setshare");
-
         // Prepare the configuration object.
         $object = new \OMV\Config\ConfigObject("conf.service.minidlna.share");
         $object->setAssoc($params);
-
         // Set the configuration object.
         $isNew = $object->isNew();
         $db = \OMV\Config\Database::getInstance();
         if (TRUE === $isNew) {
-            // Check uniqueness:
-            // - Shared folder
+            // Check uniqueness - Shared folder
             $db->assertIsUnique($object, "sharedfolderref");
         }
         $db->set($object);
-
         // Notify configuration changes.
         $dispatcher = \OMV\Engine\Notify\Dispatcher::getInstance();
         $dispatcher->notify(
             $isNew ? OMV_NOTIFY_CREATE : OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.minidlna.shares.share",
+            "org.openmediavault.services.minidlna.share",
             $object->getAssoc()
         );
-
         // Return the configuration object.
         return $object->getAssoc();
     }
@@ -185,33 +139,26 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
     public function deleteShare($params, $context)
     {
         // Validate the RPC caller context.
-        $this->validateMethodContext(
-            $context,
-            [ "role" => OMV_ROLE_ADMINISTRATOR ]
-        );
-
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
         // Validate the parameters of the RPC service method.
-        $this->validateMethodParams(
-            $params,
-            "rpc.common.objectuuid"
-        );
-
+        $this->validateMethodParams($params, "rpc.common.objectuuid");
         // Delete the configuration object.
         return $this->deleteConfigObjectByUuid(
             "conf.service.minidlna.share",
             $params['uuid'],
-            "org.openmediavault.services.minidlna.shares.share"
+            "org.openmediavault.services.minidlna.share"
         );
     }
 
     public function doRescan($params, $context)
     {
+        // Validate the RPC caller context.
+        $this->validateMethodContext($context, ["role" => OMV_ROLE_ADMINISTRATOR]);
+        // Get the configuration object.
         $db = \OMV\Config\Database::getInstance();
         $object = $db->get("conf.service.minidlna");
         if (TRUE !== $object->get("enable"))
             return;
-        $systemCtl = new \OMV\System\SystemCtl("minidlna");
-        if ($systemCtl->isEnabled() && $systemCtl->isActive())
-            $systemCtl->reload(); // running -> reload config
+        exec("systemctl force-reload minidlna", $output);
     }
 }

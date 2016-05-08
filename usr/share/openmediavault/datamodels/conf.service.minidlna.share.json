@@ -17,7 +17,8 @@
 			"format": "uuidv4"
 		},
 		"mtype": {
-			"type": "string"
+			"type": "string",
+            "default": ""
 		}
 	}
 }

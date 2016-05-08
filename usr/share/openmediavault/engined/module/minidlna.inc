@@ -18,13 +18,9 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-require_once "openmediavault/config.inc";
-
-class OMVModuleMiniDlna
-    extends \OMV\Engine\Module\ServiceAbstract
+class OMVModuleMiniDlna extends \OMV\Engine\Module\ServiceAbstract
     implements \OMV\Engine\Notify\IListener, \OMV\Engine\Module\IServiceStatus
 {
-
     public function getName()
     {
         return "minidlna";
@@ -43,19 +39,13 @@ class OMVModuleMiniDlna
         $object = $db->get("conf.service.minidlna");
         if (TRUE !== $object->get("enable"))
             return;
+        // Start this service and enable the unit file.
         $systemCtl = new \OMV\System\SystemCtl("minidlna");
-        if ($systemCtl->isEnabled() && $systemCtl->isActive())
-            $systemCtl->reload(); // running -> reload config
-        else
-            $systemCtl->enable(TRUE);
+        $systemCtl->enable(TRUE);
     }
 
     public function stopService()
     {
-        $db = \OMV\Config\Database::getInstance();
-        $object = $db->get("conf.service.minidlna");
-        if (TRUE !== $object->get("enable"))
-            return;
         $systemCtl = new \OMV\System\SystemCtl("minidlna");
         $systemCtl->disable(TRUE);
     }
@@ -81,7 +71,7 @@ class OMVModuleMiniDlna
             $this->setDirty();
     }
 
-    public function bindListeners(OMVNotifyDispatcher $dispatcher)
+    public function bindListeners(\OMV\Engine\Notify\Dispatcher $dispatcher)
     {
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
@@ -90,7 +80,7 @@ class OMVModuleMiniDlna
         );
         $dispatcher->addListener(
             OMV_NOTIFY_CREATE | OMV_NOTIFY_MODIFY | OMV_NOTIFY_DELETE,
-            "org.openmediavault.services.minidlna.shares.share",
+            "org.openmediavault.services.minidlna.share",
             [ $this, "setDirty" ]
         );
         $dispatcher->addListener(
@@ -98,6 +88,5 @@ class OMVModuleMiniDlna
             "org.openmediavault.system.shares.sharedfolder",
             [ $this, "onSharedFolder" ]
         );
-        $moduleMngr = \OMV\Engine\Module\Manager::getInstance();
     }
 }
