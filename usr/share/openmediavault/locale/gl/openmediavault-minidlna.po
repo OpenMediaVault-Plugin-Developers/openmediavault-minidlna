@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 07:41-0600\n"
-"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"POT-Creation-Date: 2016-05-08 10:36-0500\n"
+"PO-Revision-Date: 2016-05-08 15:36+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -81,6 +81,9 @@ msgstr "Información"
 msgid "Log Level"
 msgstr "Nivel de rexistro"
 
+msgid "MiniDLNA"
+msgstr ""
+
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA no OpenMediaVault"
 
@@ -125,9 +128,6 @@ msgstr "DLNA estrito"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Adherirse estritamente ao estandar DLNA."
-
-msgid "The shared folder is already used by another share."
-msgstr "O cartafol compartido esta en uso por outra compartición."
 
 msgid "TiVo support"
 msgstr "Compatibilidade con "

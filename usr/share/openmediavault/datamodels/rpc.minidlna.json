@@ -1,0 +1,68 @@
+[{
+	"type": "rpc",
+	"id": "rpc.minidlna.setsettings",
+	"params": {
+		"type": "object",
+		"properties": {
+		    "enable": {
+		        "type": "boolean",
+		        "required": true
+		    },
+			"name": {
+			    "type": "string",
+		        "required": true
+			},
+			"port": {
+			    "type": "integer",
+			    "minimum": 1,
+				"maximum": 65535,
+		        "required": true
+			},
+			"strict": {
+			    "type": "boolean",
+		        "required": true
+			},
+			"tivo": {
+			    "type": "boolean",
+		        "required": true
+			},
+			"rootcontainer": {
+			    "type": "string",
+				"enum": [ ".", "B", "M", "P", "V" ],
+		        "required": true
+			},
+			"loglevel": {
+			    "type": "string",
+				"enum":[ "off", "fatal", "error", "warn", "info", "debug" ],
+		        "required": true
+			},
+			"extraoptions": {
+			    "type": "string",
+		        "required": true
+			}
+		}
+	}
+},{
+	"type": "rpc",
+	"id": "rpc.minidlna.setshare",
+	"params": {
+		"type": "object",
+		"properties": {
+			"uuid": {
+				"type": "string",
+				"format": "uuidv4",
+				"required": true
+			},
+			"sharedfolderref": {
+				"type": "string",
+				"format": "uuidv4",
+				"required": true
+			},
+			"mtype": {
+			    "type": "string",
+			    "enum":[ "A", "P", "V", "" ],
+				"required": true
+			}
+		}
+	}
+}]
