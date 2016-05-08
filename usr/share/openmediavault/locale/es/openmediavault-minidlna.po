@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Raul Fernandez Garcia <raulfg3@gmail.com>, 2014-2015
+# Raul Fernandez Garcia <raulfg3@gmail.com>, 2014-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 07:41-0600\n"
-"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"POT-Creation-Date: 2016-05-08 10:36-0500\n"
+"PO-Revision-Date: 2016-05-08 15:36+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgid "Event"
 msgstr "Evento"
 
 msgid "Extra options"
-msgstr ""
+msgstr "Opciones extra"
 
 msgid "Fatal"
 msgstr "Fatal"
@@ -80,6 +80,9 @@ msgstr "Información"
 
 msgid "Log Level"
 msgstr "Nivel de Log"
+
+msgid "MiniDLNA"
+msgstr ""
 
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA en OpenMediaVault"
@@ -125,9 +128,6 @@ msgstr "DLNA estricto"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Adhesión estricta al estandar DLNA."
-
-msgid "The shared folder is already used by another share."
-msgstr "El compartido esta en uso por otro compartido."
 
 msgid "TiVo support"
 msgstr "Soporte TiVo"

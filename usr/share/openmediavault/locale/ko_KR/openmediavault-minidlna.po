@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hyeonkyu Chu <hyeonkyu@gmail.com>, 2014-2015
+# Hyeonkyu Chu <hyeonkyu@gmail.com>, 2014-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 07:41-0600\n"
-"PO-Revision-Date: 2016-03-01 13:41+0000\n"
+"POT-Creation-Date: 2016-05-08 10:36-0500\n"
+"PO-Revision-Date: 2016-05-08 15:36+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Korean (Korea) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ko_KR/)\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgid "Event"
 msgstr "이벤트"
 
 msgid "Extra options"
-msgstr ""
+msgstr "추가 선택사항"
 
 msgid "Fatal"
 msgstr "심각"
@@ -80,6 +80,9 @@ msgstr "정보"
 
 msgid "Log Level"
 msgstr "기록 수준"
+
+msgid "MiniDLNA"
+msgstr ""
 
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "OpenMediaVault의 MiniDLNA"
@@ -125,9 +128,6 @@ msgstr "엄격한 DLNA"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "DLNA 표준을 엄격하게 준수합니다."
-
-msgid "The shared folder is already used by another share."
-msgstr "공유 폴더는 이미 다른 공유에 의해 사용되고 있습니다."
 
 msgid "TiVo support"
 msgstr "TiVo 지원"
