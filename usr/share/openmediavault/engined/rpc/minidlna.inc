@@ -60,13 +60,6 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
         $db->set($object);
         // Remove useless properties from the object.
         $object->remove("shares");
-        // Notify configuration changes.
-        $dispatcher = \OMV\Engine\Notify\Dispatcher::getInstance();
-        $dispatcher->notify(
-            OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.minidlna",
-            $object->getAssoc()
-        );
         // Return the configuration object.
         return $object->getAssoc();
     }
@@ -125,13 +118,6 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
             $db->assertIsUnique($object, "sharedfolderref");
         }
         $db->set($object);
-        // Notify configuration changes.
-        $dispatcher = \OMV\Engine\Notify\Dispatcher::getInstance();
-        $dispatcher->notify(
-            $isNew ? OMV_NOTIFY_CREATE : OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.minidlna.share",
-            $object->getAssoc()
-        );
         // Return the configuration object.
         return $object->getAssoc();
     }
@@ -143,11 +129,11 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, "rpc.common.objectuuid");
         // Delete the configuration object.
-        return $this->deleteConfigObjectByUuid(
-            "conf.service.minidlna.share",
-            $params['uuid'],
-            "org.openmediavault.services.minidlna.share"
-        );
+        $db = \OMV\Config\Database::getInstance();
+        $object = $db->get("conf.service.minidlna.share", $params['uuid']);
+        $db->delete($object);
+        // Return the deleted configuration object.
+        return $object->getAssoc();
     }
 
     public function doRescan($params, $context)
