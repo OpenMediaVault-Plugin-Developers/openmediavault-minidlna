@@ -75,18 +75,21 @@ class OMVModuleMiniDlna extends \OMV\Engine\Module\ServiceAbstract
     {
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.minidlna",
+            "org.openmediavault.conf.service.minidlna",
             [ $this, "setDirty" ]
         );
         $dispatcher->addListener(
             OMV_NOTIFY_CREATE | OMV_NOTIFY_MODIFY | OMV_NOTIFY_DELETE,
-            "org.openmediavault.services.minidlna.share",
+            "org.openmediavault.conf.service.minidlna.share",
             [ $this, "setDirty" ]
         );
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
-            "org.openmediavault.system.shares.sharedfolder",
-            [ $this, "onSharedFolder" ]
-        );
+            "org.openmediavault.conf.system.sharedfolder",
+            [ $this, "onSharedFolder" ]);
+		$dispatcher->addListener(
+            OMV_NOTIFY_MODIFY,
+            "org.openmediavault.conf.system.sharedfolder.privilege",
+            [ $this, "onSharedFolder" ]);
     }
 }
