@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.3.1) stable; urgency=low
+
+  * Fix applyconfig
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 11 Jun 2016 09:12:59 -0500
+
 openmediavault-minidlna (3.3) stable; urgency=low
 
   * Update for auto notifications
