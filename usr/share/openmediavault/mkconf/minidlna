@@ -30,6 +30,18 @@ XPATH="/config/services/minidlna"
 OMV_MINIDLNA_DB_DIR=${OMV_MINIDLNA_DB_DIR:-"/var/cache/minidlna"}
 OMV_MINIDLNA_LOG_DIR=${OMV_MINIDLNA_LOG_DIR:-"/var/log"}
 
+# create and set permissions for database directory
+if [ ! -d ${OMV_MINIDLNA_DB_DIR} ]; then
+    mkdir -p ${OMV_MINIDLNA_DB_DIR}
+fi
+chown -R minidlna:minidlna ${OMV_MINIDLNA_DB_DIR}
+
+# create and set permissions for log directory
+if [ ! -d ${OMV_MINIDLNA_LOG_DIR} ]; then
+    mkdir -p ${OMV_MINIDLNA_LOG_DIR}
+fi
+chown -R minidlna:minidlna ${OMV_MINIDLNA_LOG_DIR}
+
 log_level=$(omv_config_get "${XPATH}/loglevel")
 name=$(omv_config_get "${XPATH}/name")
 port=$(omv_config_get "${XPATH}/port")

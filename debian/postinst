@@ -30,8 +30,10 @@ case "$1" in
         SERVICE_XPATH_NAME="minidlna"
         SERVICE_XPATH="/config/services/${SERVICE_XPATH_NAME}"
 
-        omv_set_default "OMV_MINIDLNA_DB_DIR" "/var/cache/minidlna"
-        omv_set_default "OMV_MINIDLNA_LOG_DIR" "/var/log"
+        if dpkg --compare-versions "$2" lt-nl "3.3.4"; then
+            omv_set_default "OMV_MINIDLNA_DB_DIR" "/var/cache/minidlna"
+            omv_set_default "OMV_MINIDLNA_LOG_DIR" "/var/log"
+        fi
 
         if [ -z "${2}" ]; then
             deb-systemd-helper disable ${SERVICE_XPATH_NAME}.service >/dev/null || true
