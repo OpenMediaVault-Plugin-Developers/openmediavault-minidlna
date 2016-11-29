@@ -27,6 +27,9 @@ set -e
 MINIDLNA_CONFIG="/etc/minidlna.conf"
 XPATH="/config/services/minidlna"
 
+OMV_MINIDLNA_DB_DIR=${OMV_MINIDLNA_DB_DIR:-"/var/cache/minidlna"}
+OMV_MINIDLNA_LOG_DIR=${OMV_MINIDLNA_LOG_DIR:-"/var/log"}
+
 log_level=$(omv_config_get "${XPATH}/loglevel")
 name=$(omv_config_get "${XPATH}/name")
 port=$(omv_config_get "${XPATH}/port")
@@ -58,8 +61,8 @@ cat <<EOF > ${MINIDLNA_CONFIG}
 port=${port}
 #network_interface=eth0
 friendly_name=${name}
-#db_dir=/var/cache/minidlna
-#log_dir=/var/log
+db_dir=${OMV_MINIDLNA_DB_DIR}
+log_dir=${OMV_MINIDLNA_LOG_DIR}
 album_art_names=Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg
 inotify=yes
 enable_tivo=${tivo}
