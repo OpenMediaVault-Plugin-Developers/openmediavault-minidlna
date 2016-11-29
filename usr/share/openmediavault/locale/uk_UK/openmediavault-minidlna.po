@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# zubr139, 2013
+# zubr139, 2013,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-08 10:36-0500\n"
-"PO-Revision-Date: 2016-05-08 15:36+0000\n"
-"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
+"PO-Revision-Date: 2016-08-21 15:24+0000\n"
+"Last-Translator: zubr139\n"
 "Language-Team: Ukrainian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgid "Audio"
 msgstr "Аудіо"
 
 msgid "Browse"
-msgstr ""
+msgstr "Огляд"
 
 msgid "Component"
 msgstr "Компонент"
@@ -49,7 +49,7 @@ msgid "Date & Time"
 msgstr "Дата і Час"
 
 msgid "Debug"
-msgstr ""
+msgstr "Відлагодження"
 
 msgid "Edit media share"
 msgstr "Редагувати каталог медіа"
@@ -58,16 +58,16 @@ msgid "Enable"
 msgstr "Увімкнути"
 
 msgid "Error"
-msgstr ""
+msgstr "Помилка"
 
 msgid "Event"
 msgstr "Подія"
 
 msgid "Extra options"
-msgstr ""
+msgstr "Додаткові опції"
 
 msgid "Fatal"
-msgstr ""
+msgstr "Фатально"
 
 msgid "General settings"
 msgstr "Загальні налаштування"
@@ -76,28 +76,28 @@ msgid "Images"
 msgstr "Зображення"
 
 msgid "Info"
-msgstr ""
+msgstr "Інформація"
 
 msgid "Log Level"
-msgstr ""
+msgstr "Рівень журналу"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA на OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Музика"
 
 msgid "Name"
 msgstr "Ім'я"
 
 msgid "Off"
-msgstr ""
+msgstr "Вимкнути"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Зображення"
 
 msgid "Port"
 msgstr "Порт"
@@ -106,7 +106,7 @@ msgid "Rescan"
 msgstr "Повторне сканування"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Кореневий контейнер"
 
 msgid "Settings"
 msgstr "Налаштування"
@@ -121,7 +121,7 @@ msgid "Shares"
 msgstr "Спісльний"
 
 msgid "Standard"
-msgstr ""
+msgstr "Стандарт"
 
 msgid "Strict DLNA"
 msgstr "Жорсткі DLNA"
@@ -136,7 +136,7 @@ msgid "Video"
 msgstr "Відео"
 
 msgid "Warn"
-msgstr ""
+msgstr "Застереження"
 
 msgid "n/a"
 msgstr "н/д"
