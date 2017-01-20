@@ -1,7 +1,7 @@
 <?php
 /**
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
- * @copyright Copyright (c) 2013-2016 OpenMediaVault Plugin Developers
+ * @copyright Copyright (c) 2013-2017 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,11 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
- require_once("openmediavault/functions.inc");
+require_once("openmediavault/functions.inc");
+require_once("openmediavault/globals.inc");
 
 \OMV\System\LogFileSpec::registerSpecification("minidlna", [
     "filename" => "minidlna.log",
-    "filepath" => "/var/log/minidlna.log",
+    "filepath" => \OMV\Environment::get("OMV_MINIDLNA_LOG_DIR", "/var/log") .
+        "/minidlna.log",
     "regex"    => "/^\[(.*?)\]\s+(.*?)\..*?:\d+:\s+.*?:\s+(.*)$/",
     "columns"  => [
         "date"      => [

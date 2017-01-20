@@ -2,7 +2,7 @@
 
 /**
  * Copyright (C) 2009-2013 Volker Theile <volker.theile@openmediavault.org>
- * Copyright (C) 2013-2016 OpenMediaVault Plugin Developers
+ * Copyright (C) 2013-2017 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -86,10 +86,12 @@ class OMVModuleMiniDlna extends \OMV\Engine\Module\ServiceAbstract
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
             "org.openmediavault.conf.system.sharedfolder",
-            [ $this, "onSharedFolder" ]);
-		$dispatcher->addListener(
+            [ $this, "onSharedFolder" ]
+        );
+        $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
             "org.openmediavault.conf.system.sharedfolder.privilege",
-            [ $this, "onSharedFolder" ]);
+            [ $this, "onSharedFolder" ]
+        );
     }
 }

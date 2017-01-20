@@ -4,7 +4,7 @@
 # @author    Volker Theile <volker.theile@openmediavault.org>
 # @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 # @copyright Copyright (c) 2009-2013 Volker Theile
-# @copyright Copyright (c) 2013-2016 OpenMediaVault Plugin Developers
+# @copyright Copyright (c) 2013-2017 OpenMediaVault Plugin Developers
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -40,7 +40,12 @@ chown -R minidlna:minidlna ${OMV_MINIDLNA_DB_DIR}
 if [ ! -d ${OMV_MINIDLNA_LOG_DIR} ]; then
     mkdir -p ${OMV_MINIDLNA_LOG_DIR}
 fi
-chown -R minidlna:minidlna ${OMV_MINIDLNA_LOG_DIR}
+if [ ! "${OMV_MINIDLNA_LOG_DIR}" = "/var/log" ]; then
+    chown minidlna:minidlna ${OMV_MINIDLNA_LOG_DIR}
+fi
+if [ -f "${OMV_MINIDLNA_LOG_DIR}/minidlna.log" ]; then
+    chown minidlna:minidlna ${OMV_MINIDLNA_LOG_DIR}/minidlna.log
+fi
 
 log_level=$(omv_config_get "${XPATH}/loglevel")
 name=$(omv_config_get "${XPATH}/name")

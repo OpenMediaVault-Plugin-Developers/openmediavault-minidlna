@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.3.5) stable; urgency=low
+
+  * Fix log dir permissions
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Fri, 20 Jan 2017 16:35:39 -0600
+
 openmediavault-minidlna (3.3.4) stable; urgency=low
 
   * Add default values for db and log directories
