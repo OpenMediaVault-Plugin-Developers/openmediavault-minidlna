@@ -5,13 +5,13 @@
 # Translators:
 # David Hönel <davidh1990@gmx.de>, 2013
 # Ettore Atalan <atalanttore@googlemail.com>, 2014-2016
-# Kai Sieben <kai.sieben@gmx.com>, 2016
+# Kai Sieben <inactive+sieben@transifex.com>, 2016
 # Raiko, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-08 10:36-0500\n"
+"POT-Creation-Date: 2017-01-24 06:01-0600\n"
 "PO-Revision-Date: 2016-07-30 14:50+0000\n"
 "Last-Translator: Raiko\n"
 "Language-Team: German (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/de/)\n"
