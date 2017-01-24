@@ -88,7 +88,7 @@ notify_interval=60
 serial=31446138
 model_number=1
 ${rootcontainer}
-log_level=${log_level}
+log_level=general,artwork,database,inotify,scanner,metadata,http,ssdp,tivo=${log_level}
 ${extraoptions}
 EOF
 
