@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.3.7) stable; urgency=low
+
+  * Mantis 0001688: JSON error when try to change privileges.
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 05 Mar 2017 20:36:24 -0600
+
 openmediavault-minidlna (3.3.6) stable; urgency=low
 
   * Fix logging
