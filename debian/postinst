@@ -56,10 +56,10 @@ case "$1" in
         echo "Add ${SERVICE_XPATH_NAME} user to group: users"
         usermod -G users ${SERVICE_XPATH_NAME}
 
-        if grep -q "fs.inotify.max_user_watches" /etc/sysctl.conf; then
-            echo "Increasing max user watches ..."
-            echo "fs.inotify.max_user_watches=100000" >> /etc/sysctl.conf
-            echo 100000 > /proc/sys/fs/inotify/max_user_watches
+        # set max user watches for inotify
+        echo "fs.inotify.max_user_watches=100000" > /etc/sysctl.d/90openmediavault-minidlna
+        if [ $(cat /proc/sys/fs/inotify/max_user_watches) -lt 100000 ]; then
+            sysctl -p /etc/sysctl.d/90openmediavault-minidlna
         fi
 
         dpkg-trigger update-fixperms

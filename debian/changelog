@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.3.9) stable; urgency=low
+
+  * Improve setting max user watches
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 11 Mar 2017 21:42:34 -0600
+
 openmediavault-minidlna (3.3.8) stable; urgency=low
 
   * Fix typo
