@@ -87,11 +87,13 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
     stateful          : true,
     stateId           : "9889057b-b2c0-4c48-a4c1-8c9b4fb54d7b",
     columns           : [{
+        xtype     : "textcolumn",
         text      : _("Shared Folder"),
         sortable  : true,
         dataIndex : "sharedfoldername",
         stateId   : "sharedfoldername"
     },{
+        xtype     : "textcolumn",
         text      : _("Content Type(s)"),
         sortable  : true,
         dataIndex : "mtype",

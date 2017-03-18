@@ -1,3 +1,9 @@
+openmediavault-minidlna (3.3.10) stable; urgency=low
+
+  * Improve foreign content handling
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 18 Mar 2017 10:31:40 -0500
+
 openmediavault-minidlna (3.3.9) stable; urgency=low
 
   * Improve setting max user watches
