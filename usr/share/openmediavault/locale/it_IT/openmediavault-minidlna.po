@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
 # Damtux, 2013
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-24 06:01-0600\n"
-"PO-Revision-Date: 2016-05-11 10:08+0000\n"
+"POT-Creation-Date: 2017-10-25 17:38-0500\n"
+"PO-Revision-Date: 2017-09-19 22:18+0000\n"
 "Last-Translator: Paolo Velati <paolo.velati@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/it/)\n"
 "MIME-Version: 1.0\n"

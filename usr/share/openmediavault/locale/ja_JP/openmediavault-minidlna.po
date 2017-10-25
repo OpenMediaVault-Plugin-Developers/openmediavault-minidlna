@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
 # Toshihiro Kan <kansuke4649@gmail.com>, 2014-2016
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-24 06:01-0600\n"
-"PO-Revision-Date: 2016-05-10 07:07+0000\n"
+"POT-Creation-Date: 2017-10-25 17:38-0500\n"
+"PO-Revision-Date: 2017-09-19 23:46+0000\n"
 "Last-Translator: Toshihiro Kan <kansuke4649@gmail.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
