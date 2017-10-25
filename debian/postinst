@@ -57,9 +57,9 @@ case "$1" in
         usermod -G users ${SERVICE_XPATH_NAME}
 
         # set max user watches for inotify
-        echo "fs.inotify.max_user_watches=100000" > /etc/sysctl.d/90openmediavault-minidlna
+        echo "fs.inotify.max_user_watches=100000" > /etc/sysctl.d/90openmediavault-minidlna.conf
         if [ $(cat /proc/sys/fs/inotify/max_user_watches) -lt 100000 ]; then
-            sysctl -p /etc/sysctl.d/90openmediavault-minidlna
+            sysctl -p /etc/sysctl.d/90openmediavault-minidlna.conf
         fi
 
         dpkg-trigger update-fixperms

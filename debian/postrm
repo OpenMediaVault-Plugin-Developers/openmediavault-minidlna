@@ -27,7 +27,7 @@ set -e
 case "$1" in
     purge)
         # Remove the configuration data
-        rm -f /etc/sysctl.d/90openmediavault-minidlna
+        rm -f /etc/sysctl.d/90openmediavault-minidlna.conf
         omv_config_delete "/config/services/minidlna"
     ;;
 
