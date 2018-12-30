@@ -2,7 +2,7 @@
 
 /**
  * Copyright (C) 2009-2013 Volker Theile <volker.theile@openmediavault.org>
- * Copyright (C) 2013-2017 OpenMediaVault Plugin Developers
+ * Copyright (C) 2013-2019 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,30 +24,6 @@ class OMVModuleMiniDlna extends \OMV\Engine\Module\ServiceAbstract
     public function getName()
     {
         return "minidlna";
-    }
-
-    public function applyConfig()
-    {
-        $cmd = new \OMV\System\Process("omv-mkconf", "minidlna");
-        $cmd->setRedirect2to1();
-        $cmd->execute();
-    }
-
-    public function startService()
-    {
-        $db = \OMV\Config\Database::getInstance();
-        $object = $db->get("conf.service.minidlna");
-        if (TRUE !== $object->get("enable"))
-            return;
-        // Start this service and enable the unit file.
-        $systemCtl = new \OMV\System\SystemCtl("minidlna");
-        $systemCtl->enable(TRUE);
-    }
-
-    public function stopService()
-    {
-        $systemCtl = new \OMV\System\SystemCtl("minidlna");
-        $systemCtl->disable(TRUE);
     }
 
     public function getStatus()

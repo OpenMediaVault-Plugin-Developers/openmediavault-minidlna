@@ -4,7 +4,7 @@
 # @author    Volker Theile <volker.theile@openmediavault.org>
 # @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 # @copyright Copyright (c) 2009-2013 Volker Theile
-# @copyright Copyright (c) 2013-2017 OpenMediaVault Plugin Developers
+# @copyright Copyright (c) 2013-2019 OpenMediaVault Plugin Developers
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -26,44 +26,21 @@ set -e
 
 case "$1" in
     configure)
-
-        SERVICE_XPATH_NAME="minidlna"
-        SERVICE_XPATH="/config/services/${SERVICE_XPATH_NAME}"
-
-        if dpkg --compare-versions "$2" lt-nl "3.3.4"; then
-            omv_set_default "OMV_MINIDLNA_DB_DIR" "/var/cache/minidlna"
-            omv_set_default "OMV_MINIDLNA_LOG_DIR" "/var/log"
-        fi
-
         if [ -z "${2}" ]; then
-            deb-systemd-helper disable ${SERVICE_XPATH_NAME}.service >/dev/null || true
-            deb-systemd-invoke stop ${SERVICE_XPATH_NAME} >/dev/null || true
+            deb-systemd-helper disable minidlna.service >/dev/null || true
+            deb-systemd-invoke stop minidlna.service >/dev/null || true
         fi
 
-        if ! omv_config_exists "${SERVICE_XPATH}"; then
-            omv_config_add_node "/config/services" "${SERVICE_XPATH_NAME}"
-            omv_config_add_key "${SERVICE_XPATH}" "enable" "0"
-            omv_config_add_key "${SERVICE_XPATH}" "name" "MiniDLNA Server on OpenMediaVault"
-            omv_config_add_key "${SERVICE_XPATH}" "port" "8200"
-            omv_config_add_key "${SERVICE_XPATH}" "strict" "0"
-            omv_config_add_key "${SERVICE_XPATH}" "tivo" "0"
-            omv_config_add_key "${SERVICE_XPATH}" "rootcontainer" "."
-            omv_config_add_node "${SERVICE_XPATH}" "shares"
-            omv_config_add_key "${SERVICE_XPATH}" "loglevel" "error"
-            omv_config_add_key "${SERVICE_XPATH}" "extraoptions" ""
-        fi
-
-        echo "Add ${SERVICE_XPATH_NAME} user to group: users"
-        usermod -G users ${SERVICE_XPATH_NAME}
-
-        # set max user watches for inotify
-        echo "fs.inotify.max_user_watches=100000" > /etc/sysctl.d/90openmediavault-minidlna.conf
-        if [ $(cat /proc/sys/fs/inotify/max_user_watches) -lt 100000 ]; then
-            sysctl -p /etc/sysctl.d/90openmediavault-minidlna.conf
-        fi
-
+        # Activate package triggers.
         dpkg-trigger update-fixperms
         dpkg-trigger update-locale
+
+        # Initialize and migrate configuration database.
+        echo "Updating configuration database ..."
+        omv-confdbadm create "conf.service.minidlna"
+        if [ -n "$2" ]; then
+            omv-confdbadm migrate "conf.service.minidlna" "${2}"
+        fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

@@ -1,0 +1,50 @@
+{% set dbdir = salt['pillar.get']('default:OMV_MINIDLNA_DB_DIR', '/var/cache/minidlna') -%}
+{% set logdir = salt['pillar.get']('default:OMV_MINIDLNA_LOG_DIR', '/var/log') -%}
+
+{{ pillar['headers']['multiline'] }}
+
+port={{ config.port }}
+#network_interface=eth0
+friendly_name={{ config.name }}
+db_dir={{ dbdir }}
+log_dir={{ logdir }}
+album_art_names=Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg
+inotify=yes
+
+{% if config.tivo | to_bool %}
+enable_tivo=yes
+{% else %}
+enable_tivo=no
+{% endif %}
+
+{% if config.strict | to_bool %}
+strict_dlna=yes
+{% else %}
+strict_dlna=no
+{% endif %}
+
+notify_interval=60
+serial=31446138
+model_number=1
+
+{% if config.rootcontainer | length > 0 %}
+root_container={{ config.rootcontainer }}
+{% else %}
+#root_container=.
+{% endif %}
+
+log_level=general,artwork,database,inotify,scanner,metadata,http,ssdp,tivo={{ config.loglevel }}
+
+{% if config.extraoptions | length > 0 %}
+{{ config.extraoptions }}
+{% endif %}
+
+{% for share in config.shares.share %}
+{% set sfpath = salt['omv_conf.get_sharedfolder_path'](share.sharedfolderref) %}
+{% if share.mtype | length > 0 %}
+media_dir={{ share.mtype }},{{ sfpath }}
+{% else %}
+media_dir={{ sfpath }}
+{% endif %}
+{% endfor %}
+

@@ -1,3 +1,9 @@
+openmediavault-minidlna (5.0) stable; urgency=low
+
+  * Adapt to OMV 5 (Usul)
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 30 Dec 2018 15:58:16 -0600
+
 openmediavault-minidlna (3.3.11) stable; urgency=low
 
   * add .conf to sysctl file
