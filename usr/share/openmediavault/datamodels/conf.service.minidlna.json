@@ -29,6 +29,10 @@
 			"type": "boolean",
 			"default": 0
 		},
+		"widelinks": {
+			"type": "boolean",
+			"default": 0
+		},
 		"rootcontainer": {
 			"type": "string",
 			"default": "."

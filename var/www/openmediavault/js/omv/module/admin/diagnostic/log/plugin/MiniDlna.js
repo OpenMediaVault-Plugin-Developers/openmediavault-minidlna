@@ -22,38 +22,38 @@
 // require("js/omv/util/Format.js")
 
 Ext.define("OMV.module.admin.diagnostic.log.plugin.MiniDlna", {
-    extend : "OMV.module.admin.diagnostic.log.plugin.Plugin",
-    alias  : "omv.plugin.diagnostic.log.minidlna",
+    extend: "OMV.module.admin.diagnostic.log.plugin.Plugin",
+    alias: "omv.plugin.diagnostic.log.minidlna",
 
-    id       : "minidlna",
-    text     : _("DLNA"),
-    stateful : true,
-    stateId  : "92a5f193-e76a-481e-a1c0-13db308c97c0",
-    columns  : [{
-        text      : _("Date & Time"),
-        sortable  : true,
-        dataIndex : "date",
-        stateId   : "date",
-        renderer  : OMV.util.Format.localeTimeRenderer()
+    id: "minidlna",
+    text: _("DLNA"),
+    stateful: true,
+    stateId: "92a5f193-e76a-481e-a1c0-13db308c97c0",
+    columns: [{
+        text: _("Date & Time"),
+        sortable: true,
+        dataIndex: "date",
+        stateId: "date",
+        renderer: OMV.util.Format.localeTimeRenderer()
     },{
-        text      : _("Component"),
-        sortable  : true,
-        dataIndex : "component",
-        stateId   : "component",
-        flex      : 1
+        text: _("Component"),
+        sortable: true,
+        dataIndex: "component",
+        stateId: "component",
+        flex: 1
     },{
-        text      : _("Event"),
-        sortable  : true,
-        dataIndex : "event",
-        stateId   : "event",
-        flex      : 1
+        text: _("Event"),
+        sortable: true,
+        dataIndex: "event",
+        stateId: "event",
+        flex: 1
     }],
-    rpcParams : {
-        id : "minidlna"
+    rpcParams: {
+        id: "minidlna"
     },
-    rpcFields : [
-        { name : "date", type : "string" },
-        { name : "component", type : "string" },
-        { name : "event", type : "string" }
+    rpcFields: [
+        { name: "date", type: "string" },
+        { name: "component", type: "string" },
+        { name: "event", type: "string" }
     ]
 });

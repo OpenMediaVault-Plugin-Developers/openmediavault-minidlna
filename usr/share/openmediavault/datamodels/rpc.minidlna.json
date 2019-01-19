@@ -4,41 +4,45 @@
 	"params": {
 		"type": "object",
 		"properties": {
-		    "enable": {
-		        "type": "boolean",
-		        "required": true
-		    },
+			"enable": {
+				"type": "boolean",
+				"required": true
+			},
 			"name": {
-			    "type": "string",
-		        "required": true
+				"type": "string",
+				"required": true
 			},
 			"port": {
-			    "type": "integer",
-			    "minimum": 1,
+				"type": "integer",
+				"minimum": 1,
 				"maximum": 65535,
-		        "required": true
+				"required": true
 			},
 			"strict": {
-			    "type": "boolean",
-		        "required": true
+				"type": "boolean",
+				"required": true
 			},
 			"tivo": {
-			    "type": "boolean",
-		        "required": true
+				"type": "boolean",
+				"required": true
+			},
+			"widelinks": {
+				"type": "boolean",
+				"required": true
 			},
 			"rootcontainer": {
-			    "type": "string",
+				"type": "string",
 				"enum": [ ".", "B", "M", "P", "V" ],
-		        "required": true
+				"required": true
 			},
 			"loglevel": {
-			    "type": "string",
+				"type": "string",
 				"enum":[ "off", "fatal", "error", "warn", "info", "debug" ],
-		        "required": true
+				"required": true
 			},
 			"extraoptions": {
-			    "type": "string",
-		        "required": true
+				"type": "string",
+				"required": true
 			}
 		}
 	}

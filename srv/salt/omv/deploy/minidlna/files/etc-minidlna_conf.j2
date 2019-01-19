@@ -13,6 +13,11 @@ enable_tivo=yes
 {%- else %}
 enable_tivo=no
 {%- endif %}
+{%- if config.widelinks | to_bool %}
+wide_links=yes
+{%- else %}
+wide_lnks=no
+{%- endif %}
 {%- if config.strict | to_bool %}
 strict_dlna=yes
 {%- else %}

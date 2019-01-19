@@ -3,7 +3,7 @@
  * @author    Volker Theile <volker.theile@openmediavault.org>
  * @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
  * @copyright Copyright (c) 2009-2013 Volker Theile
- * @copyright Copyright (c) 2013-2017 OpenMediaVault Plugin Developers
+ * @copyright Copyright (c) 2013-2019 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,49 +22,49 @@
 // require("js/omv/workspace/form/Panel.js")
 
 Ext.define("OMV.module.admin.service.minidlna.Settings", {
-    extend : "OMV.workspace.form.Panel",
+    extend: "OMV.workspace.form.Panel",
 
-    rpcService   : "MiniDlna",
-    rpcGetMethod : "getSettings",
-    rpcSetMethod : "setSettings",
+    rpcService: "MiniDlna",
+    rpcGetMethod: "getSettings",
+    rpcSetMethod: "setSettings",
 
-    plugins : [{
-        ptype        : "linkedfields",
-        correlations : [{
-            name        : [
+    plugins: [{
+        ptype: "linkedfields",
+        correlations: [{
+            name: [
                "enable"
             ],
-            conditions  : [
-                { name : "enable", value : true }
+            conditions: [
+                { name: "enable", value: true }
             ],
-            properties : function(valid, field) {
+            properties: function(valid, field) {
                 this.setButtonDisabled("rescan", !valid);
             }
         }]
     }],
 
-    getButtonItems : function() {
+    getButtonItems: function() {
         var me = this;
         var items = me.callParent(arguments);
         items.push({
-            id       : me.getId() + "-rescan",
-            xtype    : "button",
-            text     : _("Rescan"),
-            icon     : "images/reboot.png",
-            iconCls  : Ext.baseCSSPrefix + "btn-icon-16x16",
-            disabled : true,
-            scope    : me,
-            handler  : function() {
+            id: me.getId() + "-rescan",
+            xtype: "button",
+            text: _("Rescan"),
+            icon: "images/reboot.png",
+            iconCls: Ext.baseCSSPrefix + "btn-icon-16x16",
+            disabled: true,
+            scope: me,
+            handler: function() {
                 // Execute RPC.
                 OMV.Rpc.request({
-                    scope       : this,
-                    callback    : function(id, success, response) {
+                    scope: this,
+                    callback: function(id, success, response) {
                         this.doReload();
                     },
-                    relayErrors : false,
-                    rpcData     : {
-                        service  : "MiniDlna",
-                        method   : "doRescan"
+                    relayErrors: false,
+                    rpcData: {
+                        service: "MiniDlna",
+                        method: "doRescan"
                     }
                 });
             }
@@ -72,67 +72,72 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
         return items;
     },
 
-    getFormItems : function () {
+    getFormItems: function () {
         return [{
-            xtype         : "fieldset",
-            title         : _("General settings"),
-            fieldDefaults : {
-                labelSeparator : ""
+            xtype: "fieldset",
+            title: _("General settings"),
+            fieldDefaults: {
+                labelSeparator: ""
             },
-            items : [{
-                xtype      : "checkbox",
-                name       : "enable",
-                fieldLabel : _("Enable"),
-                checked    : false
+            items: [{
+                xtype: "checkbox",
+                name: "enable",
+                fieldLabel: _("Enable"),
+                checked: false
             },{
-                xtype      : "textfield",
-                name       : "name",
-                value      : _("MiniDLNA on OpenMediaVault"),
-                fieldLabel : _("Name")
+                xtype: "textfield",
+                name: "name",
+                value: _("MiniDLNA on OpenMediaVault"),
+                fieldLabel: _("Name")
             },{
-                xtype         : "numberfield",
-                name          : "port",
-                fieldLabel    : _("Port"),
-                vtype         : "port",
-                minValue      : 1,
-                maxValue      : 65535,
-                allowDecimals : false,
-                allowBlank    : false,
-                value         : 8200
+                xtype: "numberfield",
+                name: "port",
+                fieldLabel: _("Port"),
+                vtype: "port",
+                minValue: 1,
+                maxValue: 65535,
+                allowDecimals: false,
+                allowBlank: false,
+                value: 8200
             },{
-                xtype      : "checkbox",
-                name       : "strict",
-                fieldLabel : _("Strict DLNA"),
-                boxLabel   : _("Strictly adhere to DLNA standards."),
-                checked    : false
+                xtype: "checkbox",
+                name: "strict",
+                fieldLabel: _("Strict DLNA"),
+                boxLabel: _("Strictly adhere to DLNA standards."),
+                checked: false
             },{
-                xtype      : "checkbox",
-                name       : "tivo",
-                fieldLabel : _("TiVo support"),
-                checked    : false
+                xtype: "checkbox",
+                name: "tivo",
+                fieldLabel: _("TiVo support"),
+                checked: false
             },{
-                xtype         : "combo",
-                name          : "rootcontainer",
-                fieldLabel    : _("Root Container"),
-                queryMode     : "local",
-                store : [
+                xtype: "checkbox",
+                name: "widelinks",
+                fieldLabel: _("Wide links"),
+                checked: false
+            },{
+                xtype: "combo",
+                name: "rootcontainer",
+                fieldLabel: _("Root Container"),
+                queryMode: "local",
+                store: [
                     [ ".", _("Standard") ],
                     [ "B", _("Browse") ],
                     [ "M", _("Music") ],
                     [ "P", _("Pictures") ],
                     [ "V", _("Video") ]
                 ],
-                editable      : false,
-                triggerAction : "all",
-                value         : "."
+                editable: false,
+                triggerAction: "all",
+                value: "."
             },{
-                xtype      : "combo",
-                name       : "loglevel",
-                fieldLabel : _("Log Level"),
-                mode       : "local",
-                store      : new Ext.data.SimpleStore({
-                    fields  : [ "value", "text" ],
-                    data    : [
+                xtype: "combo",
+                name: "loglevel",
+                fieldLabel: _("Log Level"),
+                mode: "local",
+                store: new Ext.data.SimpleStore({
+                    fields: [ "value", "text" ],
+                    data: [
                         [ "off", _("Off") ],
                         [ "fatal", _("Fatal") ],
                         [ "error", _("Error") ],
@@ -141,26 +146,26 @@ Ext.define("OMV.module.admin.service.minidlna.Settings", {
                         [ "debug", _("Debug") ]
                     ]
                 }),
-                displayField  : "text",
-                valueField    : "value",
-                allowBlank    : false,
-                editable      : false,
-                triggerAction : "all",
-                value         : "error"
+                displayField: "text",
+                valueField: "value",
+                allowBlank: false,
+                editable: false,
+                triggerAction: "all",
+                value: "error"
             },{
-                xtype      : "textarea",
-                name       : "extraoptions",
-                fieldLabel : _("Extra options"),
-                allowBlank : true
+                xtype: "textarea",
+                name: "extraoptions",
+                fieldLabel: _("Extra options"),
+                allowBlank: true
             }]
         }];
     }
 });
 
 OMV.WorkspaceManager.registerPanel({
-    id        : "settings",
-    path      : "/service/minidlna",
-    text      : _("Settings"),
-    position  : 10,
-    className : "OMV.module.admin.service.minidlna.Settings"
+    id: "settings",
+    path: "/service/minidlna",
+    text: _("Settings"),
+    position: 10,
+    className: "OMV.module.admin.service.minidlna.Settings"
 });

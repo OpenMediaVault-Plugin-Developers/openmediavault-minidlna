@@ -3,7 +3,7 @@
  * @author    Volker Theile <volker.theile@openmediavault.org>
  * @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
  * @copyright Copyright (c) 2009-2013 Volker Theile
- * @copyright Copyright (c) 2013-2017 OpenMediaVault Plugin Developers
+ * @copyright Copyright (c) 2013-2019 OpenMediaVault Plugin Developers
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,76 +29,76 @@
 // require("js/omv/form/field/SharedFolderComboBox.js")
 
 Ext.define("OMV.module.admin.service.minidlna.Share", {
-    extend : "OMV.workspace.window.Form",
-    uses   : [
+    extend: "OMV.workspace.window.Form",
+    uses: [
         "OMV.form.field.SharedFolderComboBox",
         "OMV.workspace.window.plugin.ConfigObject"
     ],
 
-    rpcService   : "MiniDlna",
-    rpcGetMethod : "getShare",
-    rpcSetMethod : "setShare",
-    plugins      : [{
-        ptype : "configobject"
+    rpcService: "MiniDlna",
+    rpcGetMethod: "getShare",
+    rpcSetMethod: "setShare",
+    plugins: [{
+        ptype: "configobject"
     }],
 
-    getFormItems : function () {
+    getFormItems: function () {
         var me = this;
         return [{
-            xtype      : "sharedfoldercombo",
-            name       : "sharedfolderref",
-            fieldLabel : _("Shared Folder"),
-            readOnly   : (me.uuid !== OMV.UUID_UNDEFINED),
-            plugins    : [{
-                ptype : "fieldinfo",
-                text  : _("Shared folder containing media files")
+            xtype: "sharedfoldercombo",
+            name: "sharedfolderref",
+            fieldLabel: _("Shared Folder"),
+            readOnly: (me.uuid !== OMV.UUID_UNDEFINED),
+            plugins: [{
+                ptype: "fieldinfo",
+                text: _("Shared folder containing media files")
             }]
         },{
-            xtype         : "combo",
-            name          : "mtype",
-            fieldLabel    : _("Content Type"),
-            queryMode     : "local",
-            store : [
+            xtype: "combo",
+            name: "mtype",
+            fieldLabel: _("Content Type"),
+            queryMode: "local",
+            store: [
                 [ "A", _("Audio") ],
                 [ "P", _("Images") ],
                 [ "V", _("Video") ],
                 [ "", _("All media") ]
             ],
-            editable      : false,
-            triggerAction : "all",
-            value         : ""
+            editable: false,
+            triggerAction: "all",
+            value: ""
         }];
     }
 });
 
 Ext.define("OMV.module.admin.service.minidlna.Shares", {
-    extend   : "OMV.workspace.grid.Panel",
-    requires : [
+    extend: "OMV.workspace.grid.Panel",
+    requires: [
         "OMV.Rpc",
         "OMV.data.Store",
         "OMV.data.Model",
         "OMV.data.proxy.Rpc"
     ],
-    uses     : [
+    uses: [
         "OMV.module.admin.service.minidlna.Share"
     ],
 
-    hidePagingToolbar : false,
-    stateful          : true,
-    stateId           : "9889057b-b2c0-4c48-a4c1-8c9b4fb54d7b",
-    columns           : [{
-        xtype     : "textcolumn",
-        text      : _("Shared Folder"),
-        sortable  : true,
-        dataIndex : "sharedfoldername",
-        stateId   : "sharedfoldername"
+    hidePagingToolbar: false,
+    stateful: true,
+    stateId: "9889057b-b2c0-4c48-a4c1-8c9b4fb54d7b",
+    columns: [{
+        xtype: "textcolumn",
+        text: _("Shared Folder"),
+        sortable: true,
+        dataIndex: "sharedfoldername",
+        stateId: "sharedfoldername"
     },{
-        xtype     : "textcolumn",
-        text      : _("Content Type(s)"),
-        sortable  : true,
-        dataIndex : "mtype",
-        stateId   : "mtype",
-        renderer  : function (value) {
+        xtype: "textcolumn",
+        text: _("Content Type(s)"),
+        sortable: true,
+        dataIndex: "mtype",
+        stateId: "mtype",
+        renderer: function (value) {
             var content;
             switch (value) {
             case 'A':
@@ -118,24 +118,24 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
         }
     }],
 
-    initComponent : function () {
+    initComponent: function () {
         var me = this;
         Ext.apply(me, {
-            store : Ext.create("OMV.data.Store", {
-                autoLoad : true,
-                model    : OMV.data.Model.createImplicit({
-                    idProperty : "uuid",
-                    fields     : [
-                        { name  : "uuid", type: "string" },
-                        { name  : "sharedfoldername", type: "string" },
-                        { name  : "mtype", type: "string" }
+            store: Ext.create("OMV.data.Store", {
+                autoLoad: true,
+                model: OMV.data.Model.createImplicit({
+                    idProperty: "uuid",
+                    fields: [
+                        { name: "uuid", type: "string" },
+                        { name: "sharedfoldername", type: "string" },
+                        { name: "mtype", type: "string" }
                     ]
                 }),
-                proxy    : {
-                    type    : "rpc",
-                    rpcData : {
-                        service : "MiniDlna",
-                        method  : "getShareList"
+                proxy: {
+                    type: "rpc",
+                    rpcData: {
+                        service: "MiniDlna",
+                        method: "getShareList"
                     }
                 }
             })
@@ -146,11 +146,11 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
     onAddButton: function () {
         var me = this;
         Ext.create("OMV.module.admin.service.minidlna.Share", {
-            title     : _("Add media share"),
-            uuid      : OMV.UUID_UNDEFINED,
-            listeners : {
-                scope  : me,
-                submit : function () {
+            title: _("Add media share"),
+            uuid: OMV.UUID_UNDEFINED,
+            listeners: {
+                scope: me,
+                submit: function () {
                     this.doReload();
                 }
             }
@@ -161,11 +161,11 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
         var me = this;
         var record = me.getSelected();
         Ext.create("OMV.module.admin.service.minidlna.Share", {
-            title     : _("Edit media share"),
-            uuid      : record.get("uuid"),
-            listeners : {
-                scope  : me,
-                submit : function () {
+            title: _("Edit media share"),
+            uuid: record.get("uuid"),
+            listeners: {
+                scope: me,
+                submit: function () {
                     this.doReload();
                 }
             }
@@ -175,12 +175,12 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
     doDeletion: function (record) {
         var me = this;
         OMV.Rpc.request({
-            scope    : me,
-            callback : me.onDeletion,
-            rpcData  : {
-                service : "MiniDlna",
-                method  : "deleteShare",
-                params  : {
+            scope: me,
+            callback: me.onDeletion,
+            rpcData: {
+                service: "MiniDlna",
+                method: "deleteShare",
+                params: {
                     uuid: record.get("uuid")
                 }
             }
@@ -189,9 +189,9 @@ Ext.define("OMV.module.admin.service.minidlna.Shares", {
 });
 
 OMV.WorkspaceManager.registerPanel({
-    id        : "shares",
-    path      : "/service/minidlna",
-    text      : _("Shares"),
-    position  : 20,
-    className : "OMV.module.admin.service.minidlna.Shares"
+    id: "shares",
+    path: "/service/minidlna",
+    text: _("Shares"),
+    position: 20,
+    className: "OMV.module.admin.service.minidlna.Shares"
 });
