@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
+# Marcelo Esteves <marcelopge@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-25 17:38-0500\n"
-"PO-Revision-Date: 2016-05-08 15:36+0000\n"
+"POT-Creation-Date: 2019-01-19 11:25-0600\n"
+"PO-Revision-Date: 2019-01-19 17:26+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +28,7 @@ msgid "All media"
 msgstr ""
 
 msgid "Audio"
-msgstr ""
+msgstr "Áudio"
 
 msgid "Browse"
 msgstr ""
@@ -36,43 +37,43 @@ msgid "Component"
 msgstr ""
 
 msgid "Content Type"
-msgstr ""
+msgstr "Tipo de conteúdo"
 
 msgid "Content Type(s)"
-msgstr ""
+msgstr "Tipo(s) de conteúdo(s)"
 
 msgid "DLNA"
-msgstr ""
+msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr ""
+msgstr "Data e hora"
 
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 msgid "Edit media share"
-msgstr ""
+msgstr "Editar compartilhamento de mídia"
 
 msgid "Enable"
-msgstr ""
+msgstr "Habilitar"
 
 msgid "Error"
-msgstr ""
+msgstr "Erro"
 
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 
 msgid "Extra options"
-msgstr ""
+msgstr "Opções extras"
 
 msgid "Fatal"
 msgstr ""
 
 msgid "General settings"
-msgstr ""
+msgstr "Configurações gerais"
 
 msgid "Images"
-msgstr ""
+msgstr "Imagens"
 
 msgid "Info"
 msgstr ""
@@ -81,31 +82,31 @@ msgid "Log Level"
 msgstr ""
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr ""
+msgstr "MiniDLNA no OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Música"
 
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 msgid "Off"
-msgstr ""
+msgstr "Desligado"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Imagens"
 
 msgid "Port"
-msgstr ""
+msgstr "Porta"
 
 msgid "Rescan"
 msgstr ""
 
 msgid "Root Container"
-msgstr ""
+msgstr "Raiz do contêiner"
 
 msgid "Settings"
 msgstr ""
@@ -135,6 +136,9 @@ msgid "Video"
 msgstr ""
 
 msgid "Warn"
+msgstr ""
+
+msgid "Wide links"
 msgstr ""
 
 msgid "n/a"

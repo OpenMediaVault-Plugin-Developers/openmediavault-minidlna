@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
+# Axel Cantenys, 2017
 # Seboss666 <sebastien_verdet@seboss666.info>, 2015
 # Zacharie ARNAISE <spacebrain.damage@gmail.com>, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-25 17:38-0500\n"
-"PO-Revision-Date: 2017-09-23 19:18+0000\n"
+"POT-Creation-Date: 2019-01-19 11:25-0600\n"
+"PO-Revision-Date: 2019-01-19 17:26+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +66,7 @@ msgid "Event"
 msgstr "Événement"
 
 msgid "Extra options"
-msgstr ""
+msgstr "Options supplémentaires"
 
 msgid "Fatal"
 msgstr "Fatal"
@@ -83,7 +84,7 @@ msgid "Log Level"
 msgstr "Niveau de journalisation"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA sur OpenMediaVault"
@@ -138,6 +139,9 @@ msgstr "Vidéo"
 
 msgid "Warn"
 msgstr "Warn"
+
+msgid "Wide links"
+msgstr ""
 
 msgid "n/a"
 msgstr "n/a"
