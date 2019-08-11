@@ -6,13 +6,14 @@
 # Alexander Savchenko, 2013
 # Alexander Savchenko, 2015
 # Артур Мудрых <arturmon82@gmail.com>, 2013
+# Дмитрий <bardimnik@rambler.ru>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
-"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
+"PO-Revision-Date: 2019-08-08 12:53+0000\n"
+"Last-Translator: Дмитрий <bardimnik@rambler.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +34,7 @@ msgid "Audio"
 msgstr "Аудио"
 
 msgid "Browse"
-msgstr ""
+msgstr "Просмотреть"
 
 msgid "Component"
 msgstr "Компонент"
@@ -42,7 +43,7 @@ msgid "Content Type"
 msgstr "Тип контента"
 
 msgid "Content Type(s)"
-msgstr "Тип контента (ы)"
+msgstr "Тип(ы) контента"
 
 msgid "DLNA"
 msgstr "DLNA"
@@ -51,7 +52,7 @@ msgid "Date & Time"
 msgstr "Дата и Время"
 
 msgid "Debug"
-msgstr ""
+msgstr "Отладить"
 
 msgid "Edit media share"
 msgstr "Редактировать общие медиа"
@@ -66,10 +67,10 @@ msgid "Event"
 msgstr "Событие"
 
 msgid "Extra options"
-msgstr ""
+msgstr "Дополнительные параметры"
 
 msgid "Fatal"
-msgstr ""
+msgstr "Недоступен"
 
 msgid "General settings"
 msgstr "Основные настройки"
@@ -78,28 +79,28 @@ msgid "Images"
 msgstr "Изображения"
 
 msgid "Info"
-msgstr ""
+msgstr "Информация"
 
 msgid "Log Level"
-msgstr ""
+msgstr "Уровень журналирования"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
 msgstr "MiniDLNA на OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Музыка"
 
 msgid "Name"
 msgstr "Имя"
 
 msgid "Off"
-msgstr ""
+msgstr "Отключить"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Изображения"
 
 msgid "Port"
 msgstr "Порт"
@@ -108,7 +109,7 @@ msgid "Rescan"
 msgstr "Повторное сканирование"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Корневой контейнер"
 
 msgid "Settings"
 msgstr "Настройки"
@@ -123,13 +124,13 @@ msgid "Shares"
 msgstr "Общие"
 
 msgid "Standard"
-msgstr ""
+msgstr "Стандарт"
 
 msgid "Strict DLNA"
 msgstr "Строгий DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "Строго придерживаться стандартов DLNA."
 
 msgid "TiVo support"
 msgstr "Поддержка TiVo"
@@ -138,10 +139,10 @@ msgid "Video"
 msgstr "Видео"
 
 msgid "Warn"
-msgstr ""
+msgstr "Предупреждения"
 
 msgid "Wide links"
-msgstr ""
+msgstr "Широкие ссылки"
 
 msgid "n/a"
-msgstr ""
+msgstr "n/a"

@@ -1,9 +1,9 @@
-openmediavault-minidlna (5.0.1) UNRELEASED; urgency=medium
+openmediavault-minidlna (5.0.1) stable; urgency=low
 
   * Add wide links option
   * Update locales
 
- -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 19 Jan 2019 11:28:12 -0600
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 11 Aug 2019 09:26:19 -0500
 
 openmediavault-minidlna (5.0) stable; urgency=low
 
