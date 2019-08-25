@@ -8,21 +8,9 @@ db_dir={{ dbdir }}
 log_dir={{ logdir }}
 album_art_names=Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg
 inotify=yes
-{%- if config.tivo | to_bool %}
-enable_tivo=yes
-{%- else %}
-enable_tivo=no
-{%- endif %}
-{%- if config.widelinks | to_bool %}
-wide_links=yes
-{%- else %}
-wide_lnks=no
-{%- endif %}
-{%- if config.strict | to_bool %}
-strict_dlna=yes
-{%- else %}
-strict_dlna=no
-{%- endif %}
+enable_tivo={{ 'yes' if config.tivo else 'no' }}
+wide_links={{ 'yes' if config.widelinks else 'no' }}
+strict_dlna={{ 'yes' if config.strict else 'no' }}
 notify_interval=60
 serial=31446138
 model_number=1
@@ -37,9 +25,5 @@ log_level=general,artwork,database,inotify,scanner,metadata,http,ssdp,tivo={{ co
 {%- endif %}
 {% for share in config.shares.share %}
 {%- set sfpath = salt['omv_conf.get_sharedfolder_path'](share.sharedfolderref) -%}
-{%- if share.mtype | length > 0 -%}
-media_dir={{ share.mtype }},{{ sfpath }}
-{%- else %}
-media_dir={{ sfpath }}
-{%- endif %}
+media_dir={% if share.mtype | length > 0 %}{{ share.mtype }},{% endif %}{{ sfpath }}
 {% endfor %}
