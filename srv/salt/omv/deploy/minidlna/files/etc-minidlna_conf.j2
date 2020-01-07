@@ -1,5 +1,6 @@
 {%- set dbdir = salt['pillar.get']('default:OMV_MINIDLNA_DB_DIR', '/var/cache/minidlna') -%}
 {%- set logdir = salt['pillar.get']('default:OMV_MINIDLNA_LOG_DIR', '/var/log') -%}
+{%- set serial = salt['pillar.get']('default:OMV_MINIDLNA_SERIAL', '31446138') -%}
 {{ pillar['headers']['multiline'] }}
 port={{ config.port }}
 #network_interface=eth0
@@ -12,7 +13,7 @@ enable_tivo={{ 'yes' if config.tivo else 'no' }}
 wide_links={{ 'yes' if config.widelinks else 'no' }}
 strict_dlna={{ 'yes' if config.strict else 'no' }}
 notify_interval=60
-serial=31446138
+serial={{ serial }}
 model_number=1
 {%- if config.rootcontainer | length > 0 %}
 root_container={{ config.rootcontainer }}

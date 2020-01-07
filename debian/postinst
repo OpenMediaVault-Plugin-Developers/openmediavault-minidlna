@@ -35,12 +35,19 @@ case "$1" in
         dpkg-trigger update-fixperms
         dpkg-trigger update-locale
 
+        if ! grep -q 'OMV_MINIDLNA_SERIAL' /etc/default/openmediavault; then
+            omv_set_default "OMV_MINIDLNA_SERIAL" "$((1000 + RANDOM % 9999))$((1000 + RANDOM % 9999))" false
+            omv-salt stage run --quiet prepare
+        fi
+
         # Initialize and migrate configuration database.
         echo "Updating configuration database ..."
         omv-confdbadm create "conf.service.minidlna"
         if [ -n "$2" ]; then
             omv-confdbadm migrate "conf.service.minidlna" "${2}"
         fi
+
+        omv-salt deploy run --quiet minidlna
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
