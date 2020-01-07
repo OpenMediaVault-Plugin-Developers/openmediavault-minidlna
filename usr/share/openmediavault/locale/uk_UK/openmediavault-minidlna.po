@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
+# dsafsadf <heneral@gmail.com>, 2019
 # zubr139, 2013,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
-"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
+"PO-Revision-Date: 2019-09-24 12:43+0000\n"
+"Last-Translator: dsafsadf <heneral@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,7 +140,7 @@ msgid "Warn"
 msgstr "Застереження"
 
 msgid "Wide links"
-msgstr ""
+msgstr "Розширенні посилання"
 
 msgid "n/a"
 msgstr "н/д"
