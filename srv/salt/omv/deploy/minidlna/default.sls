@@ -25,7 +25,7 @@ configure_minidlna:
   file.managed:
     - name: "/etc/minidlna.conf"
     - source:
-      - salt://{{ slspath }}/files/etc-minidlna_conf.j2
+      - salt://{{ tpldir }}/files/etc-minidlna_conf.j2
     - template: jinja
     - context:
         config: {{ config | json }}
