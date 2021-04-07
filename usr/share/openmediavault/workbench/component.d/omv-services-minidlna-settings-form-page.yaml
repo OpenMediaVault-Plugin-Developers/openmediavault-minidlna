@@ -1,0 +1,89 @@
+version: "1.0"
+type: component
+data:
+  name: omv-services-minidlna-settings-form-page
+  type: formPage
+  config:
+    request:
+      service: MiniDlna
+      get:
+        method: getSettings
+      post:
+        method: setSettings
+    fields:
+      - type: checkbox
+        name: enable
+        label: _("Enable")
+        value: false
+      - type: textInput
+        name: name
+        label: _("Name")
+        value: _("MiniDLNA on OpenMediaVault")
+        hint: _("The name the service will advertise to clients")
+      - type: numberInput
+        name: port
+        label: _("Port")
+        value: 8200
+        validators:
+          min: 1
+          max: 65535
+          patternType: port
+          required: true 
+      - type: checkbox
+        name: strict
+        label: _("Strict DLNA")
+        value: false
+        hint: _("Strictly adhere to DLNA standards.")
+      - type: checkbox
+        name: tivo
+        label: _("TiVo support")
+        value: false
+      - type: checkbox
+        name: widelinks
+        label: _("Wide links")
+        value: false
+      - type: select
+        name: rootcontainer
+        label: _("Root Container")
+        value: "."
+        store:
+          data:
+            - - "."
+              - _("Standard")
+            - - "B"
+              - _("Browse")
+            - - "M"
+              - _("Music")
+            - - "P"
+              - _("Pictures")
+            - - "V"
+              - _("Video")
+      - type: select
+        name: loglevel
+        label: _("Log Level")
+        value: "error"
+        store:
+          data:
+            - - "off"
+              - _("Off")
+            - - "fatal"
+              - _("Fatal")
+            - - "error"
+              - _("Error")
+            - - "warn"
+              - _("Warn")
+            - - "info"
+              - _("Info")
+            - - "debug"
+              - _("Debug")
+      - type: textarea
+        name: extraoptions
+        label: _("Extra options")
+        value: ""
+        rows: 3
+    buttons:
+      - template: submit
+      - template: cancel
+        execute:
+          type: url
+          url: "/services"

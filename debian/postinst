@@ -32,8 +32,7 @@ case "$1" in
         fi
 
         # Activate package triggers.
-        dpkg-trigger update-fixperms
-        dpkg-trigger update-locale
+        dpkg-trigger update-updateworkbench
 
         if ! grep -q 'OMV_MINIDLNA_SERIAL' /etc/default/openmediavault; then
             omv_set_default "OMV_MINIDLNA_SERIAL" "$((1000 + RANDOM % 9999))$((1000 + RANDOM % 9999))" false

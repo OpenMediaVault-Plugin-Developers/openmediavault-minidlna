@@ -1,0 +1,6 @@
+version: "1.0"
+type: route
+data:
+  url: "/services/minidlna"
+  title: _("DLNA")
+  component: omv-services-minidlna-navigation-page

@@ -25,7 +25,7 @@ set -e
 . /usr/share/openmediavault/scripts/helper-functions
 
 remove_action() {
-    dpkg-trigger update-fixperms
+    dpkg-trigger update-workbench
 }
 
 case "$1" in

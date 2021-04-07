@@ -1,0 +1,8 @@
+version: "1.0"
+type: navigation-item
+data:
+  path: "services.minidlna.shares"
+  text: _("Shares")
+  position: 20
+  icon: share
+  url: "/services/minidlna/shares"

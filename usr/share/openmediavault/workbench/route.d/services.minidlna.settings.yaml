@@ -1,0 +1,6 @@
+version: "1.0"
+type: route
+data:
+  url: "/services/minidlna/settings"
+  title: _("Settings")
+  component: omv-services-minidlna-settings-form-page

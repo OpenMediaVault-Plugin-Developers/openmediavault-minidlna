@@ -1,0 +1,44 @@
+version: "1.0"
+type: component
+data:
+  name: omv-services-minidlna-share-form-page
+  type: formPage
+  config:
+    request:
+      service: MiniDlna
+      get:
+        method: getShare
+        params:
+          uuid: "{{ _routeParams.uuid }}"
+      post:
+        method: setShare
+    fields:
+      - type: confObjUuid
+      - type: sharedFolderSelect
+        name: sharedfolderref
+        label: _("Shared folder")
+        hint: _("The location of media files.")
+      - type: select
+        name: mtype
+        label: _("Content Type")
+        value: ""
+        store:
+          data:
+            - - "A"
+              - _("Audio")
+            - - "P"
+              - _("Images")
+            - - "V"
+              - _("Video")
+            - - ""
+              - _("All media")
+    buttons:
+      - template: submit
+        execute:
+          type: url
+          url: "/services/minidlna/shares"
+      - template: cancel
+        execute:
+          type: url
+          url: "/services/minidlna/shares"
+

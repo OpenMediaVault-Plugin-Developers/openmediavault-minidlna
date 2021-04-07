@@ -1,0 +1,7 @@
+version: "1.0"
+type: route
+data:
+  url: "/services/minidlna/shares/create"
+  title: _("Create")
+  notificationTitle: _("Created share.")
+  component: omv-services-minidlna-share-form-page

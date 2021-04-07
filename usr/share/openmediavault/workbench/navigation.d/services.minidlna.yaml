@@ -1,0 +1,7 @@
+version: "1.0"
+type: navigation-item
+data:
+  path: "services.minidlna"
+  text: _("MiniDLNA")
+  icon: "minidlna.svg"
+  url: "/services/minidlna"
