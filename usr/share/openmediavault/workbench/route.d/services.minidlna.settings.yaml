@@ -3,4 +3,5 @@ type: route
 data:
   url: "/services/minidlna/settings"
   title: _("Settings")
+  editing: true
   component: omv-services-minidlna-settings-form-page

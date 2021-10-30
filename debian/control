@@ -3,14 +3,14 @@ Section: net
 XB-Plugin-Section: multimedia
 Priority: optional
 Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-Build-Depends: debhelper (>= 9.0.0 )
+Build-Depends: debhelper (>= 12 )
 Standards-Version: 3.9.6
 Homepage: http://omv-extras.org/
 
 Package: openmediavault-minidlna
 Architecture: all
 Depends: minidlna (>= 1.1.6),
-         openmediavault (>= 5.0),
+         openmediavault (>= 6.0),
          ${misc:Depends}
 Description: OpenMediaVault miniDLNA (DLNA server) plugin
  lightweight DLNA/UPnP-AV server targeted at embedded systems

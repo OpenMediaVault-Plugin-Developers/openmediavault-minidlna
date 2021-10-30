@@ -2,8 +2,3 @@ Format: http://dep.debian.net/deps/dep5
 Upstream-Contact: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 Copyright: 2013-2021 OpenMediaVault Plugin Developers <plugins@omv-extras.org>
 License: GPL-3
-
-Files: /var/www/openmediavault/images/minidlna.png
-       /var/www/openmediavault/images/minidlna.svg
-Copyright: IcoMoon <http://www.icomoon.io>
-IcoMoon <http://www.icomoon.io>

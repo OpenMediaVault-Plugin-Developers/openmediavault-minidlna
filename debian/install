@@ -1,3 +1,2 @@
 usr/share/openmediavault/*  usr/share/openmediavault
 srv/*                       srv
-var/www/openmediavault/assets/* /var/www/openmediavault/assets

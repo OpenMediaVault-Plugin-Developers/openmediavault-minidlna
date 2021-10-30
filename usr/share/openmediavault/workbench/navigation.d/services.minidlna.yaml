@@ -3,5 +3,5 @@ type: navigation-item
 data:
   path: "services.minidlna"
   text: _("MiniDLNA")
-  icon: "minidlna.svg"
+  icon: "mdi:view-stream-outline"
   url: "/services/minidlna"

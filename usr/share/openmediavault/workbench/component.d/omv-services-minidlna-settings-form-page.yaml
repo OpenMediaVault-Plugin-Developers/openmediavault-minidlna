@@ -87,3 +87,11 @@ data:
         execute:
           type: url
           url: "/services"
+      - text: _('apt clean')
+        execute:
+          type: request
+          request:
+            service: MiniDlna
+            method: doRescan
+            task: true
+            progressMessage: _('Starting rescan ...')
