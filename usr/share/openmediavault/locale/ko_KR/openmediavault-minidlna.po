@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Korean (Korea) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ko_KR/)\n"
 "MIME-Version: 1.0\n"
@@ -42,6 +42,12 @@ msgstr "내용 형식"
 msgid "Content Type(s)"
 msgstr "내용 형식(들)"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -51,8 +57,14 @@ msgstr "날짜 & 시간"
 msgid "Debug"
 msgstr "디버그"
 
+msgid "Edit"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "매체 공유 편집"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
 msgstr "활성화"
@@ -114,6 +126,9 @@ msgstr "설정"
 msgid "Shared Folder"
 msgstr "공유 폴더"
 
+msgid "Shared folder"
+msgstr ""
+
 msgid "Shared folder containing media files"
 msgstr "매체 파일이 들어있는 공유 폴더"
 
@@ -128,6 +143,12 @@ msgstr "엄격한 DLNA"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "DLNA 표준을 엄격하게 준수합니다."
+
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
 
 msgid "TiVo support"
 msgstr "TiVo 지원"

@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Axel Cantenys, 2017
+# Axel Cantenys, 2020
 # Seboss666 <sebastien_verdet@seboss666.info>, 2015
 # Zacharie ARNAISE <spacebrain.damage@gmail.com>, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Add media share"
-msgstr "Partager un contenu"
+msgstr "Ajouter un contenu partagé"
 
 msgid "All Media"
 msgstr "Tous les médias"
@@ -44,6 +45,12 @@ msgstr "Type de contenu"
 msgid "Content Type(s)"
 msgstr "Type(s) de contenu"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -51,10 +58,16 @@ msgid "Date & Time"
 msgstr "Date & Heure"
 
 msgid "Debug"
-msgstr "Debuggage"
+msgstr "Débogage"
+
+msgid "Edit"
+msgstr ""
 
 msgid "Edit media share"
 msgstr "Modifier le partage multimédia"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
 msgstr "Activer"
@@ -116,6 +129,9 @@ msgstr "Paramètres"
 msgid "Shared Folder"
 msgstr "Dossier partagé"
 
+msgid "Shared folder"
+msgstr ""
+
 msgid "Shared folder containing media files"
 msgstr "Dossier partagé contenant des fichiers multimédias"
 
@@ -131,6 +147,12 @@ msgstr "Mode DLNA strict"
 msgid "Strictly adhere to DLNA standards."
 msgstr "Se conformer strictement aux normes DLNA."
 
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
+
 msgid "TiVo support"
 msgstr "Support de TiVo"
 
@@ -141,7 +163,7 @@ msgid "Warn"
 msgstr "Warn"
 
 msgid "Wide links"
-msgstr ""
+msgstr "Liens étendus"
 
 msgid "n/a"
-msgstr "n/a"
+msgstr "N/A"

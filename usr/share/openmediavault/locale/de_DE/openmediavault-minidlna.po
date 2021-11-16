@@ -5,14 +5,14 @@
 # Translators:
 # David Hönel <davidh1990@gmx.de>, 2013
 # Ettore Atalan <atalanttore@googlemail.com>, 2014-2016
-# Kai Sieben <inactive+sieben@transifex.com>, 2016
+# d4e998992c5d77930be0dd0199008e4a_0663716 <f71f241308a4c2d418872ce2fcb85dec_386310>, 2016
 # Raiko, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -45,6 +45,12 @@ msgstr "Inhaltstyp"
 msgid "Content Type(s)"
 msgstr "Inhaltstyp(en)"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -54,8 +60,14 @@ msgstr "Datum & Uhrzeit"
 msgid "Debug"
 msgstr "Debug"
 
+msgid "Edit"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "Medienfreigabe bearbeiten"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
 msgstr "Aktivieren"
@@ -117,6 +129,9 @@ msgstr "Einstellungen"
 msgid "Shared Folder"
 msgstr "Freigegebener Ordner"
 
+msgid "Shared folder"
+msgstr ""
+
 msgid "Shared folder containing media files"
 msgstr "Freigegebener Ordner, welcher Mediendateien enthält"
 
@@ -131,6 +146,12 @@ msgstr "Striktes DLNA"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Strikt an die DLNA-Standards halten."
+
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
 
 msgid "TiVo support"
 msgstr "TiVo-Unterstützung"

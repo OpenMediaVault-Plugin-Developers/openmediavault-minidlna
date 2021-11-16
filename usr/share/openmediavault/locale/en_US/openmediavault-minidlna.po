@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: English (United States) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -41,6 +41,12 @@ msgstr "Content Type"
 msgid "Content Type(s)"
 msgstr "Content Type(s)"
 
+msgid "Create"
+msgstr "Create"
+
+msgid "Created share."
+msgstr "Created share."
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -50,8 +56,14 @@ msgstr "Date & Time"
 msgid "Debug"
 msgstr "Debug"
 
+msgid "Edit"
+msgstr "Edit"
+
 msgid "Edit media share"
 msgstr "Edit media share"
+
+msgid "Edit share."
+msgstr "Edit share."
 
 msgid "Enable"
 msgstr "Enable"
@@ -113,6 +125,9 @@ msgstr "Settings"
 msgid "Shared Folder"
 msgstr "Shared Folder"
 
+msgid "Shared folder"
+msgstr "Shared folder"
+
 msgid "Shared folder containing media files"
 msgstr "Shared folder containing media files"
 
@@ -127,6 +142,12 @@ msgstr "Strict DLNA"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Strictly adhere to DLNA standards."
+
+msgid "The location of media files."
+msgstr "The location of media files."
+
+msgid "The name the service will advertise to clients"
+msgstr "The name the service will advertise to clients"
 
 msgid "TiVo support"
 msgstr "TiVo support"

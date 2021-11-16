@@ -4,12 +4,13 @@
 # 
 # Translators:
 # okpail <okpail@gmail.com>, 2014-2016
+# Varkentjes, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-19 17:26+0000\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Add media share"
-msgstr "Voeg 'media share' toe "
+msgstr "Media-share toevoegen"
 
 msgid "All Media"
 msgstr "Alle Media"
@@ -31,7 +32,7 @@ msgid "Audio"
 msgstr "Audio"
 
 msgid "Browse"
-msgstr "Browse"
+msgstr "Bladeren"
 
 msgid "Component"
 msgstr "Component"
@@ -42,26 +43,38 @@ msgstr "Content Type"
 msgid "Content Type(s)"
 msgstr "Content Type(s)"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
-msgstr "DLNA (Digital Living Network Alliance)"
+msgstr "DLNA"
 
 msgid "Date & Time"
 msgstr "Datum & Tijd"
 
 msgid "Debug"
-msgstr "Debug"
+msgstr "Foutopsporing"
+
+msgid "Edit"
+msgstr ""
 
 msgid "Edit media share"
-msgstr "Edit media share"
+msgstr "Media-share bewerken"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
-msgstr "Aanzetten"
+msgstr "Inschakelen"
 
 msgid "Error"
 msgstr "Fout"
 
 msgid "Event"
-msgstr "Event"
+msgstr "Gebeurtenis"
 
 msgid "Extra options"
 msgstr "Extra opties"
@@ -70,7 +83,7 @@ msgid "Fatal"
 msgstr "Fataal"
 
 msgid "General settings"
-msgstr "Generiek Instelling"
+msgstr "Algemene instellingen"
 
 msgid "Images"
 msgstr "Afbeeldingen"
@@ -100,46 +113,55 @@ msgid "Pictures"
 msgstr "Afbeeldingen"
 
 msgid "Port"
-msgstr "IP poort"
+msgstr "IP-poort"
 
 msgid "Rescan"
 msgstr "Opnieuw scannen"
 
 msgid "Root Container"
-msgstr "Root Container"
+msgstr "Root-Container"
 
 msgid "Settings"
-msgstr "Instellinge"
+msgstr "Instellingen"
 
 msgid "Shared Folder"
-msgstr "Gedeelde Folder"
+msgstr "Gedeelde map"
+
+msgid "Shared folder"
+msgstr ""
 
 msgid "Shared folder containing media files"
-msgstr "Gedeelde folder die media files bevat"
+msgstr "Gedeelde map met mediabestanden"
 
 msgid "Shares"
-msgstr "Shares"
+msgstr "Gedeelde bronnen"
 
 msgid "Standard"
 msgstr "Standaard"
 
 msgid "Strict DLNA"
-msgstr "Stricte DLNA specificatie toepassing"
+msgstr "Strikte DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr "Pas de DLNA standaarden strict toe"
+msgstr "Pas de DLNA-standaarden strikt toe"
+
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
 
 msgid "TiVo support"
-msgstr "TiVo ondersteuning"
+msgstr "TiVo-ondersteuning"
 
 msgid "Video"
 msgstr "Video"
 
 msgid "Warn"
-msgstr "Waarschuw"
+msgstr "Waarschuwen"
 
 msgid "Wide links"
 msgstr ""
 
 msgid "n/a"
-msgstr "niet aanwezig"
+msgstr "n.v.t."

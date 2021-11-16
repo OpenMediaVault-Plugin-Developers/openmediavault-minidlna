@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-22 12:35+0000\n"
-"Last-Translator: Raul Fernandez Garcia <raulfg3@gmail.com>\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,6 +42,12 @@ msgstr "Tipo de contenido"
 msgid "Content Type(s)"
 msgstr "Tipos de contenidos"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -51,8 +57,14 @@ msgstr "Fecha y Hora"
 msgid "Debug"
 msgstr "Depuración"
 
+msgid "Edit"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "Editar compartido"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
 msgstr "Habilitar"
@@ -114,6 +126,9 @@ msgstr "Opciones"
 msgid "Shared Folder"
 msgstr "Carpeta compartida"
 
+msgid "Shared folder"
+msgstr ""
+
 msgid "Shared folder containing media files"
 msgstr "Carpeta compartida que contiene los archivos multimedia"
 
@@ -128,6 +143,12 @@ msgstr "DLNA estricto"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Adhesión estricta al estandar DLNA."
+
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
 
 msgid "TiVo support"
 msgstr "Soporte TiVo"

@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-08-08 12:53+0000\n"
-"Last-Translator: Дмитрий <bardimnik@rambler.ru>\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,6 +45,12 @@ msgstr "Тип контента"
 msgid "Content Type(s)"
 msgstr "Тип(ы) контента"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -54,8 +60,14 @@ msgstr "Дата и Время"
 msgid "Debug"
 msgstr "Отладить"
 
+msgid "Edit"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "Редактировать общие медиа"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
 msgstr "Включить"
@@ -117,6 +129,9 @@ msgstr "Настройки"
 msgid "Shared Folder"
 msgstr "Общая папка"
 
+msgid "Shared folder"
+msgstr ""
+
 msgid "Shared folder containing media files"
 msgstr "Общая папка, содержащая медиа-файлы"
 
@@ -131,6 +146,12 @@ msgstr "Строгий DLNA"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Строго придерживаться стандартов DLNA."
+
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
 
 msgid "TiVo support"
 msgstr "Поддержка TiVo"

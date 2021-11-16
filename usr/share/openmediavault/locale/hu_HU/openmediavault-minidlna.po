@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
-# Gyuris Gellért <bubu@ujevangelizacio.hu>, 2018-2019
+# Gyuris Gellért <jobel@ujevangelizacio.hu>, 2018-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 11:25-0600\n"
-"PO-Revision-Date: 2019-01-27 21:10+0000\n"
-"Last-Translator: Gyuris Gellért <bubu@ujevangelizacio.hu>\n"
+"POT-Creation-Date: 2021-11-16 09:28-0600\n"
+"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Hungarian (Hungary) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/hu_HU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,6 +42,12 @@ msgstr "Tartalomtípus"
 msgid "Content Type(s)"
 msgstr "Tartalomtípusok"
 
+msgid "Create"
+msgstr ""
+
+msgid "Created share."
+msgstr ""
+
 msgid "DLNA"
 msgstr "DLNA"
 
@@ -51,8 +57,14 @@ msgstr "Dátum és idő"
 msgid "Debug"
 msgstr "Hibakeresés"
 
+msgid "Edit"
+msgstr ""
+
 msgid "Edit media share"
 msgstr "Médiamegosztás szerkesztése"
+
+msgid "Edit share."
+msgstr ""
 
 msgid "Enable"
 msgstr "Engedélyezés"
@@ -114,6 +126,9 @@ msgstr "Beállítások"
 msgid "Shared Folder"
 msgstr "Megosztott mappa"
 
+msgid "Shared folder"
+msgstr ""
+
 msgid "Shared folder containing media files"
 msgstr "Médiafájlokat tartalmazó megosztott mappa"
 
@@ -128,6 +143,12 @@ msgstr "Szigorú DLNA"
 
 msgid "Strictly adhere to DLNA standards."
 msgstr "Szigorú ragaszkodás a DLNA-szabványokhoz."
+
+msgid "The location of media files."
+msgstr ""
+
+msgid "The name the service will advertise to clients"
+msgstr ""
 
 msgid "TiVo support"
 msgstr "TiVo támogatás"
