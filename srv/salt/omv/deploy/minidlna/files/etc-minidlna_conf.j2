@@ -1,5 +1,5 @@
 {%- set dbdir = salt['pillar.get']('default:OMV_MINIDLNA_DB_DIR', '/var/cache/minidlna') -%}
-{%- set logdir = salt['pillar.get']('default:OMV_MINIDLNA_LOG_DIR', '/var/log') -%}
+{%- set logdir = salt['pillar.get']('default:OMV_MINIDLNA_LOG_DIR', '/var/log/minidlna') -%}
 {%- set serial = salt['pillar.get']('default:OMV_MINIDLNA_SERIAL', '31446138') -%}
 {{ pillar['headers']['multiline'] }}
 port={{ config.port }}
