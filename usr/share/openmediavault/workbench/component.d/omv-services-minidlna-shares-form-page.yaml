@@ -41,4 +41,3 @@ data:
         execute:
           type: url
           url: "/services/minidlna/shares"
-

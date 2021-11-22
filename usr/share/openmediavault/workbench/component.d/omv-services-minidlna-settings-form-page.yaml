@@ -28,7 +28,7 @@ data:
           min: 1
           max: 65535
           patternType: port
-          required: true 
+          required: true
       - type: checkbox
         name: strict
         label: _("Strict DLNA")
@@ -48,34 +48,23 @@ data:
         value: "."
         store:
           data:
-            - - "."
-              - _("Standard")
-            - - "B"
-              - _("Browse")
-            - - "M"
-              - _("Music")
-            - - "P"
-              - _("Pictures")
-            - - "V"
-              - _("Video")
+            - [".", _("Standard")]
+            - ["B", _("Browse")]
+            - ["M", _("Music")]
+            - ["P", _("Pictures")]
+            - ["V", _("Video")]
       - type: select
         name: loglevel
         label: _("Log Level")
         value: "error"
         store:
           data:
-            - - "off"
-              - _("Off")
-            - - "fatal"
-              - _("Fatal")
-            - - "error"
-              - _("Error")
-            - - "warn"
-              - _("Warn")
-            - - "info"
-              - _("Info")
-            - - "debug"
-              - _("Debug")
+            - ["off", _("Off")]
+            - ["fatal", _("Fatal")]
+            - ["error", _("Error")]
+            - ["warn", _("Warn")]
+            - ["info", _("Info")]
+            - ["debug", _("Debug")]
       - type: textarea
         name: extraoptions
         label: _("Extra options")
@@ -87,11 +76,11 @@ data:
         execute:
           type: url
           url: "/services"
-      - text: _('apt clean')
+      - text: _("Rescan")
         execute:
           type: request
           request:
             service: MiniDlna
             method: doRescan
             task: true
-            progressMessage: _('Starting rescan ...')
+            progressMessage: _("Starting rescan ...")
