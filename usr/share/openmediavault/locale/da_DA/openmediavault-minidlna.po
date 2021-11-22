@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Danish (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgid "Add media share"
-msgstr "Tilføj media deling"
-
-msgid "All Media"
-msgstr "Alle media"
 
 msgid "All media"
 msgstr "Alle media"
@@ -60,9 +54,6 @@ msgstr "Debug"
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr "Rediger media deling"
-
 msgid "Edit share."
 msgstr ""
 
@@ -80,9 +71,6 @@ msgstr "Ekstra valgmuligheder"
 
 msgid "Fatal"
 msgstr "Kritisk"
-
-msgid "General settings"
-msgstr "Generelle indstillinger"
 
 msgid "Images"
 msgstr "Billeder"
@@ -123,20 +111,17 @@ msgstr "Rod Beholder"
 msgid "Settings"
 msgstr "Indstillinger"
 
-msgid "Shared Folder"
-msgstr "Delt mappe"
-
 msgid "Shared folder"
 msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "Delte mapper indeholdende media filer."
 
 msgid "Shares"
 msgstr "Delinger"
 
 msgid "Standard"
 msgstr "Standard"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Udelukkende DLNA"

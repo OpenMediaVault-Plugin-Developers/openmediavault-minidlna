@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-msgid "Add media share"
-msgstr "メディアの共有を追加"
-
-msgid "All Media"
-msgstr "すべてのメディア"
 
 msgid "All media"
 msgstr "すべてのメディア"
@@ -60,9 +54,6 @@ msgstr "デバッグ"
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr "メディアの共有を編集"
-
 msgid "Edit share."
 msgstr ""
 
@@ -80,9 +71,6 @@ msgstr "追加オプション"
 
 msgid "Fatal"
 msgstr "致命的"
-
-msgid "General settings"
-msgstr "一般設定"
 
 msgid "Images"
 msgstr "画像"
@@ -123,20 +111,17 @@ msgstr "ルートコンテナ"
 msgid "Settings"
 msgstr "設定"
 
-msgid "Shared Folder"
-msgstr "共有フォルダ"
-
 msgid "Shared folder"
 msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "メディアファイルを含む共有フォルダ"
 
 msgid "Shares"
 msgstr "共有"
 
 msgid "Standard"
 msgstr "標準"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Strict DLNA"

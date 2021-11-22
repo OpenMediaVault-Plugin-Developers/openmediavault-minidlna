@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: English (United States) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -16,12 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgid "Add media share"
-msgstr "Add media share"
-
-msgid "All Media"
-msgstr "All Media"
 
 msgid "All media"
 msgstr "All media"
@@ -59,9 +53,6 @@ msgstr "Debug"
 msgid "Edit"
 msgstr "Edit"
 
-msgid "Edit media share"
-msgstr "Edit media share"
-
 msgid "Edit share."
 msgstr "Edit share."
 
@@ -79,9 +70,6 @@ msgstr "Extra options"
 
 msgid "Fatal"
 msgstr "Fatal"
-
-msgid "General settings"
-msgstr "General settings"
 
 msgid "Images"
 msgstr "Images"
@@ -122,20 +110,17 @@ msgstr "Root Container"
 msgid "Settings"
 msgstr "Settings"
 
-msgid "Shared Folder"
-msgstr "Shared Folder"
-
 msgid "Shared folder"
 msgstr "Shared folder"
-
-msgid "Shared folder containing media files"
-msgstr "Shared folder containing media files"
 
 msgid "Shares"
 msgstr "Shares"
 
 msgid "Standard"
 msgstr "Standard"
+
+msgid "Starting rescan ..."
+msgstr "Starting rescan ..."
 
 msgid "Strict DLNA"
 msgstr "Strict DLNA"

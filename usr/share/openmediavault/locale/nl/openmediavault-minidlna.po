@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -18,12 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgid "Add media share"
-msgstr "Media-share toevoegen"
-
-msgid "All Media"
-msgstr "Alle Media"
 
 msgid "All media"
 msgstr "Alle media"
@@ -61,9 +55,6 @@ msgstr "Foutopsporing"
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr "Media-share bewerken"
-
 msgid "Edit share."
 msgstr ""
 
@@ -81,9 +72,6 @@ msgstr "Extra opties"
 
 msgid "Fatal"
 msgstr "Fataal"
-
-msgid "General settings"
-msgstr "Algemene instellingen"
 
 msgid "Images"
 msgstr "Afbeeldingen"
@@ -124,20 +112,17 @@ msgstr "Root-Container"
 msgid "Settings"
 msgstr "Instellingen"
 
-msgid "Shared Folder"
-msgstr "Gedeelde map"
-
 msgid "Shared folder"
 msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "Gedeelde map met mediabestanden"
 
 msgid "Shares"
 msgstr "Gedeelde bronnen"
 
 msgid "Standard"
 msgstr "Standaard"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Strikte DLNA"

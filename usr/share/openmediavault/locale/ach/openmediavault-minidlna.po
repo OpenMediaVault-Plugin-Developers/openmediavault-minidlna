@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Acoli (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ach/)\n"
 "MIME-Version: 1.0\n"
@@ -16,12 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ach\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-msgid "Add media share"
-msgstr ""
-
-msgid "All Media"
-msgstr ""
 
 msgid "All media"
 msgstr ""
@@ -59,9 +53,6 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr ""
-
 msgid "Edit share."
 msgstr ""
 
@@ -78,9 +69,6 @@ msgid "Extra options"
 msgstr ""
 
 msgid "Fatal"
-msgstr ""
-
-msgid "General settings"
 msgstr ""
 
 msgid "Images"
@@ -122,19 +110,16 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-msgid "Shared Folder"
-msgstr ""
-
 msgid "Shared folder"
-msgstr ""
-
-msgid "Shared folder containing media files"
 msgstr ""
 
 msgid "Shares"
 msgstr ""
 
 msgid "Standard"
+msgstr ""
+
+msgid "Starting rescan ..."
 msgstr ""
 
 msgid "Strict DLNA"

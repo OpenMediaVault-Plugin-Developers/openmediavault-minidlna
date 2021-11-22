@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs_CZ\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
-
-msgid "Add media share"
-msgstr "Přidat sdílení médií"
-
-msgid "All Media"
-msgstr "Všechna média"
 
 msgid "All media"
 msgstr "Všechna média"
@@ -60,9 +54,6 @@ msgstr "Ladění"
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr "Upravit sdílení médií"
-
 msgid "Edit share."
 msgstr ""
 
@@ -80,9 +71,6 @@ msgstr "Další předvolby"
 
 msgid "Fatal"
 msgstr "Fatální"
-
-msgid "General settings"
-msgstr "Obecná nastavení"
 
 msgid "Images"
 msgstr "Obrázky"
@@ -123,20 +111,17 @@ msgstr "Kořenový kontejner"
 msgid "Settings"
 msgstr "Nastavení"
 
-msgid "Shared Folder"
-msgstr "Sdílená složka"
-
 msgid "Shared folder"
 msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "Sdílená složka ve které se nacházejí soubory s médii"
 
 msgid "Shares"
 msgstr "Sdílení"
 
 msgid "Standard"
 msgstr "Standardní"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Striktní DLNA"

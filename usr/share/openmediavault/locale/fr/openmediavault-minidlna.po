@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-msgid "Add media share"
-msgstr "Ajouter un contenu partagé"
-
-msgid "All Media"
-msgstr "Tous les médias"
 
 msgid "All media"
 msgstr "Tous les médias"
@@ -63,9 +57,6 @@ msgstr "Débogage"
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr "Modifier le partage multimédia"
-
 msgid "Edit share."
 msgstr ""
 
@@ -83,9 +74,6 @@ msgstr "Options supplémentaires"
 
 msgid "Fatal"
 msgstr "Fatal"
-
-msgid "General settings"
-msgstr "Paramètres généraux"
 
 msgid "Images"
 msgstr "Images"
@@ -126,20 +114,17 @@ msgstr "Répertoire principal"
 msgid "Settings"
 msgstr "Paramètres"
 
-msgid "Shared Folder"
-msgstr "Dossier partagé"
-
 msgid "Shared folder"
 msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "Dossier partagé contenant des fichiers multimédias"
 
 msgid "Shares"
 msgstr "Partages"
 
 msgid "Standard"
 msgstr "Standard"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "Mode DLNA strict"

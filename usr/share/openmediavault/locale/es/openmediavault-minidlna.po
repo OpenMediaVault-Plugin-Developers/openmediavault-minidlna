@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgid "Add media share"
-msgstr "Añadir carpeta multimedia"
-
-msgid "All Media"
-msgstr "Toda la multimedia"
 
 msgid "All media"
 msgstr "Todos los tipos de multimedia"
@@ -60,9 +54,6 @@ msgstr "Depuración"
 msgid "Edit"
 msgstr ""
 
-msgid "Edit media share"
-msgstr "Editar compartido"
-
 msgid "Edit share."
 msgstr ""
 
@@ -80,9 +71,6 @@ msgstr "Opciones extra"
 
 msgid "Fatal"
 msgstr "Fatal"
-
-msgid "General settings"
-msgstr "Opciones generales"
 
 msgid "Images"
 msgstr "Imagenes"
@@ -123,20 +111,17 @@ msgstr "Raíz"
 msgid "Settings"
 msgstr "Opciones"
 
-msgid "Shared Folder"
-msgstr "Carpeta compartida"
-
 msgid "Shared folder"
 msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "Carpeta compartida que contiene los archivos multimedia"
 
 msgid "Shares"
 msgstr "Compartidos"
 
 msgid "Standard"
 msgstr "Standard"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "DLNA estricto"

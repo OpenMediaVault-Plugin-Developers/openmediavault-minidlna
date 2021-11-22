@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
-# kochin <kochinc@outlook.com>, 2014-2016,2019
+# kochin <kochinc@outlook.com>, 2014-2016,2019,2021
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-msgid "Add media share"
-msgstr "新增媒體共享"
-
-msgid "All Media"
-msgstr "全部媒體"
 
 msgid "All media"
 msgstr "全部媒體"
@@ -43,10 +37,10 @@ msgid "Content Type(s)"
 msgstr "內容型式"
 
 msgid "Create"
-msgstr ""
+msgstr "新建"
 
 msgid "Created share."
-msgstr ""
+msgstr "已建立共享。"
 
 msgid "DLNA"
 msgstr "DLNA"
@@ -58,13 +52,10 @@ msgid "Debug"
 msgstr "除錯"
 
 msgid "Edit"
-msgstr ""
-
-msgid "Edit media share"
-msgstr "編輯媒體共享"
+msgstr "編輯"
 
 msgid "Edit share."
-msgstr ""
+msgstr "編輯共享。"
 
 msgid "Enable"
 msgstr "啟用"
@@ -80,9 +71,6 @@ msgstr "額外選項"
 
 msgid "Fatal"
 msgstr "致命"
-
-msgid "General settings"
-msgstr "一般設定"
 
 msgid "Images"
 msgstr "圖片"
@@ -123,20 +111,17 @@ msgstr "根容器"
 msgid "Settings"
 msgstr "設定"
 
-msgid "Shared Folder"
-msgstr "共享檔案夾"
-
 msgid "Shared folder"
-msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "內含媒體檔案的共享檔案夾"
+msgstr "共享檔案夾"
 
 msgid "Shares"
 msgstr "共享"
 
 msgid "Standard"
 msgstr "標準"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "嚴格遵循 DLNA"
@@ -145,10 +130,10 @@ msgid "Strictly adhere to DLNA standards."
 msgstr "嚴格遵循 DLNA 標準。"
 
 msgid "The location of media files."
-msgstr ""
+msgstr "媒體檔案的位置。"
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "用以告知客戶端的服務名稱"
 
 msgid "TiVo support"
 msgstr "TiVo 支援"

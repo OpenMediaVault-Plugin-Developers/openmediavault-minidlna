@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
-# songming <by@songming.me>, 2013-2016,2019
+# songming <by@songming.me>, 2013-2016,2019,2021
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-16 09:28-0600\n"
-"PO-Revision-Date: 2021-11-16 15:29+0000\n"
+"POT-Creation-Date: 2021-11-22 07:19-0600\n"
+"PO-Revision-Date: 2021-11-22 13:19+0000\n"
 "Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-msgid "Add media share"
-msgstr "添加多媒体分享"
-
-msgid "All Media"
-msgstr "所有多媒体"
 
 msgid "All media"
 msgstr "所有多媒体"
@@ -43,10 +37,10 @@ msgid "Content Type(s)"
 msgstr "包含类型(s)"
 
 msgid "Create"
-msgstr ""
+msgstr "创建"
 
 msgid "Created share."
-msgstr ""
+msgstr "创建分享。"
 
 msgid "DLNA"
 msgstr "DLNA"
@@ -58,13 +52,10 @@ msgid "Debug"
 msgstr "调试"
 
 msgid "Edit"
-msgstr ""
-
-msgid "Edit media share"
-msgstr "编辑分享多媒体"
+msgstr "编辑"
 
 msgid "Edit share."
-msgstr ""
+msgstr "编辑分享。"
 
 msgid "Enable"
 msgstr "启动"
@@ -80,9 +71,6 @@ msgstr "扩展选项"
 
 msgid "Fatal"
 msgstr "严重的"
-
-msgid "General settings"
-msgstr "常规设置"
 
 msgid "Images"
 msgstr "图像"
@@ -123,20 +111,17 @@ msgstr "Root 容器"
 msgid "Settings"
 msgstr "设置"
 
-msgid "Shared Folder"
-msgstr "分享文件夹"
-
 msgid "Shared folder"
-msgstr ""
-
-msgid "Shared folder containing media files"
-msgstr "分享文件夹包含的多媒体文件"
+msgstr "共享文件夹"
 
 msgid "Shares"
 msgstr "分享"
 
 msgid "Standard"
 msgstr "标准"
+
+msgid "Starting rescan ..."
+msgstr ""
 
 msgid "Strict DLNA"
 msgstr "标准DLNA"
@@ -145,10 +130,10 @@ msgid "Strictly adhere to DLNA standards."
 msgstr "严格遵循 DLNA标准"
 
 msgid "The location of media files."
-msgstr ""
+msgstr "媒体文件的位置。"
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "客户端看到的服务名称"
 
 msgid "TiVo support"
 msgstr "TiVo支持"
@@ -160,7 +145,7 @@ msgid "Warn"
 msgstr "警告"
 
 msgid "Wide links"
-msgstr ""
+msgstr "Wide links"
 
 msgid "n/a"
 msgstr "N/A"
