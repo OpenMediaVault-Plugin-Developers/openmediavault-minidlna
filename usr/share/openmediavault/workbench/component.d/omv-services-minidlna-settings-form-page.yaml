@@ -82,5 +82,5 @@ data:
           request:
             service: MiniDlna
             method: doRescan
-            task: true
+            task: false
             progressMessage: _("Starting rescan ...")

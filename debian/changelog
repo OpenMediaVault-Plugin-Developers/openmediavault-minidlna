@@ -1,3 +1,10 @@
+openmediavault-minidlna (6.0.3) stable; urgency=low
+
+  * Fix logging again
+  * Fix rescan button
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 23 Nov 2021 07:11:29 -0600
+
 openmediavault-minidlna (6.0.2) stable; urgency=low
 
   * Fix button text

@@ -4,15 +4,14 @@ data:
   id: minidlna
   text: _("MiniDLNA")
   columns:
-    - name: _("Date & Time")
-      sortable: true
-      prop: date
-      cellTemplateName: localeDateTime
-      flexGrow: 1
     - name: _("Component")
       sortable: true
       prop: component
-      flexGrow: 2
+      flexGrow: 1
+    - name: _("Level")
+      sortable: true
+      prop: level
+      flexGrow: 1
     - name: _("Event")
       sortable: true
       prop: event
