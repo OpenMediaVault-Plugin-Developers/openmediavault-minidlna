@@ -21,7 +21,7 @@ require_once("openmediavault/globals.inc");
 
 \OMV\System\LogFileSpec::registerSpecification("minidlna", [
     "filename" => "minidlna.log",
-    "filepath" => \OMV\Environment::get("OMV_MINIDLNA_LOG_DIR", "/var/log") .
+    "filepath" => \OMV\Environment::get("OMV_MINIDLNA_LOG_DIR", "/var/log/minidlna") .
         "/minidlna.log",
     "regex"    => "/^\[(.*?)\]\s+(.*?)\..*?:\d+:\s+.*?:\s+(.*)$/",
     "columns"  => [

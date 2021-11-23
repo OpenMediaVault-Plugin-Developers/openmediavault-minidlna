@@ -17,7 +17,6 @@
 
 {% set config = salt['omv_conf.get']('conf.service.minidlna') %}
 {% set dbdir = salt['pillar.get']('default:OMV_MINIDLNA_DB_DIR', '/var/cache/minidlna') -%}
-{% set logdir = salt['pillar.get']('default:OMV_MINIDLNA_LOG_DIR', '/var/log') -%}
 
 {% if config.enable | to_bool %}
 
