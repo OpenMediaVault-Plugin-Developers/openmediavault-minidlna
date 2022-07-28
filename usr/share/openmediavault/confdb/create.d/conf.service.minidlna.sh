@@ -33,6 +33,7 @@ if ! omv_config_exists "${SERVICE_XPATH}"; then
     omv_config_add_node "/config/services" "${SERVICE_XPATH_NAME}"
     omv_config_add_key "${SERVICE_XPATH}" "enable" "0"
     omv_config_add_key "${SERVICE_XPATH}" "name" "MiniDLNA Server on OpenMediaVault"
+    omv_config_add_key "${SERVICE_XPATH}" "netinterface" ""
     omv_config_add_key "${SERVICE_XPATH}" "port" "8200"
     omv_config_add_key "${SERVICE_XPATH}" "strict" "0"
     omv_config_add_key "${SERVICE_XPATH}" "tivo" "0"

@@ -56,6 +56,11 @@ class OMVRpcServiceMiniDlna extends \OMV\Rpc\ServiceAbstract
         // Get the existing configuration object.
         $db = \OMV\Config\Database::getInstance();
         $object = $db->get("conf.service.minidlna");
+        $interfaces = explode(",", str_replace(" ", ",", $params["netinterface"]));
+        $interfacesT = array_map("trim", $interfaces);
+        $interfacesF = array_filter($interfacesT);
+        $interfacesU = array_unique($interfacesF);
+        $params["netinterface"] = implode(",", $interfacesU);
         $object->setAssoc($params);
         $db->set($object);
         // Remove useless properties from the object.

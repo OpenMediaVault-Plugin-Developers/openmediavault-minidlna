@@ -3,7 +3,11 @@
 {%- set serial = salt['pillar.get']('default:OMV_MINIDLNA_SERIAL', '31446138') -%}
 {{ pillar['headers']['multiline'] }}
 port={{ config.port }}
+{%- if config.netinterface | length > 0 %}
+network_interface={{ config.netinterface }}
+{%- else %}
 #network_interface=eth0
+{%- endif %}
 friendly_name={{ config.name }}
 db_dir={{ dbdir }}
 log_dir={{ logdir }}

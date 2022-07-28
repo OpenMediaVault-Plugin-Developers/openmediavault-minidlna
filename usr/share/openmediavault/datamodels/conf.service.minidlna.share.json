@@ -1,24 +1,24 @@
 {
-	"type": "config",
-	"id": "conf.service.minidlna.share",
-	"title": "MiniDLNA share",
-	"queryinfo": {
-		"xpath": "//services/minidlna/shares/share",
-		"iterable": true,
-		"idproperty": "uuid"
-	},
-	"properties": {
-		"uuid": {
-			"type": "string",
-			"format": "uuidv4"
-		},
-		"sharedfolderref": {
-			"type": "string",
-			"format": "uuidv4"
-		},
-		"mtype": {
-			"type": "string",
-			"default": ""
-		}
-	}
+  "type": "config",
+  "id": "conf.service.minidlna.share",
+  "title": "MiniDLNA share",
+  "queryinfo": {
+    "xpath": "//services/minidlna/shares/share",
+    "iterable": true,
+    "idproperty": "uuid"
+  },
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "format": "uuidv4"
+    },
+    "sharedfolderref": {
+      "type": "string",
+      "format": "uuidv4"
+    },
+    "mtype": {
+      "type": "string",
+      "default": ""
+    }
+  }
 }

@@ -65,6 +65,11 @@ data:
             - ["warn", _("Warn")]
             - ["info", _("Info")]
             - ["debug", _("Debug")]
+      - type: textInput
+        name: netinterface
+        label: _("Interface")
+        value: ""
+        hint: _("Interface to listen on. Separate multiple interfaces with commas. Most users will leave this blank.")
       - type: textarea
         name: extraoptions
         label: _("Extra options")
