@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Gyuris Gellért <jobel@ujevangelizacio.hu>, 2018-2019
+# Grawens <szabolcs.szanyi@gmail.com>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-22 07:19-0600\n"
-"PO-Revision-Date: 2021-11-22 13:19+0000\n"
-"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
+"POT-Creation-Date: 2022-07-28 07:46-0500\n"
+"PO-Revision-Date: 2013-10-28 14:44+0000\n"
+"Last-Translator: Grawens <szabolcs.szanyi@gmail.com>, 2021\n"
 "Language-Team: Hungarian (Hungary) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/hu_HU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,10 +38,10 @@ msgid "Content Type(s)"
 msgstr "Tartalomtípusok"
 
 msgid "Create"
-msgstr ""
+msgstr "Létrehozás"
 
 msgid "Created share."
-msgstr ""
+msgstr "Megosztás létrehozva."
 
 msgid "DLNA"
 msgstr "DLNA"
@@ -52,10 +53,10 @@ msgid "Debug"
 msgstr "Hibakeresés"
 
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 msgid "Edit share."
-msgstr ""
+msgstr "Megosztás szerkesztése."
 
 msgid "Enable"
 msgstr "Engedélyezés"
@@ -77,6 +78,17 @@ msgstr "Képek"
 
 msgid "Info"
 msgstr "Info"
+
+msgid "Interface"
+msgstr ""
+
+msgid ""
+"Interface to listen on. Separate multiple interfaces with commas. Most users"
+" will leave this blank."
+msgstr ""
+
+msgid "Level"
+msgstr ""
 
 msgid "Log Level"
 msgstr "Naplózási szint"
@@ -112,7 +124,7 @@ msgid "Settings"
 msgstr "Beállítások"
 
 msgid "Shared folder"
-msgstr ""
+msgstr "Megosztott mappa"
 
 msgid "Shares"
 msgstr "Megosztások"
@@ -121,7 +133,7 @@ msgid "Standard"
 msgstr "Standard"
 
 msgid "Starting rescan ..."
-msgstr ""
+msgstr "Újrakeresés indítása ..."
 
 msgid "Strict DLNA"
 msgstr "Szigorú DLNA"
@@ -130,10 +142,10 @@ msgid "Strictly adhere to DLNA standards."
 msgstr "Szigorú ragaszkodás a DLNA-szabványokhoz."
 
 msgid "The location of media files."
-msgstr ""
+msgstr "A médiafájlok helye."
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "A név, amelyet a szolgáltatás hirdetni fog az ügyfeleknek"
 
 msgid "TiVo support"
 msgstr "TiVo támogatás"
