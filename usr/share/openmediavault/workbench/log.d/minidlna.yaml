@@ -16,6 +16,7 @@ data:
       sortable: true
       prop: event
       flexGrow: 3
+      cellTemplateName: text
   request:
     service: LogFile
     method: getList
