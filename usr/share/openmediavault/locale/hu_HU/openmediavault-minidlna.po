@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Gyuris Gellért <jobel@ujevangelizacio.hu>, 2018-2019
+# Gyuris Gellért <jobel@ujevangelizacio.hu>, 2023
 # Grawens <szabolcs.szanyi@gmail.com>, 2021
 msgid ""
 msgstr ""
@@ -11,8 +12,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-28 07:46-0500\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
-"Last-Translator: Grawens <szabolcs.szanyi@gmail.com>, 2021\n"
-"Language-Team: Hungarian (Hungary) (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/hu_HU/)\n"
+"Last-Translator: Gyuris Gellért <jobel@ujevangelizacio.hu>, 2023\n"
+"Language-Team: Hungarian (Hungary) (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/hu_HU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -80,15 +81,15 @@ msgid "Info"
 msgstr "Info"
 
 msgid "Interface"
-msgstr ""
+msgstr "Felület"
 
 msgid ""
 "Interface to listen on. Separate multiple interfaces with commas. Most users"
 " will leave this blank."
-msgstr ""
+msgstr "A felületek, ahol a figyelés történik. Több felületet vesszővel lehet elválasztani. A legtöbb felhasználó ezt üresen hagyja."
 
 msgid "Level"
-msgstr ""
+msgstr "Szint"
 
 msgid "Log Level"
 msgstr "Naplózási szint"

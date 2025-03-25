@@ -3,38 +3,37 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
-# Miguel Anxo Bouzada <mbouzada@gmail.com>, 2013-2015,2020
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-28 07:46-0500\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
-"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>, 2013-2015,2020\n"
-"Language-Team: Galician (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/gl/)\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Basque (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
+"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "All media"
-msgstr "Toda a multimedia"
+msgstr ""
 
 msgid "Audio"
-msgstr "Son"
+msgstr ""
 
 msgid "Browse"
-msgstr "Navegar"
+msgstr ""
 
 msgid "Component"
-msgstr "Compoñente"
+msgstr ""
 
 msgid "Content Type"
-msgstr "Tipo de contido"
+msgstr ""
 
 msgid "Content Type(s)"
-msgstr "Tipo(s) de contido"
+msgstr ""
 
 msgid "Create"
 msgstr ""
@@ -43,13 +42,13 @@ msgid "Created share."
 msgstr ""
 
 msgid "DLNA"
-msgstr "DLNA"
+msgstr ""
 
 msgid "Date & Time"
-msgstr "Data e hora"
+msgstr ""
 
 msgid "Debug"
-msgstr "Depuración"
+msgstr ""
 
 msgid "Edit"
 msgstr ""
@@ -58,25 +57,25 @@ msgid "Edit share."
 msgstr ""
 
 msgid "Enable"
-msgstr "Activar"
+msgstr ""
 
 msgid "Error"
-msgstr "Erro"
+msgstr ""
 
 msgid "Event"
-msgstr "Actividade"
+msgstr ""
 
 msgid "Extra options"
-msgstr "Opcións adicionais"
+msgstr ""
 
 msgid "Fatal"
-msgstr "Fatal"
+msgstr ""
 
 msgid "Images"
-msgstr "Imaxes"
+msgstr ""
 
 msgid "Info"
-msgstr "Información"
+msgstr ""
 
 msgid "Interface"
 msgstr ""
@@ -90,55 +89,55 @@ msgid "Level"
 msgstr ""
 
 msgid "Log Level"
-msgstr "Nivel de rexistro"
+msgstr ""
 
 msgid "MiniDLNA"
-msgstr "MiniDLNA"
+msgstr ""
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr "MiniDLNA no OpenMediaVault"
+msgstr ""
 
 msgid "Music"
-msgstr "Música"
+msgstr ""
 
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 msgid "Off"
-msgstr "Apagado"
+msgstr ""
 
 msgid "Pictures"
-msgstr "Imaxes"
+msgstr ""
 
 msgid "Port"
-msgstr "Porto"
+msgstr ""
 
 msgid "Rescan"
-msgstr "Actualizar"
+msgstr ""
 
 msgid "Root Container"
-msgstr "Contedor raíz"
+msgstr ""
 
 msgid "Settings"
-msgstr "Axustes"
+msgstr ""
 
 msgid "Shared folder"
 msgstr ""
 
 msgid "Shares"
-msgstr "Compartidos"
+msgstr ""
 
 msgid "Standard"
-msgstr "Estándar"
+msgstr ""
 
 msgid "Starting rescan ..."
 msgstr ""
 
 msgid "Strict DLNA"
-msgstr "DLNA estrito"
+msgstr ""
 
 msgid "Strictly adhere to DLNA standards."
-msgstr "Adherirse estritamente ao estandar DLNA."
+msgstr ""
 
 msgid "The location of media files."
 msgstr ""
@@ -147,16 +146,16 @@ msgid "The name the service will advertise to clients"
 msgstr ""
 
 msgid "TiVo support"
-msgstr "Compatibilidade con "
+msgstr ""
 
 msgid "Video"
-msgstr "Vídeo"
+msgstr ""
 
 msgid "Warn"
-msgstr "Atención"
+msgstr ""
 
 msgid "Wide links"
-msgstr "Ligazóns amplas"
+msgstr ""
 
 msgid "n/a"
-msgstr "n/d"
+msgstr ""

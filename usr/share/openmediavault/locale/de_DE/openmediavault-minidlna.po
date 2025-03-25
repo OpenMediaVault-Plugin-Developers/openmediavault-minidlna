@@ -4,10 +4,8 @@
 # 
 # Translators:
 # Dampflok_HD, 2022
-# David Hönel <davidh1990@gmx.de>, 2013
-# Ettore Atalan <atalanttore@googlemail.com>, 2014-2016,2022
-# d4e998992c5d77930be0dd0199008e4a_0663716 <f71f241308a4c2d418872ce2fcb85dec_386310>, 2016
-# 49656bee90bb57799c7c1e93ceb9b4ef_2da742e, 2016
+# Dampflok_HD, 2021
+# Ettore Atalan <atalanttore@googlemail.com>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
@@ -15,11 +13,11 @@ msgstr ""
 "POT-Creation-Date: 2022-07-28 07:46-0500\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
 "Last-Translator: Dampflok_HD, 2022\n"
-"Language-Team: German (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/de/)\n"
+"Language-Team: German (Germany) (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "All media"
@@ -50,7 +48,7 @@ msgid "DLNA"
 msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr "Datum & Uhrzeit"
+msgstr "Datum & Zeit"
 
 msgid "Debug"
 msgstr "Debug"
@@ -77,7 +75,7 @@ msgid "Fatal"
 msgstr "Schwerwiegend"
 
 msgid "Images"
-msgstr "Bilder"
+msgstr "Abbilder"
 
 msgid "Info"
 msgstr "Info"
@@ -163,4 +161,4 @@ msgid "Wide links"
 msgstr "Weiterführende Links"
 
 msgid "n/a"
-msgstr "Nicht verfügbar"
+msgstr "n/v"

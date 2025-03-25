@@ -5,16 +5,16 @@
 # Translators:
 # Alexander Savchenko, 2013
 # Alexander Savchenko, 2015
-# Артур Мудрых <arturmon82@gmail.com>, 2013
-# Дмитрий <bardimnik@rambler.ru>, 2019
+# Artur Mudrykh <arturmon82@gmail.com>, 2013
+# Дмитрий <bardimnik@rambler.ru>, 2019,2023
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-28 07:46-0500\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
-"Last-Translator: Дмитрий <bardimnik@rambler.ru>, 2019\n"
-"Language-Team: Russian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ru/)\n"
+"Last-Translator: Дмитрий <bardimnik@rambler.ru>, 2019,2023\n"
+"Language-Team: Russian (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 msgid "All media"
-msgstr "Вся медиа"
+msgstr "Все медиафайлы"
 
 msgid "Audio"
 msgstr "Аудио"
@@ -40,25 +40,25 @@ msgid "Content Type(s)"
 msgstr "Тип(ы) контента"
 
 msgid "Create"
-msgstr ""
+msgstr "Создать"
 
 msgid "Created share."
-msgstr ""
+msgstr "Создан общий ресурс."
 
 msgid "DLNA"
 msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr "Дата и Время"
+msgstr "Дата/Время"
 
 msgid "Debug"
 msgstr "Отладить"
 
 msgid "Edit"
-msgstr ""
+msgstr "Изменить"
 
 msgid "Edit share."
-msgstr ""
+msgstr "Изменить общий ресурс."
 
 msgid "Enable"
 msgstr "Включить"
@@ -82,15 +82,15 @@ msgid "Info"
 msgstr "Информация"
 
 msgid "Interface"
-msgstr ""
+msgstr "Интерфейс"
 
 msgid ""
 "Interface to listen on. Separate multiple interfaces with commas. Most users"
 " will leave this blank."
-msgstr ""
+msgstr "Интерфейс для прослушивания. Разделяйте несколько интерфейсов запятыми. Большинство пользователей оставят это поле пустым."
 
 msgid "Level"
-msgstr ""
+msgstr "Уровень"
 
 msgid "Log Level"
 msgstr "Уровень журналирования"
@@ -126,7 +126,7 @@ msgid "Settings"
 msgstr "Настройки"
 
 msgid "Shared folder"
-msgstr ""
+msgstr "Общая папка"
 
 msgid "Shares"
 msgstr "Общие"
@@ -135,7 +135,7 @@ msgid "Standard"
 msgstr "Стандарт"
 
 msgid "Starting rescan ..."
-msgstr ""
+msgstr "Запуск повторного сканирования ..."
 
 msgid "Strict DLNA"
 msgstr "Строгий DLNA"
@@ -144,10 +144,10 @@ msgid "Strictly adhere to DLNA standards."
 msgstr "Строго придерживаться стандартов DLNA."
 
 msgid "The location of media files."
-msgstr ""
+msgstr "Расположение медиафайлов."
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "Имя, которое сервис будет рекламировать клиентам"
 
 msgid "TiVo support"
 msgstr "Поддержка TiVo"
