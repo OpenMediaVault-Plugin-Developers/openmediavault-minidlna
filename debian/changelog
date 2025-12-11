@@ -1,3 +1,9 @@
+openmediavault-minidlna (8.0) UNRELEASED; urgency=medium
+
+  * Update for OMV 8.x
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Thu, 11 Dec 2025 13:11:22 +0000
+
 openmediavault-minidlna (7.0) stable; urgency=low
 
   * Update for OMV 7.x
