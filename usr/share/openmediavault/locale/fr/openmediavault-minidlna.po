@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
-# Axel Cantenys, 2017
+# Axel Cantenys, 2017,2023
 # Axel Cantenys, 2020
 # Seboss666 <sebastien_verdet@seboss666.info>, 2015
 # Zacharie ARNAISE <spacebrain.damage@gmail.com>, 2013-2015
@@ -13,8 +13,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-28 07:46-0500\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
-"Last-Translator: Axel Cantenys, 2020\n"
-"Language-Team: French (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/fr/)\n"
+"Last-Translator: Axel Cantenys, 2017,2023\n"
+"Language-Team: French (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,28 +37,28 @@ msgid "Content Type"
 msgstr "Type de contenu"
 
 msgid "Content Type(s)"
-msgstr "Type(s) de contenu"
+msgstr "Type de contenu"
 
 msgid "Create"
-msgstr ""
+msgstr "Créer"
 
 msgid "Created share."
-msgstr ""
+msgstr "Partage créé."
 
 msgid "DLNA"
 msgstr "DLNA"
 
 msgid "Date & Time"
-msgstr "Date & Heure"
+msgstr "Date et Heure"
 
 msgid "Debug"
 msgstr "Débogage"
 
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 msgid "Edit share."
-msgstr ""
+msgstr "Modifier le partage."
 
 msgid "Enable"
 msgstr "Activer"
@@ -82,15 +82,15 @@ msgid "Info"
 msgstr "Info"
 
 msgid "Interface"
-msgstr ""
+msgstr "Interface"
 
 msgid ""
 "Interface to listen on. Separate multiple interfaces with commas. Most users"
 " will leave this blank."
-msgstr ""
+msgstr "Interface sur laquelle écouter. Séparez les différentes interfaces par des virgules. La plupart des utilisateurs laisseront ce champ vide."
 
 msgid "Level"
-msgstr ""
+msgstr "Niveau"
 
 msgid "Log Level"
 msgstr "Niveau de journalisation"
@@ -126,16 +126,16 @@ msgid "Settings"
 msgstr "Paramètres"
 
 msgid "Shared folder"
-msgstr ""
+msgstr "Dossier partagé"
 
 msgid "Shares"
 msgstr "Partages"
 
 msgid "Standard"
-msgstr "Standard"
+msgstr "Par défaut"
 
 msgid "Starting rescan ..."
-msgstr ""
+msgstr "Démarrage de l'analyse ..."
 
 msgid "Strict DLNA"
 msgstr "Mode DLNA strict"
@@ -144,10 +144,10 @@ msgid "Strictly adhere to DLNA standards."
 msgstr "Se conformer strictement aux normes DLNA."
 
 msgid "The location of media files."
-msgstr ""
+msgstr "L'emplacement des fichiers multimédias."
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "Le nom que le service annoncera aux clients."
 
 msgid "TiVo support"
 msgstr "Support de TiVo"

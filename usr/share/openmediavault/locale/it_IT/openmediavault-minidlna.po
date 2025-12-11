@@ -36,13 +36,13 @@ msgid "Content Type"
 msgstr "Tipo di contenuto"
 
 msgid "Content Type(s)"
-msgstr "Tipo/i di contenuto(i)"
+msgstr "Tipo di contenuto(i)"
 
 msgid "Create"
 msgstr "Crea"
 
 msgid "Created share."
-msgstr "Condivisione creata."
+msgstr "La condivisione è stata creata."
 
 msgid "DLNA"
 msgstr "DLNA"
@@ -134,7 +134,7 @@ msgid "Standard"
 msgstr "Standard"
 
 msgid "Starting rescan ..."
-msgstr "Avvio della riscansione..."
+msgstr "Sto avviando la riscansione ..."
 
 msgid "Strict DLNA"
 msgstr "DLNA Preciso"

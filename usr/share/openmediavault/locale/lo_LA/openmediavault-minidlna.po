@@ -3,162 +3,159 @@
 # This file is distributed under the same license as the openmediavault-minidlna package.
 # 
 # Translators:
-# okpail <okpail@gmail.com>, 2014-2016
-# Varkentjes, 2020
-# Stephan Paternotte <stephan@paternottes.net>, 2025
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-28 07:46-0500\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
-"Last-Translator: Stephan Paternotte <stephan@paternottes.net>, 2025\n"
-"Language-Team: Dutch (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/nl/)\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Lao (Laos) (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/lo_LA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: lo_LA\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "All media"
-msgstr "Alle media"
+msgstr ""
 
 msgid "Audio"
-msgstr "Audio"
+msgstr ""
 
 msgid "Browse"
-msgstr "Bladeren"
+msgstr ""
 
 msgid "Component"
-msgstr "Component"
+msgstr ""
 
 msgid "Content Type"
-msgstr "Content Type"
+msgstr ""
 
 msgid "Content Type(s)"
-msgstr "Content Type(s)"
+msgstr ""
 
 msgid "Create"
-msgstr "Aanmaken"
+msgstr ""
 
 msgid "Created share."
-msgstr "Share aanmaken."
+msgstr ""
 
 msgid "DLNA"
-msgstr "DLNA"
+msgstr ""
 
 msgid "Date & Time"
-msgstr "Datum & Tijd"
+msgstr ""
 
 msgid "Debug"
-msgstr "Foutopsporing"
+msgstr ""
 
 msgid "Edit"
-msgstr "Bewerken"
+msgstr ""
 
 msgid "Edit share."
-msgstr "Share bewerken."
+msgstr ""
 
 msgid "Enable"
-msgstr "Inschakelen"
+msgstr ""
 
 msgid "Error"
-msgstr "Fout"
+msgstr ""
 
 msgid "Event"
-msgstr "Gebeurtenis"
+msgstr ""
 
 msgid "Extra options"
-msgstr "Extra opties"
+msgstr ""
 
 msgid "Fatal"
-msgstr "Fataal"
+msgstr ""
 
 msgid "Images"
-msgstr "Afbeeldingen"
+msgstr ""
 
 msgid "Info"
-msgstr "Info"
+msgstr ""
 
 msgid "Interface"
-msgstr "Interface"
+msgstr ""
 
 msgid ""
 "Interface to listen on. Separate multiple interfaces with commas. Most users"
 " will leave this blank."
-msgstr "Te beluisteren interface. Meerdere interfaces scheiden met komma's. De meeste gebruikers zullen dit leeg laten."
+msgstr ""
 
 msgid "Level"
-msgstr "Niveau"
+msgstr ""
 
 msgid "Log Level"
-msgstr "Logboekniveau"
+msgstr ""
 
 msgid "MiniDLNA"
-msgstr "MiniDLNA"
+msgstr ""
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr "MiniDLNA in OpenMediaVault"
+msgstr ""
 
 msgid "Music"
-msgstr "Muziek"
+msgstr ""
 
 msgid "Name"
-msgstr "Naam"
+msgstr ""
 
 msgid "Off"
-msgstr "Uit"
+msgstr ""
 
 msgid "Pictures"
-msgstr "Afbeeldingen"
+msgstr ""
 
 msgid "Port"
-msgstr "IP-poort"
+msgstr ""
 
 msgid "Rescan"
-msgstr "Opnieuw scannen"
+msgstr ""
 
 msgid "Root Container"
-msgstr "Root-Container"
+msgstr ""
 
 msgid "Settings"
-msgstr "Instellingen"
+msgstr ""
 
 msgid "Shared folder"
-msgstr "Gedeelde map"
+msgstr ""
 
 msgid "Shares"
-msgstr "Shares"
+msgstr ""
 
 msgid "Standard"
-msgstr "Standaard"
+msgstr ""
 
 msgid "Starting rescan ..."
-msgstr "Nieuwe scan starten…"
+msgstr ""
 
 msgid "Strict DLNA"
-msgstr "Strikte DLNA"
+msgstr ""
 
 msgid "Strictly adhere to DLNA standards."
-msgstr "DLNA-standaarden strikt toepassen."
+msgstr ""
 
 msgid "The location of media files."
-msgstr "De locatie van mediabestanden."
+msgstr ""
 
 msgid "The name the service will advertise to clients"
-msgstr "De naam die de dienst aan cliënten zal adverteren"
+msgstr ""
 
 msgid "TiVo support"
-msgstr "TiVo-ondersteuning"
+msgstr ""
 
 msgid "Video"
-msgstr "Video"
+msgstr ""
 
 msgid "Warn"
-msgstr "Waarschuwen"
+msgstr ""
 
 msgid "Wide links"
-msgstr "Brede links"
+msgstr ""
 
 msgid "n/a"
-msgstr "n.v.t."
+msgstr ""
