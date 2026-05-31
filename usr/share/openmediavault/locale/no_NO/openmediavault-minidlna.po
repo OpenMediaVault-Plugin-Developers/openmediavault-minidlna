@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 07:46-0500\n"
+"POT-Creation-Date: 2026-05-31 01:24+0000\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Norwegian (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/no/)\n"
@@ -39,12 +39,6 @@ msgid "Create"
 msgstr ""
 
 msgid "Created share."
-msgstr ""
-
-msgid "DLNA"
-msgstr ""
-
-msgid "Date & Time"
 msgstr ""
 
 msgid "Debug"

@@ -5,12 +5,12 @@
 # Translators:
 # Damtux, 2013
 # Giovanni Scafora <scafora.giovanni@gmail.com>, 2025
-# Paolo Velati <paolo.velati@gmail.com>, 2014-2016
+# d5316b6b4d283a9cbe4ea704ae8abe02_b972f24 <bd82b27c045fcb3aa6bd04640e5224c5_36908>, 2014-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 07:46-0500\n"
+"POT-Creation-Date: 2026-05-31 01:24+0000\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
 "Last-Translator: Giovanni Scafora <scafora.giovanni@gmail.com>, 2025\n"
 "Language-Team: Italian (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/it/)\n"
@@ -43,12 +43,6 @@ msgstr "Crea"
 
 msgid "Created share."
 msgstr "La condivisione è stata creata."
-
-msgid "DLNA"
-msgstr "DLNA"
-
-msgid "Date & Time"
-msgstr "Data e ora"
 
 msgid "Debug"
 msgstr "Debug"

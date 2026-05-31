@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 07:46-0500\n"
+"POT-Creation-Date: 2026-05-31 01:24+0000\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
 "Last-Translator: Дмитрий <bardimnik@rambler.ru>, 2019,2023\n"
 "Language-Team: Russian (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ru/)\n"
@@ -44,12 +44,6 @@ msgstr "Создать"
 
 msgid "Created share."
 msgstr "Создан общий ресурс."
-
-msgid "DLNA"
-msgstr "DLNA"
-
-msgid "Date & Time"
-msgstr "Дата/Время"
 
 msgid "Debug"
 msgstr "Отладить"

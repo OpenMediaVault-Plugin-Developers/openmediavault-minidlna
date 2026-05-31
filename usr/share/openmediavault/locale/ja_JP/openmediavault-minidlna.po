@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 07:46-0500\n"
+"POT-Creation-Date: 2026-05-31 01:24+0000\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
 "Last-Translator: Toshihiro Kan <kansuke4649@gmail.com>, 2014-2016,2019,2022-2023\n"
 "Language-Team: Japanese (Japan) (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/ja_JP/)\n"
@@ -41,12 +41,6 @@ msgstr "作成"
 
 msgid "Created share."
 msgstr "作成済みの共有。"
-
-msgid "DLNA"
-msgstr "DLNA"
-
-msgid "Date & Time"
-msgstr "日付 & 時間"
 
 msgid "Debug"
 msgstr "デバッグ"

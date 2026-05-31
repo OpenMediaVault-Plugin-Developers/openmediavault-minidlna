@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-minidlna\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 07:46-0500\n"
+"POT-Creation-Date: 2026-05-31 01:24+0000\n"
 "PO-Revision-Date: 2013-10-28 14:44+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Lao (Laos) (http://app.transifex.com/openmediavault-plugin-developers/openmediavault-minidlna/language/lo_LA/)\n"
@@ -18,144 +18,138 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "All media"
-msgstr ""
+msgstr "ສື່ທັງໝົດ"
 
 msgid "Audio"
-msgstr ""
+msgstr "ສຽງ"
 
 msgid "Browse"
-msgstr ""
+msgstr "ທ່ອງເບິ່ງ"
 
 msgid "Component"
-msgstr ""
+msgstr "ອົງປະກອບ"
 
 msgid "Content Type"
-msgstr ""
+msgstr "ປະເພດເນື້ອຫາ"
 
 msgid "Content Type(s)"
-msgstr ""
+msgstr "ປະເພດເນື້ອຫາ"
 
 msgid "Create"
-msgstr ""
+msgstr "ສ້າງ"
 
 msgid "Created share."
-msgstr ""
-
-msgid "DLNA"
-msgstr ""
-
-msgid "Date & Time"
-msgstr ""
+msgstr "ສ້າງການແບ່ງປັນແລ້ວ."
 
 msgid "Debug"
-msgstr ""
+msgstr "ດີບັກ"
 
 msgid "Edit"
-msgstr ""
+msgstr "ແກ້ໄຂ"
 
 msgid "Edit share."
-msgstr ""
+msgstr "ແກ້ໄຂການແບ່ງປັນ."
 
 msgid "Enable"
-msgstr ""
+msgstr "ເປີດໃຊ້ງານ"
 
 msgid "Error"
-msgstr ""
+msgstr "ຂໍ້ຜິດພາດ"
 
 msgid "Event"
-msgstr ""
+msgstr "ເຫດການ"
 
 msgid "Extra options"
-msgstr ""
+msgstr "ຕົວເລືອກເພີ່ມເຕີມ"
 
 msgid "Fatal"
-msgstr ""
+msgstr "ຮ້າຍແຮງ"
 
 msgid "Images"
-msgstr ""
+msgstr "ຮູບພາບ"
 
 msgid "Info"
-msgstr ""
+msgstr "ຂໍ້ມູນ"
 
 msgid "Interface"
-msgstr ""
+msgstr "ອິນເຕີເຟສ"
 
 msgid ""
 "Interface to listen on. Separate multiple interfaces with commas. Most users"
 " will leave this blank."
-msgstr ""
+msgstr "ອິນເຕີເຟສທີ່ຈະຮັບການເຊື່ອມຕໍ່. ແຍກແຕ່ລະອິນເຕີເຟສດ້ວຍເຄື່ອງໝາຍຈຸດ. ຜູ້ໃຊ້ສ່ວນໃຫຍ່ຈະປະຫວ່າງໄວ້."
 
 msgid "Level"
-msgstr ""
+msgstr "ລະດັບ"
 
 msgid "Log Level"
-msgstr ""
+msgstr "ລະດັບການບັນທຶກ (Log)"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr ""
+msgstr "MiniDLNA ເທິງ OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "ເພງ"
 
 msgid "Name"
-msgstr ""
+msgstr "ຊື່"
 
 msgid "Off"
-msgstr ""
+msgstr "ປິດ"
 
 msgid "Pictures"
-msgstr ""
+msgstr "ຮູບພາບ"
 
 msgid "Port"
-msgstr ""
+msgstr "ພອດ"
 
 msgid "Rescan"
-msgstr ""
+msgstr "ສະແກນໃໝ່"
 
 msgid "Root Container"
-msgstr ""
+msgstr "ບ່ອນເກັບຂໍ້ມູນຫຼັກ (Root Container)"
 
 msgid "Settings"
-msgstr ""
+msgstr "ການຕັ້ງຄ່າ"
 
 msgid "Shared folder"
-msgstr ""
+msgstr "ໂຟນເດີທີ່ແບ່ງປັນ"
 
 msgid "Shares"
-msgstr ""
+msgstr "ການແບ່ງປັນ"
 
 msgid "Standard"
-msgstr ""
+msgstr "ມາດຕະຖານ"
 
 msgid "Starting rescan ..."
-msgstr ""
+msgstr "ກຳລັງເລີ່ມຕົ້ນສະແກນໃໝ່ ..."
 
 msgid "Strict DLNA"
-msgstr ""
+msgstr "DLNA ແບບເຄັ່ງຄັດ"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "ປະຕິບັດຕາມມາດຕະຖານ DLNA ຢ່າງເຄັ່ງຄັດ."
 
 msgid "The location of media files."
-msgstr ""
+msgstr "ຕຳແໜ່ງຂອງໄຟລ໌ສື່."
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "ຊື່ທີ່ບໍລິການຈະສະແດງໃຫ້ເຄື່ອງລູກຂ່າຍ (Client) ເຫັນ"
 
 msgid "TiVo support"
-msgstr ""
+msgstr "ການຮອງຮັບ TiVo"
 
 msgid "Video"
-msgstr ""
+msgstr "ວິດີໂອ"
 
 msgid "Warn"
-msgstr ""
+msgstr "ເຕືອນ"
 
 msgid "Wide links"
-msgstr ""
+msgstr "ລິ້ງແບບກວ້າງ (Wide links)"
 
 msgid "n/a"
-msgstr ""
+msgstr "ບໍ່ມີຂໍ້ມູນ"
