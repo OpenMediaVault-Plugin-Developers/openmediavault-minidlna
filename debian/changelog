@@ -1,3 +1,13 @@
+openmediavault-minidlna (8.1) unstable; urgency=low
+
+  * Read the MiniDLNA log from the systemd journal instead of
+    /var/log/minidlna/minidlna.log, since minidlnad now logs via
+    stdout/stderr under systemd (-S) instead of writing to log_dir
+  * Self-heal ownership of the database/art_cache directory on every
+    deploy, in case it was previously created as root
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 16 Aug 2026 14:29:36 +0000
+
 openmediavault-minidlna (8.0) UNRELEASED; urgency=medium
 
   * Update for OMV 8.x
