@@ -19,14 +19,33 @@
 require_once("openmediavault/functions.inc");
 require_once("openmediavault/globals.inc");
 
+// minidlnad is started with -S (systemd foreground mode), so it no longer
+// writes to log_dir/minidlna.log and instead logs to stdout/stderr, which
+// systemd captures in the journal under the "minidlnad" syslog identifier.
+// Log lines keep their original "component.c:line: level: message" format,
+// journald just prepends its own timestamp/hostname/identifier[pid]: prefix.
 \OMV\System\LogFileSpec::registerSpecification("minidlna", [
-    "filename" => "minidlna.log",
-    "filepath" => \OMV\Environment::get("OMV_MINIDLNA_LOG_DIR", "/var/log/minidlna") .
-        "/minidlna.log",
-    "regex"    => "/^(.*?):\d+:\s+(.*?):\s+(.*)$/",
+    "command" => "export SYSTEMD_COLORS=0; sudo journalctl --quiet --no-pager ".
+        "SYSLOG_IDENTIFIER='minidlnad' --output=short-iso",
+    "filename" => "minidlna",
+    "regex"    => "/^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:?\d{2})\s+(\S+)\s+".
+        "minidlnad\[\d+\]:\s+(.*?):\d+:\s+(.*?):\s+(.*)$/",
     "columns"  => [
-        "component" => 1,
-        "level" => 2,
-        "event" => 3
+        "ts" => [
+            "index" => 1,
+            "func" => function ($v) {
+                return strpdate($v, "Y-m-d*H:i:sT");
+            }
+        ],
+        "date" => [
+            "index" => 1,
+            "func" => function ($v) {
+                return strftime("%c", strpdate($v, "Y-m-d*H:i:sT"));
+            }
+        ],
+        "hostname" => 2,
+        "component" => 3,
+        "level" => 4,
+        "event" => 5
     ]
 ]);

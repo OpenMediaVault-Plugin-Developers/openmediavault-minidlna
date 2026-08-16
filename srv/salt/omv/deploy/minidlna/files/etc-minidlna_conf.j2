@@ -1,5 +1,4 @@
 {%- set dbdir = salt['pillar.get']('default:OMV_MINIDLNA_DB_DIR', '/var/cache/minidlna') -%}
-{%- set logdir = salt['pillar.get']('default:OMV_MINIDLNA_LOG_DIR', '/var/log/minidlna') -%}
 {%- set serial = salt['pillar.get']('default:OMV_MINIDLNA_SERIAL', '31446138') -%}
 {{ pillar['headers']['multiline'] }}
 port={{ config.port }}
@@ -10,7 +9,6 @@ network_interface={{ config.netinterface }}
 {%- endif %}
 friendly_name={{ config.name }}
 db_dir={{ dbdir }}
-log_dir={{ logdir }}
 album_art_names=Cover.jpg/cover.jpg/AlbumArtSmall.jpg/albumartsmall.jpg/AlbumArt.jpg/albumart.jpg/Album.jpg/album.jpg/Folder.jpg/folder.jpg/Thumb.jpg/thumb.jpg
 inotify=yes
 enable_tivo={{ 'yes' if config.tivo else 'no' }}

@@ -24,7 +24,6 @@ set -e
 . /usr/share/openmediavault/scripts/helper-functions
 
 OMV_MINIDLNA_DB_DIR=${OMV_MINIDLNA_DB_DIR:-"/var/cache/minidlna"}
-OMV_MINIDLNA_LOG_DIR=${OMV_MINIDLNA_LOG_DIR:-"/var/log/minidlna"}
 
 SERVICE_XPATH_NAME="minidlna"
 SERVICE_XPATH="/config/services/${SERVICE_XPATH_NAME}"
@@ -56,16 +55,5 @@ if [ ! -d ${OMV_MINIDLNA_DB_DIR} ]; then
     mkdir -p ${OMV_MINIDLNA_DB_DIR}
 fi
 chown -R minidlna:minidlna ${OMV_MINIDLNA_DB_DIR}
-
-# create and set permissions for log directory
-if [ ! -d ${OMV_MINIDLNA_LOG_DIR} ]; then
-    mkdir -p ${OMV_MINIDLNA_LOG_DIR}
-fi
-if [ ! "${OMV_MINIDLNA_LOG_DIR}" = "/var/log" ]; then
-    chown minidlna:minidlna ${OMV_MINIDLNA_LOG_DIR}
-fi
-if [ -f "${OMV_MINIDLNA_LOG_DIR}/minidlna.log" ]; then
-    chown minidlna:minidlna ${OMV_MINIDLNA_LOG_DIR}/minidlna.log
-fi
 
 exit 0

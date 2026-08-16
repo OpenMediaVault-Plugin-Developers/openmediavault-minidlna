@@ -32,12 +32,23 @@ configure_minidlna:
     - group: root
     - mode: '0644'
 
+fix_minidlna_db_dir_owner:
+  file.directory:
+    - name: "{{ dbdir }}"
+    - user: minidlna
+    - group: minidlna
+    - makedirs: True
+    - recurse:
+      - user
+      - group
+
 start_minidlna_service:
   service.running:
     - name: minidlna
     - enable: True
     - watch:
       - file: configure_minidlna
+      - file: fix_minidlna_db_dir_owner
 
 {% else %}
 
