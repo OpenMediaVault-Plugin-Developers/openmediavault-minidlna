@@ -18,138 +18,138 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "All media"
-msgstr ""
+msgstr "Alla medier"
 
 msgid "Audio"
-msgstr ""
+msgstr "Ljud"
 
 msgid "Browse"
-msgstr ""
+msgstr "Bläddra"
 
 msgid "Component"
-msgstr ""
+msgstr "Komponent"
 
 msgid "Content Type"
-msgstr ""
+msgstr "Innehållstyp"
 
 msgid "Content Type(s)"
-msgstr ""
+msgstr "Innehållstyp(er)"
 
 msgid "Create"
-msgstr ""
+msgstr "Skapa"
 
 msgid "Created share."
-msgstr ""
+msgstr "Delningen har skapats."
 
 msgid "Debug"
-msgstr ""
+msgstr "Felsökning"
 
 msgid "Edit"
-msgstr ""
+msgstr "Redigera"
 
 msgid "Edit share."
-msgstr ""
+msgstr "Redigera delning."
 
 msgid "Enable"
-msgstr ""
+msgstr "Aktivera"
 
 msgid "Error"
-msgstr ""
+msgstr "Fel"
 
 msgid "Event"
-msgstr ""
+msgstr "Händelse"
 
 msgid "Extra options"
-msgstr ""
+msgstr "Extra inställningar"
 
 msgid "Fatal"
-msgstr ""
+msgstr "Allvarligt"
 
 msgid "Images"
-msgstr ""
+msgstr "Bilder"
 
 msgid "Info"
-msgstr ""
+msgstr "Information"
 
 msgid "Interface"
-msgstr ""
+msgstr "Gränssnitt"
 
 msgid ""
 "Interface to listen on. Separate multiple interfaces with commas. Most users"
 " will leave this blank."
-msgstr ""
+msgstr "Gränssnitt som tjänsten ska lyssna på. Avgränsa flera gränssnitt med kommatecken. De flesta användare lämnar fältet tomt."
 
 msgid "Level"
-msgstr ""
+msgstr "Nivå"
 
 msgid "Log Level"
-msgstr ""
+msgstr "Loggnivå"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA on OpenMediaVault"
-msgstr ""
+msgstr "MiniDLNA i OpenMediaVault"
 
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 msgid "Off"
-msgstr ""
+msgstr "Av"
 
 msgid "Pictures"
-msgstr ""
+msgstr "Bilder"
 
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 msgid "Rescan"
-msgstr ""
+msgstr "Sök igenom på nytt"
 
 msgid "Root Container"
-msgstr ""
+msgstr "Rotcontainer"
 
 msgid "Settings"
-msgstr ""
+msgstr "Inställningar"
 
 msgid "Shared folder"
-msgstr ""
+msgstr "Delad mapp"
 
 msgid "Shares"
-msgstr ""
+msgstr "Delningar"
 
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 msgid "Starting rescan ..."
-msgstr ""
+msgstr "Startar ny genomsökning…"
 
 msgid "Strict DLNA"
-msgstr ""
+msgstr "Strikt DLNA"
 
 msgid "Strictly adhere to DLNA standards."
-msgstr ""
+msgstr "Följ DLNA-standarderna strikt."
 
 msgid "The location of media files."
-msgstr ""
+msgstr "Platsen för mediefilerna."
 
 msgid "The name the service will advertise to clients"
-msgstr ""
+msgstr "Namnet som tjänsten presenterar för klienterna"
 
 msgid "TiVo support"
-msgstr ""
+msgstr "TiVo-stöd"
 
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 msgid "Warn"
-msgstr ""
+msgstr "Varning"
 
 msgid "Wide links"
-msgstr ""
+msgstr "Breda länkar"
 
 msgid "n/a"
-msgstr ""
+msgstr "Ej tillgängligt"
